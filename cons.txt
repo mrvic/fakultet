@@ -1,0 +1,10 @@
+  CONSTRAINT `ispit_ibfk_1` FOREIGN KEY (`mbrStud`) REFERENCES `stud` (`mbrStud`),
+  CONSTRAINT `ispit_ibfk_2` FOREIGN KEY (`sifPred`) REFERENCES `pred` (`sifPred`),
+  CONSTRAINT `ispit_ibfk_3` FOREIGN KEY (`sifNastavnik`) REFERENCES `nastavnik` (`sifNastavnik`)
+  CONSTRAINT `mjesto_ibfk_1` FOREIGN KEY (`sifZupanija`) REFERENCES `zupanija` (`sifZupanija`)
+  CONSTRAINT `nastavnik_ibfk_1` FOREIGN KEY (`pbrStan`) REFERENCES `mjesto` (`pbr`),
+  CONSTRAINT `nastavnik_ibfk_2` FOREIGN KEY (`sifOrgjed`) REFERENCES `orgjed` (`sifOrgjed`)
+  CONSTRAINT `orgjed_ibfk_1` FOREIGN KEY (`sifNadorgjed`) REFERENCES `orgjed` (`sifOrgjed`)
+  CONSTRAINT `pred_ibfk_1` FOREIGN KEY (`sifOrgjed`) REFERENCES `orgjed` (`sifOrgjed`)
+  CONSTRAINT `stud_ibfk_1` FOREIGN KEY (`pbrRod`) REFERENCES `mjesto` (`pbr`),
+  CONSTRAINT `stud_ibfk_2` FOREIGN KEY (`pbrStan`) REFERENCES `mjesto` (`pbr`)

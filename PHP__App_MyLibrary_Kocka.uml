@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\App\MyLibrary\AbstractKocka</OriginalElement>
+  <nodes>
+    <node x="110.75" y="282.0">\App\MyLibrary\Kocka</node>
+    <node x="363.0" y="-6.0">\App\MyLibrary\IKocka</node>
+    <node x="0.0" y="0.0">\App\MyLibrary\AbstractKocka</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\App\MyLibrary\Kocka" target="\App\MyLibrary\AbstractKocka">
+      <point x="-66.5" y="-116.0" />
+      <point x="177.25" y="257.0" />
+      <point x="133.0" y="257.0" />
+      <point x="0.0" y="116.0" />
+    </edge>
+    <edge source="\App\MyLibrary\Kocka" target="\App\MyLibrary\IKocka">
+      <point x="66.5" y="-116.0" />
+      <point x="310.25" y="257.0" />
+      <point x="354.5" y="257.0" />
+      <point x="0.0" y="60.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="250.0" y="254.0" />
+  <SelectedNodes>
+    <node>\App\MyLibrary\IKocka</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

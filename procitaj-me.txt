@@ -1,0 +1,45 @@
+#KAKO FORWARDATI PORT NA HOMESTEAD:
+C:\Windows\system32>netsh interface portproxy add v4tov4 listenport=3306 listenaddress=192.168.0.100 connectport=3306 connectaddress=192.168.10.10
+# UKLANJANJE FORWARDA
+C:\Windows\system32>netsh interface portproxy delete v4tov4 listenport=3306 listenaddress=192.168.0.100
+# Prikaz FOWARDA
+C:\Windows\system32>netsh interface portproxy show all
+
+Listen on ipv4:             Connect to ipv4:
+
+Address         Port        Address         Port
+--------------- ----------  --------------- ----------
+192.168.0.100   3306        192.168.10.10   3306
+
+
+
+# PHPUNIT settings za remote Homestead
+C:\Users\SkyLucy\.PhpStorm2016.1\config\settings-sada-radi-phpunit-ne-radi-mysql-i-vagrant.jar
+
+#treba skinuti phpunit.phar:
+vagrant@homestead:~/Code/blog$ sudo wget https://phar.phpunit.de/phpunit.phar
+
+#editirati remote php 7.0 i dodati mu xdebug:
+vagrant@homestead:~/Code/blog$ cat /etc/php/7.0/cli/php.ini
+
+[PHP]
+zend_extension=xdebug.so
+xdebug.remote_enable = 1
+xdebug.remote_connect_back = 1
+xdebug.remote_port = 9000
+
+# (sada mi javlja: You are running composer with xdebug enabled. This has a major impact on run)
+
+
+# restartirati PHP na remote HOmestead:
+vagrant@homestead:~/Code/blog$ sudo service php7.0-fpm restart
+
+# sada bi testovi trebali raditi
+//TODO pokušaj kreirati test naredbom php artisan make:test Example2Test
+php artisan make:test Example2Test
+
+# RADI : desni klik na projekt -> new ->phpunit test
+//TODO Pokusaj namjestiti mysql server
+
+# instalirao
+vagrant@homestead:~/Code/blog$ composer require barryvdh/laravel-ide-helper

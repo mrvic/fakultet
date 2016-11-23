@@ -1,0 +1,43 @@
+
+# odi u cmd
+cd C:\Users\SkyLucy\Homestead
+vagrant up
+
+# user vagrant, pass vagrant
+# prije toga instalirati GIT BASH
+vagrant ssh
+
+#provjeriti radni direktorij
+vagrant@homestead:~/Code/blog$ pwd
+/home/vagrant/Code/blog
+
+vagrant@homestead:~/Code/blog$ php artisan route:list
++--------+----------+----------+------+---------+--------------+
+| Domain | Method   | URI      | Name | Action  | Middleware   |
++--------+----------+----------+------+---------+--------------+
+|        | GET|HEAD | /        |      | Closure | web          |
+|        | GET|HEAD | api/user |      | Closure | api,auth:api |
++--------+----------+----------+------+---------+--------------+
+
+#postaviti .env datoteku
+
+# INSTALIRATI XETHRON library
+https://github.com/Xethron/migrations-generator
+
+#Prebaciti postojeću bazu u skriptu za migraciju
+cd /home/vagrant/Code/blog
+php artisan migrate:generate
+
+# pokrenuti migraciju
+vagrant@homestead:~/Code/blog$ php artisan migrate:refresh
+
+# SEED podataka
+vagrant@homestead:~/Code/blog$ php artisan migrate --seed
+
+# Ili sve u jednom koraku
+vagrant@homestead:~/Code/blog$ php artisan migrate:refresh --seed
+
+#Postaviti HEIDISQL
+C:\Users\SkyLucy\Code\blog\database\heidisql homestead SSH postavke.JPG
+
+

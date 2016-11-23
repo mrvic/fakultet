@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.dvorana</OriginalElement>
+  <nodes>
+    <node x="711.25" y="245.0">91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.orgjed</node>
+    <node x="746.25" y="0.0">91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.dvorana</node>
+    <node x="456.0" y="545.5">91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.nastavnik</node>
+    <node x="172.5" y="245.0">91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.mjesto</node>
+    <node x="134.5" y="0.0">91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.zupanija</node>
+    <node x="443.0" y="957.0">91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.ispit</node>
+    <node x="846.0" y="545.5">91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.pred</node>
+    <node x="0.0" y="527.0">91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.stud</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.ispit" target="91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.pred">
+      <point x="132.0" y="-152.5" />
+      <point x="773.0" y="932.0" />
+      <point x="1047.0" y="932.0" />
+      <point x="0.0" y="171.5" />
+    </edge>
+    <edge source="91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.ispit" target="91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.nastavnik">
+      <point x="0.0" y="-152.5" />
+      <point x="0.0" y="171.5" />
+    </edge>
+    <edge source="91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.mjesto" target="91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.zupanija">
+      <point x="0.0" y="-116.0" />
+      <point x="0.0" y="97.5" />
+    </edge>
+    <edge source="91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.pred" target="91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.orgjed">
+      <point x="0.0" y="-171.5" />
+      <point x="1047.0" y="502.0" />
+      <point x="982.0" y="502.0" />
+      <point x="90.25" y="116.0" />
+    </edge>
+    <edge source="91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.stud" target="91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.mjesto">
+      <point x="-109.0" y="-190.0" />
+      <point x="109.0" y="502.0" />
+      <point x="224.5" y="502.0" />
+      <point x="-104.0" y="116.0" />
+    </edge>
+    <edge source="91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.nastavnik" target="91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.mjesto">
+      <point x="-92.5" y="-171.5" />
+      <point x="548.5" y="502.0" />
+      <point x="432.5" y="502.0" />
+      <point x="104.0" y="116.0" />
+    </edge>
+    <edge source="91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.orgjed" target="91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.dvorana">
+      <point x="0.0" y="-116.0" />
+      <point x="0.0" y="97.5" />
+    </edge>
+    <edge source="91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.ispit" target="91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.stud">
+      <point x="-132.0" y="-152.5" />
+      <point x="509.0" y="932.0" />
+      <point x="218.0" y="932.0" />
+      <point x="0.0" y="190.0" />
+    </edge>
+    <edge source="91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.nastavnik" target="91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.orgjed">
+      <point x="92.5" y="-171.5" />
+      <point x="733.5" y="502.0" />
+      <point x="801.5" y="502.0" />
+      <point x="-90.25" y="116.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="624.0" y="543.5" />
+  <SelectedNodes>
+    <node>91c5e213-5e9c-433a-bc20-e1589063c2da.TABLE:fakultet.dvorana</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+
