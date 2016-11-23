@@ -1,0 +1,2 @@
+# fakultet
+Fakultet - Laravel projekt
