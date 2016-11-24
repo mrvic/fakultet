@@ -1,3 +1,15 @@
+#GIT
+cd ~/Code
+git clone https://github.com/mrvic/fakultet.git fakultet
+composer update
+php artisan optimize
+php artisan config:clear
+(nakon ovoga namjesti .env konfiguraciju)
+php artisan route:list
+php artisan dump-autoload
+
+
+
 #KAKO FORWARDATI PORT NA HOMESTEAD:
 C:\Windows\system32>netsh interface portproxy add v4tov4 listenport=3306 listenaddress=192.168.0.100 connectport=3306 connectaddress=192.168.10.10
 # UKLANJANJE FORWARDA
