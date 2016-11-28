@@ -1,6 +1,6 @@
 <?php
 
-use App\Lib\Motor;
+use App\MyLibrary\Motor;
 
 class motorClassTest extends TestCase
 {
@@ -28,7 +28,7 @@ class motorClassTest extends TestCase
      * @author pmrvic1
      * @param type $myclass
      */
-    public function testMotor2Exist($myclass= App\Lib\Motor::class){
+    public function testMotor2Exist($myclass= App\MyLibrary\Motor::class){
      // potrebno je napraviti Direktorij app\lib\
      // unutar njega klasu: Auto
     $this->assertTrue(class_exists($myclass),"Ne mogu dohvatiti klasu $myclass USE namespacima? Jel dobar Namespace?");
@@ -48,7 +48,7 @@ class motorClassTest extends TestCase
     // radilo je dok nisam pozvao composer dump-autoload
     public function test2MotorClass(){
         echo (new Motor(30))->status;
-        $this->assertEquals((new App\Lib\Motor(40))->zvuk,40,  'Klasa Motor ');
+        $this->assertEquals((new App\MyLibrary\Motor(40))->zvuk,40,  'Klasa Motor ');
         
     }
     
