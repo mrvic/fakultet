@@ -77,7 +77,15 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
-
+                <div>
+   <ul>
+        <li><a href="/studenti">Studenti</a></li>
+        <li><a href="/zupanija">Županije</a></li>
+        <li><a href="/mjesto">Mjesta</a></li>
+        
+    </ul>
+                    
+                </div>
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
