@@ -8,6 +8,15 @@ php artisan config:clear
 php artisan route:list
 php artisan dump-autoload
 
+KREIRANJE KONTROLLERA
+
+         // potrebno je napraviti kontroller auto
+         // u konzoli: 
+         // cd ~/Code/blog
+         // php artisan make:controller auto --resource 
+
+KREIRANJE TESTA:
+php artisan make:test Example2Test
 
 
 #KAKO FORWARDATI PORT NA HOMESTEAD:

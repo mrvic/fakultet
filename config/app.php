@@ -12,8 +12,8 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Laravel',
-
+    //'name' => 'Laravel',
+      'name' => 'Fakultet',
     /*
     |--------------------------------------------------------------------------
     | Application Environment
@@ -38,8 +38,8 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
-
+    //'debug' => env('APP_DEBUG', false),
+      'debug' => env('APP_DEBUG', true),
     /*
     |--------------------------------------------------------------------------
     | Application URL
@@ -136,7 +136,11 @@ return [
     */
 
     'providers' => [
-
+        /*
+         * Provideri koje sam ja dodao
+         */
+        //za kreiranje formi: https://laravelcollective.com/docs/5.3/html
+        Collective\Html\HtmlServiceProvider::class,
         /*
          * Laravel Framework Service Providers...
          */
@@ -172,11 +176,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Fakultet\Providers\AppServiceProvider::class,
+        Fakultet\Providers\AuthServiceProvider::class,
+        // Fakultet\Providers\BroadcastServiceProvider::class,
+        Fakultet\Providers\EventServiceProvider::class,
+        Fakultet\Providers\RouteServiceProvider::class,
 
         /*
  * Ova dva reda sam dodao 03.11.2016 kako bi omogucio
@@ -202,7 +206,16 @@ return [
     */
 
     'aliases' => [
-
+        /*
+         * Dodao na vrh
+         */
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Input' => Illuminate\Support\Facades\Input::class,
+        
+        /*
+         * Ispod su postojeće:
+         */  
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,

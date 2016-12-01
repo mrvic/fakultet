@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Fakultet\Http\Controllers\Auth;
 
-use App\User;
+use Fakultet\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use Fakultet\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller

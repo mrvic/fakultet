@@ -6,22 +6,7 @@
  * Time: 0:58
  */
 
-$servername = "localhost";
-$username = "homestead";
-$password = "secret";
-$dbname = "fakultet";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-if (!$conn->set_charset("utf8")) {
-    printf("Error loading character set utf8: %s\n", $conn->error);
-    exit();
-}
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include 'mysql-config.php';
 
 $sql = "SELECT * FROM mjesto";
 $result = $conn->query($sql);

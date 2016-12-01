@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Fakultet\Http\Controllers;
 use Request;
-use App\Http\Requests;
+use Fakultet\Http\Requests;
 use Validator;
 use Input;
 use Session;
 use Redirect;
 use View;
 use Zupanija;
-use App\Item;
+use Fakultet\Item;
 
 
 //use Illuminate\Http\Request;

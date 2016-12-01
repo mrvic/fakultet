@@ -9,9 +9,25 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Application Test Suite">
+        <testsuite name="Application Test Fakultet">
             <directory suffix="Test.php">./tests</directory>
+            <exclude>NerdTest.php</exclude>
         </testsuite>
+        <testsuite name="Uvod u PHP i objektno orjentirano programiranje">
+            <directory suffix="Test.php">./tests/OsnovePHP</directory>                 
+            <directory suffix="Test.php">./tests/OsnovePHP/TipoviVarijableIzraziOperatori</directory>  
+            <directory suffix="Test.php">./tests/OsnovePHP/PetljeNizovi</directory>      
+            <directory suffix="Test.php">./tests/OsnovePHP/ObjektiFunkcije</directory>             
+        </testsuite>
+         <testsuite name="Osnove MySQL baze podataka">
+            <directory suffix="Test.php">./tests/OsnoveMysql</directory>
+        </testsuite>      
+         <testsuite name="PHP i MySQL">
+            <directory suffix="Test.php">./tests/PHP+MySQL</directory>
+        </testsuite> 
+         <testsuite name="Napredno PHP programiranje i izrada web aplikacija">
+            <directory suffix="Test.php">./tests/NaprednoPHP</directory>
+        </testsuite>                 
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">

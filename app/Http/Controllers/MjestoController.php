@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Fakultet\Http\Controllers;
 
 use Illuminate\Http\Request;
 
 
 //use Request;
-//use App\Http\Requests;
+//use Fakultet\Http\Requests;
 //use Validator;
 //use Input;
 //use Session;
 //use Redirect;
 //use View;
 use Mjesto;
-use App\Item;
+use Fakultet\Item;
 
 
 

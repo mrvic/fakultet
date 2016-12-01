@@ -1,5 +1,5 @@
 <?php
-namespace App\MyLibrary;
+namespace Fakultet\MyLibrary;
 
 /**
  * prije pokretanja testova u composer.json treba dodati "app/myLibrary"
@@ -10,7 +10,7 @@ namespace App\MyLibrary;
             "app/myLibrary"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "Fakultet\\": "app/"
         }
     }
  *

@@ -14,7 +14,7 @@
 
 	<div class="form-group">
 		{{ Form::label('sifZupanija', 'Broj županije') }}
-		{{ Form::text('sifZupanija', Input::old('sifZupanija'), array('class' => 'form-control')) }}
+		{{ Form::number('sifZupanija', Input::old('sifZupanija'), array('class' => 'form-control')) }}
 	</div>
 	<div class="form-group">
 		{{ Form::label('nazZupanija', 'Ime županije') }}
@@ -22,8 +22,9 @@
 	</div>
 
 
-	{{ Form::submit('Dodaj novu županiju!', array('class' => 'btn btn-primary')) }}
+	{{ Form::submit('Dodaj novu županiju!', array('class' => 'btn btn-primary','id'=>'zupanija-dodaj')) }}
 
 {{ Form::close() }}
 
 @endsection
+ 

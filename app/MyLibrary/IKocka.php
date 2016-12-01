@@ -5,7 +5,7 @@
  * Date: 15.11.2016.
  * Time: 22:31
  */
-namespace App\MyLibrary;
+namespace Fakultet\MyLibrary;
 
 interface IKocka
 {

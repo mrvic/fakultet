@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Fakultet\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
+use Fakultet\Http\Requests;
 
 class auto extends Controller
 {

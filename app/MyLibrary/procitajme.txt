@@ -1,0 +1,14 @@
+# Ovo je primjer custom klase koja se može koristiti unutar laravel frameworka
+# Potrebno je dodati "app/MyLibrary" kako bi laravel odradio autoload ovih klasa:
+[/composer.json]
+    "autoload": {
+        "classmap": [
+            "database",
+            "app/MyLibrary",
+            "app/Fakultet"
+        ],
+
+
+
+# Ako se bilo što doda u ovaj folder moramo pozvati naredbu
+composer dump-autoload

@@ -6,21 +6,24 @@
  * Time: 22:06
  */
 
-namespace App\MyLibrary;
+namespace Fakultet\MyLibrary;
 
 
 abstract class AbstractKocka
 {
-    public $broj_strana;
-    private $trenutniBroj;
+
+    protected $trenutniBroj=1;
+    
     public function varaj()
     {
         $this->trenutniBroj = random_int(5, 6);
     }
-    public function setTrenutni()
+    
+    public function setTrenutni($defbroj=3)
     {
-        $this->trenutniBroj=3;
+        $this->trenutniBroj=$defbroj;
     }
+    
     abstract public function sayHello();
 
 }
