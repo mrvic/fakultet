@@ -18,9 +18,10 @@ class motorClassTest extends TestCase
      * @param type $myclass
      */
     public function testMotorExist($myclass= Motor::class){
-     // potrebno je napraviti Direktorij app\lib\
-     // unutar njega klasu: Auto
-    $this->assertTrue(class_exists($myclass),"Ne mogu dohvatiti klasu $myclass je li ga kreirana? Jel dobar Namespace?");
+     // potrebno je napraviti Direktorij app\MyLibrary\
+     // unutar njega klasu: Motor.class.php
+    $this->assertTrue(class_exists($myclass)
+            ,"Ne mogu dohvatiti klasu $myclass je li ga kreirana? Jel dobar Namespace?");
     }
     
     /**
@@ -28,9 +29,10 @@ class motorClassTest extends TestCase
      * @param type $myclass
      */
     public function testMotor2Exist($myclass= Fakultet\MyLibrary\Motor::class){
-     // potrebno je napraviti Direktorij app\lib\
-     // unutar njega klasu: Auto
-    $this->assertTrue(class_exists($myclass),"Ne mogu dohvatiti klasu $myclass USE namespacima? Jel dobar Namespace?");
+     // potrebno je napraviti Direktorij app\MyLibrary\
+     // unutar njega klasu: Motor.class.php
+    $this->assertTrue(class_exists($myclass)
+            ,"Ne mogu dohvatiti klasu $myclass USE namespacima? Jel dobar Namespace?");
     }
             /**
      * A basic functional test example.
@@ -38,15 +40,18 @@ class motorClassTest extends TestCase
      * @return void
      */
     public function testMotorClass(){
-        //$this->assertEquals(new Auto(),"brmmmmmm",  'Klasa Auto ');
-        $this->assertEquals((new Motor(20))->zvuk,20,  'Klasa Motor (new Motor())->zvuk,"brmmmmmm"');
+        $this->assertEquals(
+                (new Motor(20))->zvuk
+                ,20
+                ,'Klasa Motor (new Motor())->zvuk,"brmmmmmm"');
     }
 
     
     // OVO RADI! Znači direktan poziv na klasu 
     // radilo je dok nisam pozvao composer dump-autoload
     public function test2MotorClass(){
-        echo (new Motor(30))->status;
+        // Radi. zakomentirao sam da ne printa na output
+        //echo (new Motor(30))->status;
         $this->assertEquals((new Fakultet\MyLibrary\Motor(40))->zvuk,40,  'Klasa Motor ');
         
     }

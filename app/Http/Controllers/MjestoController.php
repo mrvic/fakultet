@@ -12,7 +12,7 @@ use Illuminate\Http\Request;
 //use Session;
 //use Redirect;
 //use View;
-use Mjesto;
+use Fakultet\Mjesto;
 use Fakultet\Item;
 
 

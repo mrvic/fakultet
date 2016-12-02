@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,33 +10,29 @@
 |
 */
 
-#File: app/Http/routes.php
-Route::get('/show-autoloaders', function(){
-    foreach(spl_autoload_functions() as $callback)
-    {
-        if(is_string($callback))
-        {
-            echo '- ',$callback,"\n<br>\n";
-        }
-
-        else if(is_array($callback))
-        {
-            if(is_object($callback[0]))
-            {
-                echo '- ',get_class($callback[0]);
-            }
-            elseif(is_string($callback[0]))
-            {
-                echo '- ',$callback[0];
-            }
-            echo '::',$callback[1],"\n<br>\n";            
-        }
-        else
-        {
-            var_dump($callback);
-        }
-    }
+Route::get('/mjesto-zupanija', function(){
+    //$comments = App\Post::find(1)->comments;
+/*
+    foreach ($comments as $comment) {
+//
+}
+ * */
+ 
+    $lista_mjesta=Fakultet\Zupanija::all();
+   dd($lista_mjesta);
 });
+
+Route::get('/show-key', function(){
+    var_dump( $_ENV['APP_KEY']);
+});
+
+// Ovako isprintamo composer.json
+Route::get('/get-composer-json', function(){
+    $string = file_get_contents(base_path()."/composer.json");
+$json_a = json_decode($string, true);
+print_r($json_a);
+});
+    
 
 Route::get('/', function () {
     return view('welcome');

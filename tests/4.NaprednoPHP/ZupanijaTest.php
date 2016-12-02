@@ -4,10 +4,28 @@ use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Faker\Factory as Faker;
-use Zupanija;
+use Fakultet\Zupanija;
+use Fakultet;
 
 class ZupanijaTest extends TestCase
 {
+    public function testModelZupanija() {
+        //$lista_mjesta->Zupanija::find(1)->mjesto;
+    //print_r($lista_mjesta);
+        //TODO $lista_mjesta->Zupanija::find(1)->mjesto;
+ /*
+        $z= new Zupanija();
+        echo "\n".get_class($this).": ispis Zupanije()\n";
+        print_r( $z->fillable);
+  */
+        
+        $this->assertArraySubset(
+                (new Zupanija())->fillable
+                ,array('sifZupanija','nazZupanija')
+                ,'Županija mora imati $fillable=["sifZupanija","nazZupanija"] ');
+    }
+    
+    
      /**
      * Potrebno je kreirati view-ove unutar:
      * \resources\views\fakultet\zupanija\

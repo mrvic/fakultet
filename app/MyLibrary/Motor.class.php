@@ -29,7 +29,7 @@ class Motor {
             throw new \InvalidArgumentException("Moraš ubaciti broj!");        
         }
         else{
-        echo "\nMotor je kreiran sa ispravno unešenim argumentom\n";
+        echo "\n".get_class($this).": Motor je kreiran sa ispravno unešenim argumentom\n";
         $this->zvuk=$s;
         }
     }

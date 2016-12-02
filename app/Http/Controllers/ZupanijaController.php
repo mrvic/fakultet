@@ -8,7 +8,7 @@ use Input;
 use Session;
 use Redirect;
 use View;
-use Zupanija;
+use Fakultet\Zupanija;
 use Fakultet\Item;
 
 

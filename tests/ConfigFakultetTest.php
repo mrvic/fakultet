@@ -5,8 +5,8 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 /**
- * Ovim testom ćemo pokušati pokriti cijelu konfiguraciju postavki za naš projekt Fakultet
- *
+ * @abstract Ovim testom ćemo pokušati pokriti cijelu konfiguraciju postavki za naš projekt Fakultet
+ * 
  * @author pmrvic
  */
 class ConfigFakultetTest extends TestCase{
@@ -19,7 +19,37 @@ class ConfigFakultetTest extends TestCase{
                 ,substr($_ENV['APP_KEY'], 0, 6)
                 ,'Ključ nije ispravan, mora počinjati sa "base64"');
     }
-      public function testPostavkeServiceProvider()
+    
+      /**
+       * @abstract Provjerava jesmo li dodali vlastite direktorije u autoload listu
+       * @author pmrvic
+       */
+    public function testComposerJsonAutoload() {
+        // Učitaj cijeli file u string
+        $string = file_get_contents("/home/pmrvic/Code/fakultet/composer.json");
+
+        // Pretvori ucitani JSON u PHP Array
+        $json_a = json_decode($string, true);
+
+        // Pripremi Array za usporedbu
+        $autoloadArray = Array(
+                    'classmap' => Array
+                        (
+                        '0' => 'database',
+                        '1' => 'app/MyLibrary',
+                        '2' => 'app/Fakultet'
+                    ),
+                    'psr-4' => Array
+                        (
+                        'Fakultet\\' => 'app/'
+                    )
+        );
+
+        // Usporedi dva arraya
+        $this->assertArraySubset($autoloadArray, $json_a['autoload']);
+    }
+
+    public function testPostavkeServiceProvider()
     {
        
          $this->assertTrue(in_array('Collective\Html\HtmlServiceProvider'
@@ -31,26 +61,7 @@ class ConfigFakultetTest extends TestCase{
       //  Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
          
     }  
-         public function testPostavkeAliases()
-    {
-       
-         $this->assertTrue(in_array('Collective\Html\FormFacade'
-                 , config('app.aliases'))
-                 ,'"Alias Collective\Html\FormFacade" postavi u "/config/app.php"');
-         
-         $this->assertTrue(in_array('Collective\Html\HtmlFacade'
-                 , config('app.aliases'))
-                 ,'"alias Collective\Html\HtmlFacade" postavi u "/config/app.php"');  
-         
-         $this->assertTrue(in_array('Illuminate\Support\Facades\Input'
-                 , config('app.aliases'))
-                 ,'"alias Illuminate\Support\Facades\Input" postavi u "/config/app.php"');  
-                  
-         $this->assertTrue(in_array('Illuminate\Support\Facades\App'
-                 , config('app.aliases'))
-                 ,'"alias Illuminate\Support\Facades\App" postavi u "/config/app.php"');  
-    }  
-           
+        
         
     public function testPostavkeCustomAliases()
     {
