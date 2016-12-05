@@ -14,19 +14,19 @@
             <exclude>NerdTest.php</exclude>
         </testsuite>
         <testsuite name="Uvod u PHP i objektno orjentirano programiranje">
-            <directory suffix="Test.php">./tests/OsnovePHP</directory>                 
-            <directory suffix="Test.php">./tests/OsnovePHP/TipoviVarijableIzraziOperatori</directory>  
-            <directory suffix="Test.php">./tests/OsnovePHP/PetljeNizovi</directory>      
-            <directory suffix="Test.php">./tests/OsnovePHP/ObjektiFunkcije</directory>             
+            <directory suffix="Test.php">./tests/1.OsnovePHP</directory>                 
+            <directory suffix="Test.php">./tests/1.OsnovePHP/TipoviVarijableIzraziOperatori</directory>  
+            <directory suffix="Test.php">./tests/1.OsnovePHP/PetljeNizovi</directory>      
+            <directory suffix="Test.php">./tests/1.OsnovePHP/ObjektiFunkcije</directory>             
         </testsuite>
          <testsuite name="Osnove MySQL baze podataka">
-            <directory suffix="Test.php">./tests/OsnoveMysql</directory>
+            <directory suffix="Test.php">./tests/2.OsnoveMysql</directory>
         </testsuite>      
          <testsuite name="PHP i MySQL">
-            <directory suffix="Test.php">./tests/PHP+MySQL</directory>
+            <directory suffix="Test.php">./tests/3.PHP+MySQL</directory>
         </testsuite> 
          <testsuite name="Napredno PHP programiranje i izrada web aplikacija">
-            <directory suffix="Test.php">./tests/NaprednoPHP</directory>
+            <directory suffix="Test.php">./tests/4.NaprednoPHP</directory>
         </testsuite>                 
     </testsuites>
     <filter>
