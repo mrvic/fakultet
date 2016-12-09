@@ -59,7 +59,7 @@ class MjestoController extends Controller
      */
     public function show($id)
     {
-        //
+        return Mjesto::find($id);
     }
 
     /**
@@ -82,7 +82,35 @@ class MjestoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // validate
+        // read more on validation at http://laravel.com/docs/validation
+        $rules = array(
+            'pbr'         => 'required|numeric',
+            'nazMjesto'   => 'required',
+            'sifZupanija' => 'required|numeric'
+        );
+        $validator = Validator::make($request::all(), $rules);
+
+        // process the login
+        if ($validator->fails()) {
+            /*
+            return Redirect::to('mjesto/' . $id . '/edit')
+                            ->withErrors($validator)
+                            ->withInput(Input::except('password'));
+             
+             */
+        } else {
+            // store
+            $mjesto = Mjesto::find($id);
+            $mjesto->pbr         = $request::get('pbr');
+            $mjesto->nazMjesto   = $request::get('nazMjesto');
+            $mjesto->sifZupanija = $request::get('sifZupanija');
+            $mjesto->save();
+
+            // redirect
+            Session::flash('message', 'Successfully updated mjesto!');
+            return Redirect::to('mjesto');
+        }
     }
 
     /**

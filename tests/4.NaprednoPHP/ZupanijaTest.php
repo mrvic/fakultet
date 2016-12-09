@@ -25,7 +25,6 @@ class ZupanijaTest extends TestCase
                 ,'Županija mora imati $fillable=["sifZupanija","nazZupanija"] ');
     }
     
-    
      /**
      * Potrebno je kreirati view-ove unutar:
      * \resources\views\fakultet\zupanija\
@@ -46,6 +45,8 @@ class ZupanijaTest extends TestCase
                  ,'Kreiraj view "\resources\views\fakultet\zupanija\show.blade.php"');
     }
 
+
+    
 
     /**
      * A basic test example.

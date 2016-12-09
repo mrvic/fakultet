@@ -29,8 +29,12 @@ Route::get('/show-key', function(){
 // Ovako isprintamo composer.json
 Route::get('/get-composer-json', function(){
     $string = file_get_contents(base_path()."/composer.json");
-$json_a = json_decode($string, true);
-print_r($json_a);
+    $json_a = json_decode($string, true);
+   
+
+    // This will dump and die, can also print_r($json_a);
+    // CTRL-CLICK za expand all
+    dd($json_a);
 });
     
 
@@ -41,7 +45,12 @@ Route::get('/xxx', function () {
     return "xxx";
 });
 
+
 //Fakultet aplikacija
+Route::get('/mjesto-ajax', function () {
+    return view('fakultet.mjesto.index');
+});
+
 Route::resource('mjesto',   'MjestoController');
 Route::resource('zupanija', 'ZupanijaController');
 Route::resource('studenti', 'StudController');

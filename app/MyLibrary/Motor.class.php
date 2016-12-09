@@ -20,11 +20,17 @@ class Motor {
     //put your code here    
     public $status="\n\t\t------    Auto 1 alive!   -------\n\n";
     public $zvuk="brmmmmmm";
+    
+    /**
+     * @author pmrvic
+     * @param int $s
+     * @throws \InvalidArgumentException
+     */
     public function __construct($s){
         // Cilj je testirati namjerno ubacivanjem krivog tipa varijable
         // kako bi provocirali hvatanje greške u 
         // /tests/Osnove/motorClassTest@testPokusajDaKreiramoMotorSaKrivimArgumentima()
-        if (!is_numeric($s)){ 
+        if (!is_int($s)){ 
             // mora se postaviti \ znak jer je to root klasa a ne custom \InvalidArgumentException
             throw new \InvalidArgumentException("Moraš ubaciti broj!");        
         }
