@@ -25,7 +25,17 @@ class Mjesto extends Model
     protected  $fillable = ['nazMjesto'];
     
     public function zupanija() {
-        return $this->belongsTo('Fakultet\Zupanija');
+  
+   // Ovo dolje ne radi!, mora se unijeti foreign key od parent modela Fakultet\zupanija
+   // return $this->belongsTo('Fakultet\Zupanija');
+        
+   /**
+    *  ispravno!  
+    * Sada možemo pozvati modal na slijedeći način:
+    *    
+    */
+   return $this->belongsTo('Fakultet\Zupanija', 'sifZupanija');    
+
     }
 
 }

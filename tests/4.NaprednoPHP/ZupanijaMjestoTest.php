@@ -7,14 +7,63 @@ use Fakultet\Zupanija;
 use Fakultet\Mjesto;
 
 class ZupanijaMjestoTest extends TestCase {
-
-    public function testEloquentMjestoZupanija() {
-        $z = new Fakultet\Zupanija;
-        $this->assertEquals("Kostanjevac", 
-                $z->find(1)->mjesto->find(10455)->nazMjesto
-                , 'Mjesto sa pbr 10455 je trebao biti Kostanjevac');
+    
+     /**
+     * Na ovaj način preskačemo testove koje ne želimo da se izvrše
+     */
+    public function testPreskociOvajTest() {    
+        $this->markTestSkipped('must be revisited.');
+        $this->assertTrue(false);
     }
+     
+    /**
+     * Potrebno je dohvatiti naziv mjesta u Županiji sa šifrom 1 (Zagrebačka)
+     * Koje počinje sa "Ko"
+     * Ovo radi ali nije dovoljno dobro jer smo upisali PBR
+     */
+    public function testDohvatiMjestoUZupaniji() {
+        $z = new Fakultet\Zupanija;
+        
+        $this->assertEquals("Kostanjevac",
+                           $z->find(1)->mjesto->find(10455)->nazMjesto
+                           , 'Mjesto sa pbr 10455 je trebao biti Kostanjevac');
+    }
+          
 
+    /**
+     * Potrebno je dohvatiti naziv mjesta u Županiji sa šifrom 1 (Zagrebačka)
+     * Koje počinje sa "Ko"
+     * OVO radi ali je grozno dohvaćanje pomoću $result[0]['nazMjesto']
+     */
+    public function testDohvatiMjestoUZupaniji2() {
+        $z =new Fakultet\Zupanija;
+        
+        // Sa get() dobijamo array
+        $result=$z->find(1)->mjesto()->where('nazMjesto', 'LIKE', 'Ko%')->get();
+        $this->assertEquals("Kostanjevac",
+                           $result[0]['nazMjesto']
+                           , 'Mjesto sa pbr 10455 je trebao biti Kostanjevac');
+    }
+    
+    /*
+     * OVO je jedini ispravan & elegantan način
+     * 
+     */
+    public function testDohvatiMjestoUZupaniji3() {
+        $z = Fakultet\Zupanija::find(1);
+                
+        // Sa first() dobijamo model ili NULL
+        $result=$z->mjesto()->where('nazMjesto', 'LIKE', 'Ko%')->first();  
+        
+        $this->assertEquals("Kostanjevac",
+                           $result->nazMjesto
+                           , 'Mjesto sa pbr 10455 je trebao biti Kostanjevac');
+    }     
+    
+/**
+ * Potrebno je pomoću eloquenta izmjeniti ime mjesta "Kostanjevac" u "STARI Kostanjevac"
+ * provjeriti jeli se promjena zbilja dogodila zatim vratiti na staro i opet provjeriti
+ */
     public function testEloquentMjestoSave() {
         $m=Mjesto::find(10455);
         $m->nazMjesto="STARI Kostanjevac";
@@ -27,29 +76,25 @@ class ZupanijaMjestoTest extends TestCase {
         $this->assertEquals("Kostanjevac", (new Fakultet\Mjesto)->find(10455)->nazMjesto);
     }    
     
-    
-    public function testEloquentMjestoZupanijaSave() {
-        
-        $this->markTestSkipped('must be revisited.');
-        
-        
-        $z = new Zupanija;
-        
-        // pokušamo promjeniti ime
-        $z->find(1)->mjesto->find(10455)->nazMjesto="NOVI Kostanjevac";
-        $z->find(1)->mjesto->find(10455)->save();
-        $this->assertEquals("NOVI Kostanjevac", 
-                $z->find(1)->mjesto->find(10455)->nazMjesto
-                , 'Mjesto sa pbr 10455 je trebao biti Kostanjevac');
 
-        // vraćamo na staro
-        $z->find(1)->mjesto->find(10455)->nazMjesto="Kostanjevac";
-        $z->find(1)->mjesto->find(10455)->save();
-        $this->assertEquals("Kostanjevac", 
-                $z->find(1)->mjesto->find(10455)->nazMjesto
-                , 'Mjesto sa pbr 10455 je trebao biti Kostanjevac');        
+    /**
+     * Potrebno je promjeniti ime županije vezano uz mjesto na način da
+     * se prvo pronađe mjesto sa poštanskim brojem 10455 a nakon toga 
+     * se dohvati i izmjeni ime pripadajuće županije
+     * podatke sačuvati u bazu, provjeriti pa vratiti na staro
+     */
+     public function testEloquentMjestoZupanijaSave() {
+        $m1=Mjesto::find(10455);
+        $this->assertEquals('Zagrebačka',$m1->zupanija->nazZupanija);  
+        $m1->zupanija->nazZupanija='Zagrebačka9';
+        $m1->push();
+        unset($m1);
         
-    }
-    
+        $m2=Mjesto::find(10455);
+        $this->assertEquals('Zagrebačka9',$m2->zupanija->nazZupanija); 
+        $m2->zupanija->nazZupanija='Zagrebačka';
+        $m2->push();      
+        
+    }   
 
 }
