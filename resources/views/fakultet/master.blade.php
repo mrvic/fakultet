@@ -9,11 +9,11 @@
 
 <nav class="navbar navbar-inverse">
 	<div class="navbar-header">
-		<a class="navbar-brand" href="{{ URL::to('nerds') }}">Nerd Alert</a>
+		<a class="navbar-brand" href="{{ URL::to('fakultet') }}">Početna</a>
 	</div>
 	<ul class="nav navbar-nav">
-		<li><a href="{{ URL::to('nerds') }}">View All Nerds</a></li>
-		<li><a href="{{ URL::to('nerds/create') }}">Create a Nerd</a>
+		<li><a href="{{ URL::to('show-key') }}">Pokaži app key</a></li>
+		<li><a href="{{ URL::to('get-composer-json') }}">Dohvati composer.json</a>
 	</ul>
 </nav>
 @yield('content')
