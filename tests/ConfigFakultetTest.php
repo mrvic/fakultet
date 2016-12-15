@@ -26,8 +26,9 @@ class ConfigFakultetTest extends TestCase{
        */
     public function testComposerJsonAutoload() {
         // Učitaj cijeli file u string
-        $string = file_get_contents("/home/pmrvic/Code/fakultet/composer.json");
-
+        //$string = file_get_contents("/home/pmrvic/Code/fakultet/composer.json");
+        $string = file_get_contents(dirname(__DIR__). DIRECTORY_SEPARATOR."composer.json");
+        
         // Pretvori ucitani JSON u PHP Array
         $json_a = json_decode($string, true);
 
