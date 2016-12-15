@@ -5,14 +5,39 @@ namespace Fakultet\Http\Controllers;
 use Illuminate\Http\Request;
 
 
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ *              NE RADI NIŠTA KREIRAJ OD POČETKA 
+ * 
+ *              http://thingsaker.com/blog/ajax-laravel-controller-method's
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
 //use Request;
 //use Fakultet\Http\Requests;
 use Validator;
-use Input;
-use Session;
-use Redirect;
+//use Input;
+//use Session;
+//use Redirect;
 use View;
-use Fakultet\Zupanija;
 use Fakultet\Mjesto;
 use Fakultet\Item;
 
@@ -25,9 +50,9 @@ class MjestoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($broj=10)
+    public function index()
     {
-        $mjestos = Mjesto::paginate($broj);
+        $mjestos = Mjesto::paginate(10);
         //$mjestos = Mjesto::all();
             return View::make('fakultet.mjesto.index')
                             ->with('mjestos', $mjestos);
@@ -105,23 +130,10 @@ class MjestoController extends Controller
     public function edit($id)
     {
            $mjesto = Mjesto::find($id);
-           
-           // Ovime dobijemo sve kolumne
-           //$zupanije= Zupanija::all();
-           
-           // Odaberi samo kolumne Naziv i šifra županije za dropdown menu
-           $zupanije = Zupanija::pluck('nazZupanija', 'sifZupanija');
-           
-        
-        // Koristeći edit formu za mjesta
-        // Korisniku se prikazuje padajući menu
-        // Preddabrana vrijednost je trenutna važeća županija
-        // Kada korisnik odabere padajući menu   
-        // Kada potvrdi formu
-        // Postavlja se nova županija   
+
+        // show the edit form and pass the nerd
         return View::make('fakultet.mjesto.edit')
-                        ->with(['mjesto'=> $mjesto,'zupanije'=> $zupanije]); // za dropdown menu u view fakultet.mjesto.edit
-                
+                        ->with('mjesto', $mjesto);
     }
 
     /**
@@ -140,7 +152,7 @@ class MjestoController extends Controller
             'nazMjesto'   => 'required',
             'sifZupanija' => 'required|numeric'
         );
-        $validator = Validator::make(Input::all(), $rules);
+        $validator = Validator::make($request::all(), $rules);
 
         // process the login
         if ($validator->fails()) {
@@ -150,9 +162,9 @@ class MjestoController extends Controller
         } else {
             // store
             $mjesto = Mjesto::find($id);
-            $mjesto->pbr         = Input::get('pbr');
-            $mjesto->nazMjesto   = Input::get('nazMjesto');
-            $mjesto->sifZupanija = Input::get('sifZupanija');
+            $mjesto->pbr         = $request::get('pbr');
+            $mjesto->nazMjesto   = $request::get('nazMjesto');
+            $mjesto->sifZupanija = $request::get('sifZupanija');
             $mjesto->save();
 
             // redirect

@@ -2,12 +2,12 @@
 
 namespace Fakultet\Http\Controllers;
 use Request;
-use Fakultet\Http\Requests;
-use Validator;
-use Input;
-use Session;
-use Redirect;
-use View;
+//use Fakultet\Http\Requests;
+use Validator;    // Validacija ulaznih podataka: tip i forma
+use Input;        // Ulazne varijable sa forme
+use Session;      // Za ispisivanje poruke uspješno/neuspješno
+use Redirect;     // Za povratak na formu u slučaju pogrešnog unosa
+use View;         // Prikaz ili vraćanje pogleda (view)
 use Fakultet\Zupanija;
 use Fakultet\Item;
 

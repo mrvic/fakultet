@@ -1,5 +1,5 @@
 @extends('fakultet.master')
-@section('title', 'Krirajte novu Županiju')
+@section('title', 'Kreirajte novu Županiju')
 
 @section('content')
 <h1>Dodaj novu županiju</h1>

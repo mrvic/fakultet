@@ -1,42 +1,54 @@
-<?php
+@extends('fakultet.master')
+@section('title', 'Dobrodošli na Algebrin fakultet')
 
-?>
+@section('content')
+    <h1>{{ $mjestos->total() }} Mjesta</h1>
+    <strong> stranica {{ $mjestos->currentPage() }} od {{ $mjestos->lastPage() }}</strong><br>
+    <a href="{{ URL::to('mjesto/create') }}">Kreiraj novu mjesto</a>
 
-<html>
-    <head></head>
-    <body>
-        
-        
-            
-            //TODO submit ajax()
-            
-            http://thingsaker.com/blog/ajax-laravel-controller-method's
-             'pbr'         => 'required|numeric',
-            'nazMjesto'   => 'required',
-            'sifZupanija' => 'required|numeric'
-        
-        
-        <script>
-        var pbr = 10000; // A random variable for this example
+<!-- will be used to show any messages -->
+@if (Session::has('message'))
+	<div class="alert alert-info">{{ Session::get('message') }}</div>
+@endif
 
-$.ajax({
-    method: 'POST', // Type of response and matches what we said in the route
-    url: '/mjesto', // This is the url we gave in the route
-    data: {'pbr' : id,
-           'nazMjesto':'Zagreb',
-           'sifZupanija':21}, 
-    success: function(response){ // What to do if we succeed
-        console.log(response); 
-    },
-    error: function(jqXHR, textStatus, errorThrown) { // What to do if we fail
-        console.log(JSON.stringify(jqXHR));
-        console.log("AJAX error: " + textStatus + ' : ' + errorThrown);
-    }
-});
+<table class="table table-striped table-bordered">
+	<thead>
+		<tr>
+			<th>Poštanski broj</th>
+			<th>Naziv</th>
+                        <th>Županija</th>
+		</tr>
+	</thead>
+	<tbody>
+	@foreach($mjestos as $key => $value)
+		<tr>
+			<td>{{ $value->pbr }}</td>
+			<td>{{ $value->nazMjesto }}</td>
+                        <td>{{ $value->zupanija->nazZupanija }}</td>
+			<!-- we will also add show, edit, and delete buttons -->
+			<td>
+
+				<!-- delete the nerd (uses the destroy method DESTROY /nerds/{id} -->
+				<!-- we will add this later since its a little more complicated than the first two buttons -->
+				{{ Form::open(array('url' => 'mjesto/' . $value->pbr, 'class' => 'pull-right')) }}
+					{{ Form::hidden('_method', 'DELETE') }}
+					{{ Form::submit('Obriši ovo mjesto', array('class' => 'btn btn-warning','id'=>'mjesto-del-'.$value->pbr)) }}
+				{{ Form::close() }}
+
+				<!-- show the nerd (uses the show method found at GET /nerds/{id} -->
+				<a class="btn btn-small btn-success" id="{{'mjesto-' . $value->pbr}}" href="{{ URL::to('mjesto/' . $value->pbr) }}">Pokaži ovu mjesto</a>
+
+				<!-- edit this nerd (uses the edit method found at GET /nerds/{id}/edit -->
+				<a class="btn btn-small btn-info" href="{{ URL::to('mjesto/' . $value->pbr . '/edit') }}">Uredi ovu mjesto</a>
+
+			</td>
+		</tr>
+	@endforeach
         
-        </script>
-        
-        
-    </body>
-</html>
-    
+	</tbody>
+</table>
+
+<!-- primjer paginate index@MjestoController -->
+{{ $mjestos->links() }}
+
+@endsection
