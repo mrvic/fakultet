@@ -23,6 +23,24 @@ class Zupanija extends Model
         //return $this->hasOne('App\Phone', 'foreign_key', 'local_key');
         return $this->hasMany('Fakultet\Mjesto', 'sifZupanija', 'sifZupanija'); 
     }
+    
+    public function getnazZupanijaAttribute(){
+        // Accessor
+        return $this->attributes['nazZupanija'];
+    }
+    
+    public function setnazZupanijaAttribute($in){
+        // Mutator
+        // 
+        // BDD
+        // - Koristeći http://localhost:8000/zupanija
+        // - kada se klikne na uredi županiju
+        // - kada se unese MALIM SLOVIMA ime županije
+        // - tada pretvori prvo slovo u veliko
+        $this->attributes['nazZupanija']=  ucfirst($in);
+    }
+
+    
 }
 #--------- TINKER -------------------
     /*

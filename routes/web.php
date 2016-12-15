@@ -9,7 +9,9 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-
+Route::get('/fakultet', function () {
+    return view('fakultet.index');
+});
 Route::get('/mjesto-zupanija', function(){
     //$comments = App\Post::find(1)->comments;
 /*
