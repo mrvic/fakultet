@@ -7,23 +7,16 @@ Ovaj repozitorij sadrži bazni projekt za tečaj "Programer internet aplikacija 
 Zahtjevi
 ============
 
-```
 XAMPP (https://www.apachefriends.org/index.html)
 
-```
 Netbeans (https://netbeans.org/)
 
-```
 HeidiSQL (http://www.heidisql.com/)
-```
 
 Git (https://git-scm.com/downloads)
 
-```
-git clone https://github.com/timlau/dnf-daemon.git
-cd dnf-daemon
-make test-inst
-```
+
+
 
 Pokretanje projekta
 =================================
@@ -36,14 +29,11 @@ cd ~/Code/fakultet
 composer update
 composer dump-autoload
 edit .env
-[<start-mysql-server]
+[start-mysql-server]
 php artisan migrate --seed
 ```
 
 
 Postavke
 ============
-```
 Postavke za Netbeans, HeidiSQL, XAMPP, PHPStorm i GIT će biti objavljene ovdje: https://github.com/mrvic/fakultet/issues
-
-```
