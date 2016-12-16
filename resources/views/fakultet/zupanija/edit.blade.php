@@ -22,7 +22,7 @@
 		{{ Form::text( 'nazZupanija', Input::old('nazZupanija'), array('class' => 'form-control')) }}
 	</div>
 
-	{{ Form::submit('Edit the Nerd!', array('class' => 'btn btn-primary')) }}
+	{{ Form::submit('Uredi županiju!', array('class' => 'btn btn-primary')) }}
 
 {{ Form::close() }}
 
