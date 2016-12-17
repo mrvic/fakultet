@@ -21,7 +21,6 @@ Git (https://git-scm.com/downloads)
 Pokretanje projekta
 =================================
 ```
-git clone https://github.com/timlau/yumex-dnf.git
 mkdir ~/Code
 cd ~/Code
 git clone https://github.com/mrvic/fakultet.git fakultet
