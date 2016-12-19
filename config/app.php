@@ -189,8 +189,8 @@ return [
  * php artisan migrate:generate
  * https://github.com/Xethron/migrations-generator
  * */
-        Way\Generators\GeneratorsServiceProvider::class,
-        Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
+     #   Way\Generators\GeneratorsServiceProvider::class,
+     #   Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
 
     ],
 
