@@ -7,13 +7,15 @@ Ovaj repozitorij sadrži bazni projekt za tečaj "Programer internet aplikacija 
 Zahtjevi
 ============
 
-XAMPP (https://www.apachefriends.org/index.html)
+-XAMPP (https://www.apachefriends.org/index.html)
 
-Netbeans (https://netbeans.org/)
+-Netbeans (https://netbeans.org/)
 
-HeidiSQL (http://www.heidisql.com/)
+-HeidiSQL (http://www.heidisql.com/)
 
-Git (https://git-scm.com/downloads)
+-Git (https://git-scm.com/downloads)
+
+-Composer (https://getcomposer.org/)
 
 
 
