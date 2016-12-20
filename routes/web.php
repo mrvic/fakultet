@@ -10,7 +10,10 @@
 |
 */
 Route::get('m', 'mathController@index');
-Route::get('m/{br1}/{br2}/{op}', 'mathController@zbroj');
+
+// Osnovne matematičke operacije
+Route::get('m/{br1}/{br2}/{op}', 'mathController@rezultat');
+
 Route::get('/fakultet', function () {
     return view('fakultet.index');
 });
