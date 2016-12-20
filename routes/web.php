@@ -9,6 +9,8 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+Route::get('m', 'mathController@index');
+Route::get('m/{br1}/{br2}/{op}', 'mathController@zbroj');
 Route::get('/fakultet', function () {
     return view('fakultet.index');
 });
@@ -61,7 +63,6 @@ Route::resource('mjesto',   'MjestoController');
 Route::resource('zupanija', 'ZupanijaController');
 Route::resource('studenti', 'StudController');
 
-Route::resource('autos', 'auto');
 
 Route::get('/laravel-version', function()
 {
