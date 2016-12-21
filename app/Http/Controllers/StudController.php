@@ -13,7 +13,7 @@ class StudController extends Controller
      */
     public function index()
     {
-        //
+       return "Tralallala ";
     }
 
     /**

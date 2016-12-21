@@ -10,6 +10,13 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
  * @author pmrvic
  */
 class ConfigFakultetTest extends TestCase{
+    public function testNajmanjaVerzijaLaravela($najmanjaverzija="5.3.28"){
+        
+        $najmanjaverzija=str_replace(".","",$najmanjaverzija);
+        $ver=str_replace(".","",app()::VERSION);
+
+        $this->assertGreaterThanOrEqual((int)$najmanjaverzija, (int)$ver);
+    }
     public function testAppKeyPostavljen()
     {
         $this->assertNotEmpty($_ENV['APP_KEY']
@@ -18,6 +25,10 @@ class ConfigFakultetTest extends TestCase{
         $this->assertEquals ("base64"
                 ,substr($_ENV['APP_KEY'], 0, 6)
                 ,'Ključ nije ispravan, mora počinjati sa "base64"');
+       
+        $this->assertEquals (51,strlen($_ENV['APP_KEY'])
+                ,'Ključ nije dovoljne duljine, mora imati 70 znakova');
+                
     }
     
       /**

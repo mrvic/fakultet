@@ -9,6 +9,11 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+Route::get('m', 'mathController@index');
+
+// Osnovne matematičke operacije
+Route::get('m/{br1}/{br2}/{op}', 'mathController@rezultat');
+
 Route::get('/fakultet', function () {
     return view('fakultet.index');
 });
@@ -26,6 +31,10 @@ Route::get('/mjesto-zupanija', function(){
 
 Route::get('/show-key', function(){
     var_dump( $_ENV['APP_KEY']);
+    echo "<br>";
+    $_ENV['proba']="neki text";
+    echo $_ENV['DB_USERNAME'];
+    dd($_ENV);
 });
 
 // Ovako isprintamo composer.json
@@ -43,7 +52,7 @@ Route::get('/get-composer-json', function(){
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/xxx', function () {
+Route::get('/123', function () {
     return "xxx";
 });
 
@@ -57,13 +66,8 @@ Route::resource('mjesto',   'MjestoController');
 Route::resource('zupanija', 'ZupanijaController');
 Route::resource('studenti', 'StudController');
 
-Route::resource('autos', 'auto');
 
-Route::resource('nerds', 'NerdController');
-
-Route::resource('nerds2angular', 'Nerd2AngularController');
-
-Route::get('laravel-version', function()
+Route::get('/laravel-version', function()
 {
 $laravel = app();
 return "Your Laravel version is ".$laravel::VERSION;
