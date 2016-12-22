@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class mathController extends Controller
 {
     public function index(){
-        return "molim te unesi dva broja i operaciju".'/$a/$b/{+}{-}{mul}{div}';
+        return "molim unesite dva broja i operaciju".'/$a/$b/{+}{-}{mul}{div}';
     }
     public function rezultat($br1,$br2,$op){
         
@@ -19,6 +19,6 @@ class mathController extends Controller
       }
         
         
-        dd($request->input('br2'));
+        dd(func_get_args());
     }   
 }
