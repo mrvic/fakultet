@@ -141,9 +141,6 @@ return [
          */
         //za kreiranje formi: https://laravelcollective.com/docs/5.3/html
         Collective\Html\HtmlServiceProvider::class,
-        
-        // Autocomplete za netbeans i phpstorm
-        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         /*
          * Laravel Framework Service Providers...
          */

@@ -10,7 +10,7 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
  * @author pmrvic
  */
 class ConfigFakultetTest extends TestCase{
-    public function testNajmanjaVerzijaLaravela($najmanjaverzija="5.3.24"){
+    public function testNajmanjaVerzijaLaravela($najmanjaverzija="5.3.28"){
         
         $najmanjaverzija=str_replace(".","",$najmanjaverzija);
         $ver=str_replace(".","",app()::VERSION);
