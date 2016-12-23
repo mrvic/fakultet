@@ -24,6 +24,7 @@ class ZupanijaController extends Controller
     public function index()
     {
         $zupanijas = Zupanija::all();
+       // dd($zupanijas);
         // load the view and pass the nerds
             return View::make('fakultet.zupanija.index')
                             ->with('zupanijas', $zupanijas);
@@ -82,7 +83,8 @@ class ZupanijaController extends Controller
      */
     public function show($id)
     {
-        // get the nerd
+        // Dohvati županiju sa primarnim ključem npr:
+        // http://localhost:8000/zupanija/21
         $zupanija = Zupanija::find($id);
 
         // show the view and pass the nerd to it

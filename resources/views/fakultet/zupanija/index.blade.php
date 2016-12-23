@@ -30,7 +30,7 @@
 				<!-- we will add this later since its a little more complicated than the first two buttons -->
 				{{ Form::open(array('url' => 'zupanija/' . $value->sifZupanija, 'class' => 'pull-right')) }}
 					{{ Form::hidden('_method', 'DELETE') }}
-					{{ Form::submit('Delete this Zupanija', array('class' => 'btn btn-warning','id'=>'zupanija-del-'.$value->sifZupanija)) }}
+					{{ Form::submit('Obrisi ovu Zupaniju', array('class' => 'btn btn-warning','id'=>'zupanija-del-'.$value->sifZupanija)) }}
 				{{ Form::close() }}
 
 				<!-- show the nerd (uses the show method found at GET /nerds/{id} -->
