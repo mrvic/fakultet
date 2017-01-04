@@ -13,7 +13,7 @@
 {{ Form::model($zupanija, array('action' => array('ZupanijaController@update', $zupanija->sifZupanija), 'method' => 'PUT')) }}
 
 
-	<div class="form-group">
+<div class="form-group">
 		{{ Form::label('sifZupanija', 'Broj županije') }}
 		{{ Form::text( 'sifZupanija', Input::old('sifZupanija'), array('class' => 'form-control')) }}
 	</div>
