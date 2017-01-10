@@ -70,7 +70,7 @@ class ZupanijaController extends Controller
             $zupanija->save();
 
             // redirect
-            Session::flash('message', 'Successfully created zupanija!');
+            Session::flash('message', 'Uspješno si kreirao županiju!');
             return Redirect::to('zupanija');
         }
     }

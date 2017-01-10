@@ -14,6 +14,11 @@ Route::get('m', 'mathController@index');
 // Osnovne matematičke operacije
 Route::get('m/{br1}/{br2}/{op}', 'mathController@rezultat');
 
+Route::get('/glavni', function () {
+    return view('child');
+});
+
+
 Route::get('/fakultet', function () {
     return view('fakultet.index');
 });
