@@ -9,6 +9,20 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+Route::get('/dvorane', function () {
+    $d=Fakultet\Dvorana::all();
+    //$d::all(['kapacitet','oznDvorana']);
+    //dd($d);
+    foreach ($d as $dvorana){
+        printf("%s %s <br>",$dvorana->oznDvorana,$dvorana->kapacitet);
+
+        
+        //attributes['nazZupanija'];
+    }
+    //return view('child');
+});
+
+
 Route::get('m', 'mathController@index');
 
 // Osnovne matematičke operacije
