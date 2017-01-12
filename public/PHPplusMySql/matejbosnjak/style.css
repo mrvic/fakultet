@@ -1,0 +1,125 @@
+/* Index.php */
+.wrap
+{
+	width:200px;
+	height:auto;
+	border:5px groove grey;
+	margin-left:45%;
+	margin-top:10%;
+	text-align: center;
+}
+
+.headindex
+{
+	height:20px;
+	border-bottom:1px solid grey;	
+	text-align: center;	
+}
+
+.cent
+{
+	display: inline-block;
+    width: 33%;
+    text-align: center;   
+}
+
+.footer
+{
+	border-top:1px solid grey;
+	text-align: center;
+}
+
+.larrow
+{
+	margin-right:25px;
+	text-decoration: none;
+	color:#00001a;
+}	
+
+.rarrow
+{
+	margin-left:25px;
+	text-decoration: none;
+	color:#00001a;
+}	
+
+.num
+{
+	padding-left:5px;
+	padding-right:5px;
+	text-decoration: none;
+	color:#00001a;
+}
+
+.oznaka
+{
+	text-decoration: none;
+	color:#000000;
+	transition:0.3s;
+}
+
+.oznaka:hover
+{
+	color:#333399;
+}
+
+/* Rezervacija.php */
+
+.info-box
+{
+	width:400px;
+	height:auto;
+	border:5px groove grey;
+	margin:0 auto;
+	text-align: left;
+}
+
+.head
+{
+	height:20px;
+	border-bottom:2px groove grey;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: -30px;	
+	text-align: center;	
+	transition:0.2s;
+}
+
+.head:hover
+{
+	background-color: #ccd9ff;
+}
+
+.hbody
+{
+	border-bottom:1px solid grey;
+	text-align: center;
+	font-weight: 800;
+}
+
+.body
+{
+	padding:10px;
+	font-style: italic;
+	border-top: 2px groove grey;
+}
+
+.info-box .empty
+{
+	text-align: center;
+}
+
+.htext
+{
+	margin-left:80px;
+}
+
+.button
+{
+	text-decoration: none;
+	color:#333333;
+}
+
+.arrow
+{
+	margin-right:80px;	
+}
