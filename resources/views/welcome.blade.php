@@ -49,6 +49,15 @@
                 font-size: 84px;
             }
 
+            a.mojlink{
+                color:#245580;
+                padding: 0 25px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase; 
+            }
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
@@ -78,12 +87,20 @@
                     Laravel
                 </div>
                 <div>
-   <ul>
-        <li><a href="/studenti">Studenti</a></li>
-        <li><a href="/zupanija">Županije</a></li>
-        <li><a href="/mjesto">Mjesta</a></li>
-        
+     <h2>Aplikacija</h2>
+    <p>
+    <ul><li>
+        <a class="mojlink"  href="{{URL::to('fakultet')}}">Fakultet</a>
+        </li></ul> 
+    </p>
+    <p>
+    <ul>
+        <li><a  class="mojlink" href="/studenti">Studenti</a></li>
+        <li><a  class="mojlink" href="/zupanija">Županije</a></li>
+        <li><a class="mojlink" href="/mjesto">Mjesta</a></li>
+        <li><a class="mojlink" href="/dvorane">Dvorane</a></li>
     </ul>
+    </p>
                    
                 </div>
                 <div class="links">

@@ -4,6 +4,12 @@ namespace Fakultet;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Dvorana je dio fakulteta, ima svoju oznaku.
+ * 
+ * Model kreiramo putem konzole:
+ * php artisan make:model Dvorana --migration
+ */
 class Dvorana extends Model
 {
     // Ime tablice nije isto kao ime klase pa ga moramo ručno definirati

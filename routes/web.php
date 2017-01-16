@@ -9,6 +9,11 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+
+/**
+ * Direktno sa Route -> Model -> Db
+ * 
+ */
 Route::get('/dvorane', function () {
     $d=Fakultet\Dvorana::all();
     //$d::all(['kapacitet','oznDvorana']);
@@ -84,7 +89,7 @@ Route::get('/mjesto-ajax', function () {
 Route::resource('mjesto',   'MjestoController');
 Route::resource('zupanija', 'ZupanijaController');
 Route::resource('studenti', 'StudController');
-
+Route::resource('dvorana', 'DvoranaController');
 
 Route::get('/laravel-version', function()
 {
