@@ -8,6 +8,7 @@ php artisan config:clear
 php artisan route:list
 php artisan dump-autoload
 
+
 KREIRANJE KONTROLLERA
 
          // potrebno je napraviti kontroller auto
