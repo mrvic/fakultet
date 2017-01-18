@@ -1,7 +1,11 @@
 <?php
 
 namespace Fakultet\Http\Controllers;
-//use Request;
+use Validator;    // Validacija ulaznih podataka: tip i forma
+use Input;        // Ulazne varijable sa forme
+use Session;      // Za ispisivanje poruke uspješno/neuspješno
+use Redirect;     // Za povratak na formu u slučaju pogrešnog unosa
+use View;  
 use Fakultet\Dvorana;
 use Illuminate\Http\Request;
 
@@ -19,22 +23,13 @@ class DvoranaController extends Controller
      */
     public function index()
     {
-    // Može i ivako poziv apsolutnom putanjom do klase Dvorana
-    //$d= \Fakultet\Dvorana::all();
-    
-    // Mi ćemo koristiti namespace (use) komandu
-    $d= Dvorana::all();
-    
-    //$d::all(['kapacitet','oznDvorana']);
-    //dd($d);
-    foreach ($d as $dvorana){
-        printf("%s %s <br>",$dvorana->oznDvorana,$dvorana->kapacitet);
-
         
-        //attributes['nazZupanija'];
+        $dvoranas=Dvorana::all();
+        //dd($dvoranas);
+        return View::make('fakultet.dvorana.index')
+                        ->with('dvoranas', $dvoranas);
     }
-    //return view('child');
-    }
+
 
     /**
      * Show the form for creating a new resource.
@@ -43,7 +38,7 @@ class DvoranaController extends Controller
      */
     public function create()
     {
-        //
+        return View::make('fakultet.dvorana.create');
     }
 
     /**
@@ -54,7 +49,31 @@ class DvoranaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         // validate
+        // read more on validation at http://laravel.com/docs/validation
+        $rules = array(
+            'oznDvorana'=> 'required',
+            'kapacitet' => 'required'
+        );
+        $validator = Validator::make(Input::all(), $rules);
+
+        //$validator = Validator::make($request->all(), $rules)->validate();
+        // process the login
+        if ($validator->fails()) {
+            return Redirect::to('dvorana/create')
+                            ->withErrors($validator)
+                            ->withInput(Input::except('password'));
+        } else {
+            // store
+            $dvorana = new Dvorana;
+            $dvorana->oznDvorana=Input::get('oznDvorana');
+            $dvorana->kapacitet = Input::get('kapacitet');
+            $dvorana->save();
+
+            // redirect
+            Session::flash('message', 'Uspješno si kreirao dvoranu!');
+            return Redirect::to('dvorana');
+        }
     }
 
     /**
@@ -81,7 +100,14 @@ class DvoranaController extends Controller
      */
     public function edit($id)
     {
-        //
+        $dvorana = Dvorana::find($id);
+
+        // show the edit form and pass the nerd
+       return View::make('fakultet.dvorana.edit')
+                        ->with('dvorana', $dvorana);
+        
+        
+         
     }
 
     /**
@@ -93,7 +119,28 @@ class DvoranaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+         $rules = array(
+            'oznDvorana' => 'required',
+            'kapacitet' => 'required|numeric'
+        );
+        $validator = Validator::make(Input::all(), $rules);
+
+        // process the login
+        if ($validator->fails()) {
+            return Redirect::to('dvorana/' . $id . '/edit')
+                            ->withErrors($validator)
+                            ->withInput(Input::except('password'));
+        } else {
+            // store
+            $dvorana = Dvorana::find($id);
+            $dvorana ->oznDvorana = Input::get('oznDvorana');
+            $dvorana ->kapacitet = Input::get('kapacitet');
+            $dvorana->save();
+
+            // redirect
+            Session::flash('message', 'Successfully updated dvorana!');
+            return Redirect::to('dvorana');
+        }
     }
 
     /**
@@ -104,6 +151,11 @@ class DvoranaController extends Controller
      */
     public function destroy($id)
     {
-        //
+         $dvorana = Dvorana::find($id);
+        $dvorana->delete();
+
+        // redirect
+        Session::flash('message', 'Successfully deleted dvorana!');
+        return Redirect::to('dvorana');
     }
 }
