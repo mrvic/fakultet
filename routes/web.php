@@ -25,7 +25,7 @@ Route::get('/dvorane', function () {
         //attributes['nazZupanija'];
     }
     //return view('child');
-});
+})->name('svedvorane');
 
 
 Route::get('m', 'mathController@index');

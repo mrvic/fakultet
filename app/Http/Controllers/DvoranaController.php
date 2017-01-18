@@ -23,8 +23,10 @@ class DvoranaController extends Controller
      */
     public function index()
     {
-        
-        $dvoranas=Dvorana::all();
+        /**
+         * https://laravel.com/docs/5.3/collections#method-reverse
+         */
+        $dvoranas=Dvorana::all()->reverse();
         //dd($dvoranas);
         return View::make('fakultet.dvorana.index')
                         ->with('dvoranas', $dvoranas);

@@ -31,11 +31,18 @@ class Mjesto extends Model
         
    /**
     *  ispravno!  
-    * Sada možemo pozvati modal na slijedeći način:
+    * Sada možemo pozvati modal na sljedeći način:
     *    
     */
    return $this->belongsTo('Fakultet\Zupanija', 'sifZupanija');    
 
     }
+    public function student_rod(){
+       return $this->hasMany('Fakultet\Stud', 'pbrRod', 'pbr'); 
+    }
+    public function student_stan(){
+       return $this->hasMany('Fakultet\Stud', 'pbrStan', 'pbr'); 
+    }
+    
 
 }

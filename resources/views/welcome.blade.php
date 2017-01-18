@@ -98,7 +98,7 @@
         <li><a  class="mojlink" href="/studenti">Studenti</a></li>
         <li><a  class="mojlink" href="/zupanija">Županije</a></li>
         <li><a class="mojlink" href="/mjesto">Mjesta</a></li>
-        <li><a class="mojlink" href="/dvorane">Dvorane</a></li>
+        <li><a class="mojlink" href="/dvorana">Dvorane</a></li>
     </ul>
     </p>
                    

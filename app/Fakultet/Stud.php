@@ -1,5 +1,9 @@
 <?php
 
+namespace Fakultet;
+
+use Illuminate\Database\Eloquent\Model;
+
 /**
  * Stud je dio fakulteta, ima svoju oznaku.
  * 
@@ -9,5 +13,17 @@
 class Stud extends Model
 {
     protected $table    = 'stud';
-    public    $fillable = ['imeStud','prezStud','pbrRod','pbrStan','datRodStud','jmbgStud'];
+    protected $primaryKey='mbrStud';
+    
+    public    $fillable = [
+        'imeStud',
+        'prezStud',
+        'pbrRod',
+        'pbrStan',
+        'datRodStud',
+        'jmbgStud'];
+    
+    function mjesto(){
+        return $this->belongsTo('Fakultet\Mjesto', 'pbr');  
+    }
 }
