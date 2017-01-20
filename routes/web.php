@@ -9,10 +9,34 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+
+/**
+ * Direktno sa Route -> Model -> Db
+ * 
+ */
+Route::get('/dvorane', function () {
+    $d=Fakultet\Dvorana::all();
+    //$d::all(['kapacitet','oznDvorana']);
+    //dd($d);
+    foreach ($d as $dvorana){
+        printf("%s %s <br>",$dvorana->oznDvorana,$dvorana->kapacitet);
+
+        
+        //attributes['nazZupanija'];
+    }
+    //return view('child');
+})->name('svedvorane');
+
+
 Route::get('m', 'mathController@index');
 
 // Osnovne matematičke operacije
 Route::get('m/{br1}/{br2}/{op}', 'mathController@rezultat');
+
+Route::get('/glavni', function () {
+    return view('child');
+});
+
 
 Route::get('/fakultet', function () {
     return view('fakultet.index');
@@ -65,7 +89,7 @@ Route::get('/mjesto-ajax', function () {
 Route::resource('mjesto',   'MjestoController');
 Route::resource('zupanija', 'ZupanijaController');
 Route::resource('studenti', 'StudController');
-
+Route::resource('dvorana', 'DvoranaController');
 
 Route::get('/laravel-version', function()
 {

@@ -13,7 +13,8 @@ class StudController extends Controller
      */
     public function index()
     {
-       return "Tralallala ";
+       return \Fakultet\Stud::all();
+       
     }
 
     /**

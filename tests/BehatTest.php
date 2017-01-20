@@ -16,6 +16,12 @@ class BehatTest extends TestCase
     {
 //TODO kreiraj testove prema https://www.youtube.com/watch?v=0F7-Rr4s9is
         $this->visit('/')
-             ->see('Laravel');
+             ->see('Laravel')
+             ->dontSee('Error');
+        // Može i ovako
+        $this->visit('/');
+        $this->see('Laravel');
+        $this->dontSee('Error');
+        
     }
 }

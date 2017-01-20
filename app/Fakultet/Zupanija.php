@@ -2,7 +2,13 @@
 namespace Fakultet;
 use Illuminate\Database\Eloquent\Model;
 
-//class Zupanija extends Eloquent
+//class Zupanija extends Eloquent  // prije verzije laravela 5.3
+/**
+ * Zupanija je dio fakulteta, ima ima oznaku zupanije te vezu 1-n prema mjestima.
+ * 
+ * Model kreiramo putem konzole:
+ * php artisan make:model Zupanija --migration
+ */
 class Zupanija extends Model
 {
     protected $table    = 'zupanija';

@@ -12,7 +12,7 @@
 <h1>Dobro došli na algebrin fakultet!</h1>
 
 <div class="jumbotron text-center">
-    <h2>Sekcije</h2>
+    <h3>Sekcije</h3>
     <p>
         <a href="{{ URL::to('zupanija') }}">Županije <span class="badge">{{ Fakultet\Zupanija::all()->count()-1 }}</span></a>
         <br>

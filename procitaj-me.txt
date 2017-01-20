@@ -8,6 +8,7 @@ php artisan config:clear
 php artisan route:list
 php artisan dump-autoload
 
+
 KREIRANJE KONTROLLERA
 
          // potrebno je napraviti kontroller auto
@@ -78,7 +79,18 @@ php artisan make:test Example2Test
          updated_at: null,
        },
 
-
+>>> print_r($z['attributes'])
+Array
+(
+    [sifZupanija] => 21
+    [nazZupanija] => Grad Zagreb
+    [created_at] =>
+    [updated_at] =>
+)
+=> true
+>>> $z['attributes']['nazZupanija']
+=> "Grad Zagreb"
+>>>
 
 #---------END TINKER -----------------
 
