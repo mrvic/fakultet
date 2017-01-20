@@ -21,7 +21,7 @@ class mathController extends Controller
           case 'div': return $br1/$br2;
       }
         
-        
+        dd($request->input('br2'));
         
     }   
 }
