@@ -23,8 +23,8 @@ class Stud extends Model
         'datRodStud',
         'jmbgStud'];
     
-    function mjesto(){
-        return $this->belongsTo('Fakultet\Mjesto', 'pbr');  
+    function mjesto_stan(){
+        return $this->belongsTo('Fakultet\Mjesto', 'pbrStan');  
     }
     function mjesto_rod(){
         return $this->belongsTo('Fakultet\Mjesto', 'pbrRod');  
@@ -72,7 +72,7 @@ $z->find(14)->mjesto()->find(31000)->student_rod;
 >>> $s->find(1120)->mjesto_rod->nazMjesto;
 => "Osijek"
 
-// Možemo ovako ali nije praktično:
+// Možemo ovako ali nije elegantno:
 $s= new Fakultet\Stud;
 $s->find(1120);
 $m= new Fakultet\Mjesto;
