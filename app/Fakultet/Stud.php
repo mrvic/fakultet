@@ -26,6 +26,9 @@ class Stud extends Model
     function mjesto(){
         return $this->belongsTo('Fakultet\Mjesto', 'pbr');  
     }
+    function mjesto_rod(){
+        return $this->belongsTo('Fakultet\Mjesto', 'pbrRod');  
+    }
 }
 /**
  * php artisan tinker
@@ -55,7 +58,25 @@ Psy Shell v0.7.2 (PHP 7.0.14 — cli) by Justin Hileman
 >>> $z=new Fakultet\Zupanija;
 => Fakultet\Zupanija {#928}
 $z->find(21)->mjesto->find(10000)->student_stan; 
+$z->find(14)->mjesto()->find(31000)->student_rod; 
+ 
+//RADI, JEDINO I ISPRAVNO !!!
+ * >>> $s->find(1120)->mjesto_rod;
+=> Fakultet\Mjesto {#869
+     pbr: 31000,
+     nazMjesto: "Osijek",
+     sifZupanija: 14,
+     created_at: null,
+     updated_at: null,
+   }
+>>> $s->find(1120)->mjesto_rod->nazMjesto;
+=> "Osijek"
 
-
+// Možemo ovako ali nije praktično:
+$s= new Fakultet\Stud;
+$s->find(1120);
+$m= new Fakultet\Mjesto;
+$m->find($s->find(1120)->pbrRod)->nazMjesto;
+=> "Osijek"
 
  */

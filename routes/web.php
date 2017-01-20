@@ -12,8 +12,43 @@
 
 /**
  * Direktno sa Route -> Model -> Db
- * 
+ * @todo DOhvati sve studente iz Osijeka
  */
+Route::get('/studos',function(){
+    $z=new \Fakultet\Zupanija;
+    $os=$z->find(14)->mjesto()->find(31000)->student_rod->find(1120);
+    
+    echo "<h1>Samo student iz Osijeka sa matičnim br: 1120</h1>";
+    echo $os->imeStud." ".$os->prezStud;
+    
+    $svios=$z->find(14)->mjesto()->find(31000)->student_rod->toArray();
+
+    echo "<h1>Svi studenti iz Osijeka ARRAY</h1>";
+    echo "<ol>";
+    foreach ($svios as $oosj){
+          echo "<li>".$oosj['imeStud']
+               ." "
+               .$oosj['prezStud']."</li>";         
+      } 
+    echo "</ol>";
+      
+        echo "<h1>Svi studenti iz Osijeka DIREKTNO</h1>";
+        
+    $svios=$z->find(14)->mjesto()->find(31000)->student_rod;
+ echo "<ol>";
+    foreach ($svios as $oosj){
+          printf("<li>%s %s </li>", $oosj->imeStud, $oosj->prezStud);       
+      }     
+   echo "</ol>";    
+    /*
+   // TODO: DOhvati sve studente iz Osijeka
+     *       
+     * 
+    */
+     
+   //return $z; 
+});
+
 Route::get('/dvorane', function () {
     $d=Fakultet\Dvorana::all();
     //$d::all(['kapacitet','oznDvorana']);
