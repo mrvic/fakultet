@@ -10,10 +10,6 @@ Treba:
 
 -->
 
-
-
-
-
 <!-- resources/views/fakultet/student/edit.blade.php -->
 @extends('fakultet.master')
 @section('title', 'Uredi studenta')
@@ -39,7 +35,7 @@ Treba:
 </div>
 <div class="form-group">
     {{ Form::label('prezStud', 'Prezime studenta') }}
-    {{ Form::text( 'prezStud', Input::old('prezStud'), array('class' => 'form-control')) }}
+    {{ Form::text( 'prezStud',Input::old('prezStud') , array('class' => 'form-control')) }}
 </div>
 <div class="form-group">
     {{ Form::label('pbrRod', 'Mjesto rođenja') }}
@@ -52,11 +48,10 @@ Treba:
 
 <div class="form-group">
     {{ Form::label('datRodStud', 'Datum rođenja') }}
-    {{ $student->datRodStud }}
-     {{ $student->imeStud }}
-    {!! Form::input('datetime-local', 'published_at','1985-06-06 00:00:00.000', ['class' => 'form-control']) !!}
-    {!! Form::date('date',$student->datRodStud->format('Y.m.d H:i:s'),['class' => 'form-control', 'required' => 'required']) !!}
-    {{ Form::date( 'datRodStud', Input::old('datRodStud'), array('class' => 'form-control', 'required' => 'required')) }}
+    {{ Form::date( 'datRodStud', $student->datRodStud, array('class' => 'form-control', 'required' => 'required')) }}   
+    
+    <!-- ne radi Input::old za date ?? -->
+    {{-- Form::date( 'datRodStud', Input::old('datRodStud'), array('class' => 'form-control', 'required' => 'required')) --}}
 </div>
 <div class="form-group">
     {{ Form::label('jmbgStud', 'Matični broj studenta') }}

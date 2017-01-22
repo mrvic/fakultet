@@ -2,6 +2,7 @@
 
 namespace Fakultet;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -42,12 +43,13 @@ class Stud extends Model
         // Mutator
         $this->attributes['prezStud']=  ucfirst($in);
     }  
-    /*
+    
     public function getdatRodStudAttribute(){
         // Accessor
-        return $this->attributes['datRodStud'];
+        return Carbon::parse($this->attributes['datRodStud']); 
+        //return $this->attributes['datRodStud']->format('m/d/Y');
     }
-      */
+    
      
     /**
      * 
