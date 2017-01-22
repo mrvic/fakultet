@@ -1,4 +1,5 @@
 <?php
+
 /**
  * migrciju pokreni sa:
  * vagrant@homestead:~/Code/blog$ php artisan db:seed
@@ -6,23 +7,19 @@
 use Illuminate\Database\Seeder;
 use Carbon\Carbon;
 
-class StudTableSeeder extends Seeder
-{
+class StudTableSeeder extends Seeder {
+
     /**
      * Run the database seeds.
      *
      * @return void
      */
-    public function run()
-    {
+    public function run() {
         //delete stud table records
         DB::table('stud')->delete();
         DB::table('stud')->insert(array(
-
-
-
             Array
-            (
+                (
                 'mbrStud' => '1120',
                 'imeStud' => 'Zdenko',
                 'prezStud' => 'Kolac',
@@ -30,12 +27,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '40000',
                 'datRodStud' => '1985-06-06 00:00:00',
                 'jmbgStud' => '0606985330186',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1121',
                 'imeStud' => 'Danijel',
                 'prezStud' => 'Marović',
@@ -43,12 +40,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-12-18 00:00:00',
                 'jmbgStud' => '1812984330118',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1123',
                 'imeStud' => 'Jozefina',
                 'prezStud' => 'Antončić',
@@ -56,12 +53,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-01-21 00:00:00',
                 'jmbgStud' => '2101984330133',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1124',
                 'imeStud' => 'Tihomir',
                 'prezStud' => 'Crnković',
@@ -69,12 +66,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-01 00:00:00',
                 'jmbgStud' => '0105985303228',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1125',
                 'imeStud' => 'Vjeran',
                 'prezStud' => 'Brezac',
@@ -82,12 +79,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '44000',
                 'datRodStud' => '1984-04-12 00:00:00',
                 'jmbgStud' => '1204984335026',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1127',
                 'imeStud' => 'Dario',
                 'prezStud' => 'Risek',
@@ -95,12 +92,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '32000',
                 'datRodStud' => '1984-07-19 00:00:00',
                 'jmbgStud' => '1907984362909',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1128',
                 'imeStud' => 'Zlatko',
                 'prezStud' => 'Broz',
@@ -108,12 +105,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-03-17 00:00:00',
                 'jmbgStud' => '1703984330099',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1129',
                 'imeStud' => 'Julija',
                 'prezStud' => 'Kos',
@@ -121,12 +118,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '51000',
                 'datRodStud' => '1985-05-19 00:00:00',
                 'jmbgStud' => '1905985330161',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1131',
                 'imeStud' => 'Zlatko',
                 'prezStud' => 'Nenadić',
@@ -134,12 +131,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '35000',
                 'datRodStud' => '1984-11-17 00:00:00',
                 'jmbgStud' => '1711984395329',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1132',
                 'imeStud' => 'Nikica',
                 'prezStud' => 'Arunović',
@@ -147,12 +144,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '48000',
                 'datRodStud' => '1984-09-01 00:00:00',
                 'jmbgStud' => '0109984330006',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1133',
                 'imeStud' => 'Darko',
                 'prezStud' => 'Cindrić',
@@ -160,12 +157,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-18 00:00:00',
                 'jmbgStud' => '1810984330093',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1135',
                 'imeStud' => 'Juraj',
                 'prezStud' => 'Rožman',
@@ -173,12 +170,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '42000',
                 'datRodStud' => '1984-08-19 00:00:00',
                 'jmbgStud' => '1908984312508',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1136',
                 'imeStud' => 'Vlatko',
                 'prezStud' => 'Horvatić',
@@ -186,12 +183,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '51000',
                 'datRodStud' => '1985-06-26 00:00:00',
                 'jmbgStud' => '2606985325027',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1137',
                 'imeStud' => 'Jure',
                 'prezStud' => 'Ribarić',
@@ -199,12 +196,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '22000',
                 'datRodStud' => '1983-11-02 00:00:00',
                 'jmbgStud' => '0211983392304',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1139',
                 'imeStud' => 'Niko',
                 'prezStud' => 'Marušić',
@@ -212,12 +209,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '48000',
                 'datRodStud' => '1984-08-22 00:00:00',
                 'jmbgStud' => '2208984173977',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1140',
                 'imeStud' => 'Davor',
                 'prezStud' => 'Vurnek',
@@ -225,12 +222,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-10-29 00:00:00',
                 'jmbgStud' => '2910984300802',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1141',
                 'imeStud' => 'Zoran',
                 'prezStud' => 'Habajec',
@@ -238,12 +235,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-07-25 00:00:00',
                 'jmbgStud' => '2507984301807',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1143',
                 'imeStud' => 'Davor',
                 'prezStud' => 'Voras',
@@ -251,12 +248,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-10-08 00:00:00',
                 'jmbgStud' => '0810985390025',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1144',
                 'imeStud' => 'Zvonimir',
                 'prezStud' => 'Ozimec',
@@ -264,12 +261,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-10-08 00:00:00',
                 'jmbgStud' => '0810985390015',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1145',
                 'imeStud' => 'Jurica',
                 'prezStud' => 'Bašić',
@@ -277,12 +274,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-07-06 00:00:00',
                 'jmbgStud' => '0607985361605',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1147',
                 'imeStud' => 'Alenka',
                 'prezStud' => 'Vukojević',
@@ -290,12 +287,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-06-14 00:00:00',
                 'jmbgStud' => '1406985311906',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1148',
                 'imeStud' => 'Antonijo',
                 'prezStud' => 'Javorina',
@@ -303,12 +300,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-16 00:00:00',
                 'jmbgStud' => '1607984330068',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1149',
                 'imeStud' => 'Nikola',
                 'prezStud' => 'Bačić',
@@ -316,12 +313,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-04-08 00:00:00',
                 'jmbgStud' => '0804984330122',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1151',
                 'imeStud' => 'Karlo',
                 'prezStud' => 'Krsnik',
@@ -329,12 +326,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-08-18 00:00:00',
                 'jmbgStud' => '1808984320522',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1152',
                 'imeStud' => 'Božidar',
                 'prezStud' => 'Tomić',
@@ -342,12 +339,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20250',
                 'datRodStud' => '1985-08-07 00:00:00',
                 'jmbgStud' => '0708985395074',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1153',
                 'imeStud' => 'Josip',
                 'prezStud' => 'Dukić',
@@ -355,12 +352,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-23 00:00:00',
                 'jmbgStud' => '2306985330111',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1155',
                 'imeStud' => 'Davorin',
                 'prezStud' => 'Mirković',
@@ -368,12 +365,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '32100',
                 'datRodStud' => '1985-07-04 00:00:00',
                 'jmbgStud' => '0407985307804',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1156',
                 'imeStud' => 'Nikolina',
                 'prezStud' => 'Medvedec',
@@ -381,12 +378,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10370',
                 'datRodStud' => '1985-01-27 00:00:00',
                 'jmbgStud' => '2701985381508',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1157',
                 'imeStud' => 'Nina',
                 'prezStud' => 'Cnappi',
@@ -394,12 +391,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-23 00:00:00',
                 'jmbgStud' => '2305985390005',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1159',
                 'imeStud' => 'Katarina',
                 'prezStud' => 'Dobrina',
@@ -407,12 +404,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-02-18 00:00:00',
                 'jmbgStud' => '1802985330169',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1160',
                 'imeStud' => 'Majo',
                 'prezStud' => 'Musić',
@@ -420,12 +417,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-27 00:00:00',
                 'jmbgStud' => '2710984303508',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1161',
                 'imeStud' => 'Davor',
                 'prezStud' => 'Jurinjak',
@@ -433,12 +430,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-23 00:00:00',
                 'jmbgStud' => '2305985330103',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1163',
                 'imeStud' => 'Davorka',
                 'prezStud' => 'Smolić-Grgić',
@@ -446,12 +443,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-27 00:00:00',
                 'jmbgStud' => '2706985391817',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1164',
                 'imeStud' => 'Krešimir',
                 'prezStud' => 'Vlahović',
@@ -459,12 +456,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-03-07 00:00:00',
                 'jmbgStud' => '0703985395007',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1165',
                 'imeStud' => 'Željka',
                 'prezStud' => 'Morić',
@@ -472,12 +469,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-03 00:00:00',
                 'jmbgStud' => '0306985392119',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1167',
                 'imeStud' => 'Mirko',
                 'prezStud' => 'Teklić',
@@ -485,12 +482,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-03-28 00:00:00',
                 'jmbgStud' => '2803984310615',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1168',
                 'imeStud' => 'Doris',
                 'prezStud' => 'Rapinac',
@@ -498,12 +495,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-22 00:00:00',
                 'jmbgStud' => '2211984335101',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1169',
                 'imeStud' => 'Dubravko',
                 'prezStud' => 'Vaniček',
@@ -511,12 +508,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-27 00:00:00',
                 'jmbgStud' => '2711984320539',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1170',
                 'imeStud' => 'Denis',
                 'prezStud' => 'Pauk',
@@ -524,12 +521,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '31000',
                 'datRodStud' => '1985-04-11 00:00:00',
                 'jmbgStud' => '1104985301819',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1172',
                 'imeStud' => 'Ninoslav',
                 'prezStud' => 'Novak',
@@ -537,12 +534,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-04-10 00:00:00',
                 'jmbgStud' => '1004984383309',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1173',
                 'imeStud' => 'Gordan',
                 'prezStud' => 'Boršić',
@@ -550,12 +547,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1980-02-29 00:00:00',
                 'jmbgStud' => '1902980334016',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1174',
                 'imeStud' => 'Edita',
                 'prezStud' => 'Domijan',
@@ -563,12 +560,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-21 00:00:00',
                 'jmbgStud' => '2106985380029',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1176',
                 'imeStud' => 'Predrag',
                 'prezStud' => 'Žuljević',
@@ -576,12 +573,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1983-12-31 00:00:00',
                 'jmbgStud' => '3112983320569',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1177',
                 'imeStud' => 'Kristian',
                 'prezStud' => 'Klarin',
@@ -589,12 +586,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-10 00:00:00',
                 'jmbgStud' => '1006985330028',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1178',
                 'imeStud' => 'Kristijan',
                 'prezStud' => 'Vrabec',
@@ -602,12 +599,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-07 00:00:00',
                 'jmbgStud' => '0710984361315',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1180',
                 'imeStud' => 'Iva',
                 'prezStud' => 'Mioč',
@@ -615,12 +612,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-01-31 00:00:00',
                 'jmbgStud' => '3101985340008',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1181',
                 'imeStud' => 'Arsenio',
                 'prezStud' => 'Minić',
@@ -628,12 +625,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-09-17 00:00:00',
                 'jmbgStud' => '1709984320508',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1182',
                 'imeStud' => 'Gorana',
                 'prezStud' => 'Božić',
@@ -641,12 +638,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1983-07-21 00:00:00',
                 'jmbgStud' => '2107983340011',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1184',
                 'imeStud' => 'Tihomir',
                 'prezStud' => 'Fabris',
@@ -654,12 +651,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-09-08 00:00:00',
                 'jmbgStud' => '0809984360058',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1185',
                 'imeStud' => 'Ozren',
                 'prezStud' => 'Smolić',
@@ -667,12 +664,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-23 00:00:00',
                 'jmbgStud' => '2306985330083',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1186',
                 'imeStud' => 'Zlatko',
                 'prezStud' => 'Kolar',
@@ -680,12 +677,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-18 00:00:00',
                 'jmbgStud' => '1809984391008',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1188',
                 'imeStud' => 'Kristina',
                 'prezStud' => 'Mandić',
@@ -693,12 +690,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-19 00:00:00',
                 'jmbgStud' => '1901985391825',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1189',
                 'imeStud' => 'Juraj',
                 'prezStud' => 'Maček',
@@ -706,12 +703,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-01-27 00:00:00',
                 'jmbgStud' => '2701985390206',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1190',
                 'imeStud' => 'Domagoj',
                 'prezStud' => 'Krišto',
@@ -719,12 +716,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-03-13 00:00:00',
                 'jmbgStud' => '1303985330094',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1192',
                 'imeStud' => 'Helena',
                 'prezStud' => 'Mandić',
@@ -732,12 +729,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-07-10 00:00:00',
                 'jmbgStud' => '1007985300028',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1193',
                 'imeStud' => 'Krunoslav',
                 'prezStud' => 'Brezak',
@@ -745,12 +742,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-03 00:00:00',
                 'jmbgStud' => '0311984370805',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1194',
                 'imeStud' => 'Antun Ivan',
                 'prezStud' => 'Herak',
@@ -758,12 +755,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-07-04 00:00:00',
                 'jmbgStud' => '0407984330073',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1196',
                 'imeStud' => 'Pavao',
                 'prezStud' => 'Falk',
@@ -771,12 +768,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-12 00:00:00',
                 'jmbgStud' => '1207984330057',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1197',
                 'imeStud' => 'Dominik',
                 'prezStud' => 'Hacek',
@@ -784,12 +781,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-12 00:00:00',
                 'jmbgStud' => '1204985306801',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1198',
                 'imeStud' => 'Helena',
                 'prezStud' => 'Vidaković',
@@ -797,12 +794,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-08-31 00:00:00',
                 'jmbgStud' => '3108984330057',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1200',
                 'imeStud' => 'Davor',
                 'prezStud' => 'Bunčec',
@@ -810,12 +807,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-05-05 00:00:00',
                 'jmbgStud' => '0505984330124',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1201',
                 'imeStud' => 'Doris',
                 'prezStud' => 'Končar',
@@ -823,12 +820,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-01 00:00:00',
                 'jmbgStud' => '0106985392713',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1202',
                 'imeStud' => 'Perica',
                 'prezStud' => 'Mikulec',
@@ -836,12 +833,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-04-10 00:00:00',
                 'jmbgStud' => '1004984340304',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1204',
                 'imeStud' => 'Ksenija',
                 'prezStud' => 'Čular',
@@ -849,12 +846,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '51000',
                 'datRodStud' => '1985-08-10 00:00:00',
                 'jmbgStud' => '1008985311207',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1205',
                 'imeStud' => 'Dragan',
                 'prezStud' => 'Vranešić',
@@ -862,12 +859,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-28 00:00:00',
                 'jmbgStud' => '2811984330185',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1206',
                 'imeStud' => 'Jozefina',
                 'prezStud' => 'Blauhorn',
@@ -875,12 +872,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '51000',
                 'datRodStud' => '1985-06-10 00:00:00',
                 'jmbgStud' => '1006985383925',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1208',
                 'imeStud' => 'Franjo',
                 'prezStud' => 'Stipanov',
@@ -888,12 +885,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '31000',
                 'datRodStud' => '1984-08-11 00:00:00',
                 'jmbgStud' => '1108984385042',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1209',
                 'imeStud' => 'Petar',
                 'prezStud' => 'Škrinjarić',
@@ -901,12 +898,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '31000',
                 'datRodStud' => '1984-12-14 00:00:00',
                 'jmbgStud' => '1412984380046',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1210',
                 'imeStud' => 'Lea',
                 'prezStud' => 'Dostal',
@@ -914,12 +911,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '31000',
                 'datRodStud' => '1984-12-28 00:00:00',
                 'jmbgStud' => '2812984335123',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1212',
                 'imeStud' => 'Josip',
                 'prezStud' => 'Zelić',
@@ -927,12 +924,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '47000',
                 'datRodStud' => '1984-10-01 00:00:00',
                 'jmbgStud' => '0110984330012',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1213',
                 'imeStud' => 'Petra',
                 'prezStud' => 'Čuljak',
@@ -940,12 +937,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '47000',
                 'datRodStud' => '1984-12-23 00:00:00',
                 'jmbgStud' => '2312984380051',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1214',
                 'imeStud' => 'Drago',
                 'prezStud' => 'Bartolinčić',
@@ -953,12 +950,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-26 00:00:00',
                 'jmbgStud' => '2605985383309',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1216',
                 'imeStud' => 'Lidija',
                 'prezStud' => 'Leonard',
@@ -966,12 +963,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '43000',
                 'datRodStud' => '1984-11-09 00:00:00',
                 'jmbgStud' => '0911984330036',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1217',
                 'imeStud' => 'Lovre',
                 'prezStud' => 'Huk',
@@ -979,12 +976,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '52000',
                 'datRodStud' => '1984-12-11 00:00:00',
                 'jmbgStud' => '1112984370017',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1218',
                 'imeStud' => 'Majo',
                 'prezStud' => 'Hemetek',
@@ -992,12 +989,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '31000',
                 'datRodStud' => '1985-06-23 00:00:00',
                 'jmbgStud' => '2306985340015',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1219',
                 'imeStud' => 'Predrag',
                 'prezStud' => 'Smirčić',
@@ -1005,12 +1002,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-03-17 00:00:00',
                 'jmbgStud' => '1703985335145',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1221',
                 'imeStud' => 'Slavko',
                 'prezStud' => 'Prelec',
@@ -1018,12 +1015,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-27 00:00:00',
                 'jmbgStud' => '2706985362104',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1222',
                 'imeStud' => 'Dragutin',
                 'prezStud' => 'Ladišić',
@@ -1031,12 +1028,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '34000',
                 'datRodStud' => '1984-12-15 00:00:00',
                 'jmbgStud' => '1512984391826',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1223',
                 'imeStud' => 'Kristina',
                 'prezStud' => 'Rubinić',
@@ -1044,12 +1041,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-07-02 00:00:00',
                 'jmbgStud' => '0207985335087',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1225',
                 'imeStud' => 'Mirko',
                 'prezStud' => 'Dubravić',
@@ -1057,12 +1054,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '32000',
                 'datRodStud' => '1984-08-05 00:00:00',
                 'jmbgStud' => '0508984380043',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1226',
                 'imeStud' => 'Tin',
                 'prezStud' => 'Mikulaj',
@@ -1070,12 +1067,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '42000',
                 'datRodStud' => '1985-04-11 00:00:00',
                 'jmbgStud' => '1104985392619',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1227',
                 'imeStud' => 'Dražen',
                 'prezStud' => 'Bošnjak',
@@ -1083,12 +1080,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '51000',
                 'datRodStud' => '1984-11-24 00:00:00',
                 'jmbgStud' => '2411984340712',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1229',
                 'imeStud' => 'Vjeran',
                 'prezStud' => 'Brezovec',
@@ -1096,12 +1093,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-09-24 00:00:00',
                 'jmbgStud' => '2409985330058',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1230',
                 'imeStud' => 'Predrag',
                 'prezStud' => 'Buljat',
@@ -1109,12 +1106,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '53000',
                 'datRodStud' => '1985-01-06 00:00:00',
                 'jmbgStud' => '0601985320007',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1231',
                 'imeStud' => 'Lucija',
                 'prezStud' => 'Matijašević',
@@ -1122,12 +1119,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '32000',
                 'datRodStud' => '1985-06-03 00:00:00',
                 'jmbgStud' => '0306985300888',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1233',
                 'imeStud' => 'Renato',
                 'prezStud' => 'Stepinac',
@@ -1135,12 +1132,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '51000',
                 'datRodStud' => '1985-06-03 00:00:00',
                 'jmbgStud' => '0306985300078',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1234',
                 'imeStud' => 'Ksenija',
                 'prezStud' => 'Pavišić',
@@ -1148,12 +1145,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1981-09-15 00:00:00',
                 'jmbgStud' => '1509981330133',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1235',
                 'imeStud' => 'Lea',
                 'prezStud' => 'Kamenečki',
@@ -1161,12 +1158,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-29 00:00:00',
                 'jmbgStud' => '2901985390007',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1237',
                 'imeStud' => 'Luka',
                 'prezStud' => 'Frankola',
@@ -1174,12 +1171,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-08-19 00:00:00',
                 'jmbgStud' => '1908985320002',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1238',
                 'imeStud' => 'Tihomir',
                 'prezStud' => 'Crnković',
@@ -1187,12 +1184,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-06-22 00:00:00',
                 'jmbgStud' => '2206984339303',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1239',
                 'imeStud' => 'Duje',
                 'prezStud' => 'Šimić',
@@ -1200,12 +1197,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-07 00:00:00',
                 'jmbgStud' => '0709984330054',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1241',
                 'imeStud' => 'Ljiljana',
                 'prezStud' => 'Valentić',
@@ -1213,12 +1210,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-10-04 00:00:00',
                 'jmbgStud' => '0410984330044',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1242',
                 'imeStud' => 'Alan',
                 'prezStud' => 'Samodol',
@@ -1226,12 +1223,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-10-12 00:00:00',
                 'jmbgStud' => '1210984330177',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1243',
                 'imeStud' => 'Lidija',
                 'prezStud' => 'Žiljak',
@@ -1239,12 +1236,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-01-04 00:00:00',
                 'jmbgStud' => '0401985330026',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1245',
                 'imeStud' => 'Dujo Davor',
                 'prezStud' => 'Folnegović',
@@ -1252,12 +1249,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-05 00:00:00',
                 'jmbgStud' => '0511984391518',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1246',
                 'imeStud' => 'Roko',
                 'prezStud' => 'Novosel',
@@ -1265,12 +1262,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-04 00:00:00',
                 'jmbgStud' => '0404985335091',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1247',
                 'imeStud' => 'Alan',
                 'prezStud' => 'Pasanec',
@@ -1278,12 +1275,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-29 00:00:00',
                 'jmbgStud' => '2909984330071',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1249',
                 'imeStud' => 'Maja',
                 'prezStud' => 'Belić',
@@ -1291,12 +1288,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-12 00:00:00',
                 'jmbgStud' => '1206985330109',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1250',
                 'imeStud' => 'Antonijo',
                 'prezStud' => 'Franjković',
@@ -1304,12 +1301,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-23 00:00:00',
                 'jmbgStud' => '2311984360005',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1251',
                 'imeStud' => 'Lucija',
                 'prezStud' => 'Brčić',
@@ -1317,12 +1314,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-07 00:00:00',
                 'jmbgStud' => '0705985391019',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1253',
                 'imeStud' => 'Božidar',
                 'prezStud' => 'Cetto',
@@ -1330,12 +1327,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-24 00:00:00',
                 'jmbgStud' => '2405985330205',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1254',
                 'imeStud' => 'Edo',
                 'prezStud' => 'Marić',
@@ -1343,12 +1340,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21420',
                 'datRodStud' => '1985-02-27 00:00:00',
                 'jmbgStud' => '2702985390302',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1255',
                 'imeStud' => 'Antonijo',
                 'prezStud' => 'Dumančić',
@@ -1356,12 +1353,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '32100',
                 'datRodStud' => '1984-09-21 00:00:00',
                 'jmbgStud' => '2109984302141',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1257',
                 'imeStud' => 'Adrian',
                 'prezStud' => 'Lukač',
@@ -1369,12 +1366,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-08-17 00:00:00',
                 'jmbgStud' => '1708985383929',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1258',
                 'imeStud' => 'Majo',
                 'prezStud' => 'Varga',
@@ -1382,12 +1379,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-04-21 00:00:00',
                 'jmbgStud' => '2104984340015',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1259',
                 'imeStud' => 'Ljiljana',
                 'prezStud' => 'Bulić',
@@ -1395,12 +1392,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-22 00:00:00',
                 'jmbgStud' => '2207984383304',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1261',
                 'imeStud' => 'Silvana',
                 'prezStud' => 'Novosel',
@@ -1408,12 +1405,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-12-11 00:00:00',
                 'jmbgStud' => '1112984308219',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1262',
                 'imeStud' => 'Maja',
                 'prezStud' => 'Šeremet',
@@ -1421,12 +1418,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-12-17 00:00:00',
                 'jmbgStud' => '1712984311413',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1263',
                 'imeStud' => 'Davor',
                 'prezStud' => 'Plečko',
@@ -1434,12 +1431,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '42000',
                 'datRodStud' => '1985-01-05 00:00:00',
                 'jmbgStud' => '0501985392729',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1265',
                 'imeStud' => 'Marija',
                 'prezStud' => 'Barbić',
@@ -1447,12 +1444,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '31000',
                 'datRodStud' => '1985-07-12 00:00:00',
                 'jmbgStud' => '1207985330096',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1266',
                 'imeStud' => 'Eduard',
                 'prezStud' => 'Petrović',
@@ -1460,12 +1457,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-09-25 00:00:00',
                 'jmbgStud' => '2509984383927',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1267',
                 'imeStud' => 'Adrijan',
                 'prezStud' => 'Vuković',
@@ -1473,12 +1470,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1983-07-12 00:00:00',
                 'jmbgStud' => '1207983330073',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1268',
                 'imeStud' => 'Adrijana',
                 'prezStud' => 'Buršić',
@@ -1486,12 +1483,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-19 00:00:00',
                 'jmbgStud' => '1905985320026',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1270',
                 'imeStud' => 'Nino',
                 'prezStud' => 'Triska',
@@ -1499,12 +1496,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-25 00:00:00',
                 'jmbgStud' => '2504985334318',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1271',
                 'imeStud' => 'Marijan',
                 'prezStud' => 'Mirošević',
@@ -1512,12 +1509,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-08-27 00:00:00',
                 'jmbgStud' => '2708985334008',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1272',
                 'imeStud' => 'Emil',
                 'prezStud' => 'Sertić',
@@ -1525,12 +1522,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-09 00:00:00',
                 'jmbgStud' => '0904985820084',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1274',
                 'imeStud' => 'Silvestar',
                 'prezStud' => 'Sabljak',
@@ -1538,12 +1535,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-05-15 00:00:00',
                 'jmbgStud' => '1505984335045',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1275',
                 'imeStud' => 'Dubravko',
                 'prezStud' => 'Toth',
@@ -1551,12 +1548,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-07-02 00:00:00',
                 'jmbgStud' => '0207985361927',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1276',
                 'imeStud' => 'Filip',
                 'prezStud' => 'Jurić',
@@ -1564,12 +1561,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-04 00:00:00',
                 'jmbgStud' => '0405985303209',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1278',
                 'imeStud' => 'Gordan',
                 'prezStud' => 'Dular',
@@ -1577,12 +1574,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-11-29 00:00:00',
                 'jmbgStud' => '2911984317209',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1279',
                 'imeStud' => 'Martina',
                 'prezStud' => 'Krizmanić',
@@ -1590,12 +1587,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-10 00:00:00',
                 'jmbgStud' => '1001985383921',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1280',
                 'imeStud' => 'Marin',
                 'prezStud' => 'Jurić',
@@ -1603,12 +1600,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-26 00:00:00',
                 'jmbgStud' => '2610984311907',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1282',
                 'imeStud' => 'Alan',
                 'prezStud' => 'Matuna',
@@ -1616,12 +1613,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-02-01 00:00:00',
                 'jmbgStud' => '0102985334042',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1283',
                 'imeStud' => 'Vinko',
                 'prezStud' => 'Padovan',
@@ -1629,12 +1626,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-05 00:00:00',
                 'jmbgStud' => '0504985335094',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1284',
                 'imeStud' => 'Albert',
                 'prezStud' => 'Hunić',
@@ -1642,12 +1639,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-08 00:00:00',
                 'jmbgStud' => '0801985366002',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1286',
                 'imeStud' => 'Fran',
                 'prezStud' => 'Šef',
@@ -1655,12 +1652,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-08-21 00:00:00',
                 'jmbgStud' => '2108984383317',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1287',
                 'imeStud' => 'Adrijan',
                 'prezStud' => 'Trnski',
@@ -1668,12 +1665,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-03-11 00:00:00',
                 'jmbgStud' => '1103984361305',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1288',
                 'imeStud' => 'Mirjana',
                 'prezStud' => 'Iveković',
@@ -1681,12 +1678,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1985-03-01 00:00:00',
                 'jmbgStud' => '0103985320504',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1290',
                 'imeStud' => 'Slavica',
                 'prezStud' => 'Pavić',
@@ -1694,12 +1691,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '22000',
                 'datRodStud' => '1984-12-20 00:00:00',
                 'jmbgStud' => '2012984321406',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1291',
                 'imeStud' => 'Gordan',
                 'prezStud' => 'Kačar',
@@ -1707,12 +1704,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-11-15 00:00:00',
                 'jmbgStud' => '1511984330125',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1292',
                 'imeStud' => 'Juraj',
                 'prezStud' => 'Sabljak',
@@ -1720,12 +1717,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1985-02-26 00:00:00',
                 'jmbgStud' => '2602985330075',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1294',
                 'imeStud' => 'Iva',
                 'prezStud' => 'Devčić',
@@ -1733,12 +1730,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-03-21 00:00:00',
                 'jmbgStud' => '2103985330067',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1295',
                 'imeStud' => 'Frane',
                 'prezStud' => 'Plavetić',
@@ -1746,12 +1743,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-06 00:00:00',
                 'jmbgStud' => '0601985330138',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1296',
                 'imeStud' => 'Slavko',
                 'prezStud' => 'Petreković',
@@ -1759,12 +1756,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1985-07-23 00:00:00',
                 'jmbgStud' => '2307985330036',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1298',
                 'imeStud' => 'Marinko',
                 'prezStud' => 'Horvat',
@@ -1772,12 +1769,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1985-04-11 00:00:00',
                 'jmbgStud' => '1104985390303',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1299',
                 'imeStud' => 'Davorka',
                 'prezStud' => 'Ilić',
@@ -1785,12 +1782,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '51000',
                 'datRodStud' => '1985-04-15 00:00:00',
                 'jmbgStud' => '1504985380055',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1300',
                 'imeStud' => 'Alenka',
                 'prezStud' => 'Lozić',
@@ -1798,12 +1795,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '51000',
                 'datRodStud' => '1985-07-22 00:00:00',
                 'jmbgStud' => '2207985330193',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1302',
                 'imeStud' => 'Lovre',
                 'prezStud' => 'Smiljanec',
@@ -1811,12 +1808,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-17 00:00:00',
                 'jmbgStud' => '1704985381105',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1303',
                 'imeStud' => 'Juraj',
                 'prezStud' => 'Szirovicza',
@@ -1824,12 +1821,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '31000',
                 'datRodStud' => '1985-05-23 00:00:00',
                 'jmbgStud' => '2305985330039',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1304',
                 'imeStud' => 'Mario',
                 'prezStud' => 'Babić',
@@ -1837,12 +1834,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-31 00:00:00',
                 'jmbgStud' => '3107984381518',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1306',
                 'imeStud' => 'Helena',
                 'prezStud' => 'Octenjak',
@@ -1850,12 +1847,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '47000',
                 'datRodStud' => '1983-07-14 00:00:00',
                 'jmbgStud' => '1407983330042',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1307',
                 'imeStud' => 'Franjo',
                 'prezStud' => 'Zdilar',
@@ -1863,12 +1860,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-16 00:00:00',
                 'jmbgStud' => '1609984330314',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1308',
                 'imeStud' => 'Stipe',
                 'prezStud' => 'Pugelnik',
@@ -1876,12 +1873,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '22000',
                 'datRodStud' => '1984-12-02 00:00:00',
                 'jmbgStud' => '0212984391814',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1310',
                 'imeStud' => 'Marko',
                 'prezStud' => 'Mateković',
@@ -1889,12 +1886,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-21 00:00:00',
                 'jmbgStud' => '2106985334006',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1311',
                 'imeStud' => 'Goran',
                 'prezStud' => 'Remenar',
@@ -1902,12 +1899,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '40000',
                 'datRodStud' => '1984-05-20 00:00:00',
                 'jmbgStud' => '2005984390118',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1312',
                 'imeStud' => 'Nina',
                 'prezStud' => 'Kućan',
@@ -1915,12 +1912,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-25 00:00:00',
                 'jmbgStud' => '2506985330144',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1314',
                 'imeStud' => 'Marko',
                 'prezStud' => 'Suhina',
@@ -1928,12 +1925,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '52000',
                 'datRodStud' => '1984-10-28 00:00:00',
                 'jmbgStud' => '2810984330097',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1315',
                 'imeStud' => 'Aljoša',
                 'prezStud' => 'Sobol',
@@ -1941,12 +1938,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '31000',
                 'datRodStud' => '1985-05-11 00:00:00',
                 'jmbgStud' => '1105985335128',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1316',
                 'imeStud' => 'Gorana',
                 'prezStud' => 'Frljak',
@@ -1954,12 +1951,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-05-06 00:00:00',
                 'jmbgStud' => '0605984334017',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1317',
                 'imeStud' => 'Mijo',
                 'prezStud' => 'Vucelić',
@@ -1967,12 +1964,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '49000',
                 'datRodStud' => '1985-05-23 00:00:00',
                 'jmbgStud' => '2305985383905',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1319',
                 'imeStud' => 'Petra',
                 'prezStud' => 'Školnik',
@@ -1980,12 +1977,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-13 00:00:00',
                 'jmbgStud' => '1311984330155',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1320',
                 'imeStud' => 'Martin',
                 'prezStud' => 'Kovačić',
@@ -1993,12 +1990,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-20 00:00:00',
                 'jmbgStud' => '2009984311404',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1321',
                 'imeStud' => 'Marko',
                 'prezStud' => 'Meljanac',
@@ -2006,12 +2003,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '53000',
                 'datRodStud' => '1985-02-09 00:00:00',
                 'jmbgStud' => '0902985390011',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1323',
                 'imeStud' => 'Ivan',
                 'prezStud' => 'Jambrak',
@@ -2019,12 +2016,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-06-18 00:00:00',
                 'jmbgStud' => '1806984330251',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1324',
                 'imeStud' => 'Petar',
                 'prezStud' => 'Nemet',
@@ -2032,12 +2029,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '49000',
                 'datRodStud' => '1984-11-17 00:00:00',
                 'jmbgStud' => '1711984335042',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1325',
                 'imeStud' => 'Martina',
                 'prezStud' => 'Simon',
@@ -2045,12 +2042,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-02-03 00:00:00',
                 'jmbgStud' => '0302984383304',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1327',
                 'imeStud' => 'Andrej',
                 'prezStud' => 'Jurić',
@@ -2058,12 +2055,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '44000',
                 'datRodStud' => '1983-11-27 00:00:00',
                 'jmbgStud' => '2711983370016',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1328',
                 'imeStud' => 'Renata',
                 'prezStud' => 'Vujnovac',
@@ -2071,12 +2068,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-08 00:00:00',
                 'jmbgStud' => '0810984334302',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1329',
                 'imeStud' => 'Mijo',
                 'prezStud' => 'Poljak',
@@ -2084,12 +2081,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-26 00:00:00',
                 'jmbgStud' => '2605985153755',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1331',
                 'imeStud' => 'Gordan',
                 'prezStud' => 'Lacković',
@@ -2097,12 +2094,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-03 00:00:00',
                 'jmbgStud' => '0309984330249',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1332',
                 'imeStud' => 'Svebor',
                 'prezStud' => 'Keščec',
@@ -2110,12 +2107,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-02-09 00:00:00',
                 'jmbgStud' => '0902985383308',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1333',
                 'imeStud' => 'Adrijan',
                 'prezStud' => 'Fabrični',
@@ -2123,12 +2120,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-04 00:00:00',
                 'jmbgStud' => '0409984391807',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1335',
                 'imeStud' => 'Andrija',
                 'prezStud' => 'Topolovac',
@@ -2136,12 +2133,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-18 00:00:00',
                 'jmbgStud' => '1804985391514',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1336',
                 'imeStud' => 'Slavko',
                 'prezStud' => 'Hrvojević',
@@ -2149,12 +2146,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1985-06-29 00:00:00',
                 'jmbgStud' => '2906985350009',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1337',
                 'imeStud' => 'Mate',
                 'prezStud' => 'Crnjak',
@@ -2162,12 +2159,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-01-19 00:00:00',
                 'jmbgStud' => '1901985360076',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1339',
                 'imeStud' => 'Andro',
                 'prezStud' => 'Popović',
@@ -2175,12 +2172,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-12-24 00:00:00',
                 'jmbgStud' => '2412984330067',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1340',
                 'imeStud' => 'Matej',
                 'prezStud' => 'Dukić',
@@ -2188,12 +2185,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-08-02 00:00:00',
                 'jmbgStud' => '0208985361006',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1341',
                 'imeStud' => 'Sanja',
                 'prezStud' => 'Babić',
@@ -2201,12 +2198,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-28 00:00:00',
                 'jmbgStud' => '2806985371019',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1343',
                 'imeStud' => 'Davorka',
                 'prezStud' => 'Kralj',
@@ -2214,12 +2211,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-01-05 00:00:00',
                 'jmbgStud' => '0501984330031',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1344',
                 'imeStud' => 'Sven',
                 'prezStud' => 'Rac',
@@ -2227,12 +2224,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '34330',
                 'datRodStud' => '1984-12-25 00:00:00',
                 'jmbgStud' => '2512984330145',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1345',
                 'imeStud' => 'Helena',
                 'prezStud' => 'Medved',
@@ -2240,12 +2237,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-12-10 00:00:00',
                 'jmbgStud' => '1012984320027',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1347',
                 'imeStud' => 'Mateo',
                 'prezStud' => 'Maković',
@@ -2253,12 +2250,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '52100',
                 'datRodStud' => '1985-02-23 00:00:00',
                 'jmbgStud' => '2302985363032',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1348',
                 'imeStud' => 'Silvana',
                 'prezStud' => 'Vrbanić',
@@ -2266,12 +2263,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-03-19 00:00:00',
                 'jmbgStud' => '1903985110036',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1349',
                 'imeStud' => 'Šime',
                 'prezStud' => 'Kovačić',
@@ -2279,12 +2276,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-19 00:00:00',
                 'jmbgStud' => '1909984302127',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1351',
                 'imeStud' => 'Želimir',
                 'prezStud' => 'Babić',
@@ -2292,12 +2289,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-02-02 00:00:00',
                 'jmbgStud' => '0202985330149',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1352',
                 'imeStud' => 'Marko',
                 'prezStud' => 'Levačić',
@@ -2305,12 +2302,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-07-15 00:00:00',
                 'jmbgStud' => '1507985388902',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1353',
                 'imeStud' => 'Slavica',
                 'prezStud' => 'Đurak',
@@ -2318,12 +2315,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-13 00:00:00',
                 'jmbgStud' => '1310984363004',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1355',
                 'imeStud' => 'Ante',
                 'prezStud' => 'Budimir',
@@ -2331,12 +2328,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-03-01 00:00:00',
                 'jmbgStud' => '0103985320023',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1356',
                 'imeStud' => 'Matija',
                 'prezStud' => 'Bujas',
@@ -2344,12 +2341,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '40000',
                 'datRodStud' => '1985-04-22 00:00:00',
                 'jmbgStud' => '2204985391517',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1357',
                 'imeStud' => 'Nino',
                 'prezStud' => 'Barić',
@@ -2357,12 +2354,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '31000',
                 'datRodStud' => '1985-03-25 00:00:00',
                 'jmbgStud' => '2503985381527',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1359',
                 'imeStud' => 'Matija Tvrtko',
                 'prezStud' => 'Andrišek',
@@ -2370,12 +2367,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-22 00:00:00',
                 'jmbgStud' => '2201985335002',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1360',
                 'imeStud' => 'Sunčica',
                 'prezStud' => 'Bošnjak',
@@ -2383,12 +2380,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-08-25 00:00:00',
                 'jmbgStud' => '2508984330069',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1361',
                 'imeStud' => 'Anto',
                 'prezStud' => 'Globlek',
@@ -2396,12 +2393,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '44400',
                 'datRodStud' => '1984-06-14 00:00:00',
                 'jmbgStud' => '1406984330053',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1363',
                 'imeStud' => 'Matko',
                 'prezStud' => 'Grgić',
@@ -2409,12 +2406,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '32000',
                 'datRodStud' => '1985-06-08 00:00:00',
                 'jmbgStud' => '0806985383315',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1364',
                 'imeStud' => 'Antun',
                 'prezStud' => 'Ferenc',
@@ -2422,12 +2419,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-20 00:00:00',
                 'jmbgStud' => '2001985302121',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1365',
                 'imeStud' => 'Anton',
                 'prezStud' => 'Bečić',
@@ -2435,12 +2432,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-05-11 00:00:00',
                 'jmbgStud' => '1105985330025',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1366',
                 'imeStud' => 'Vinko',
                 'prezStud' => 'Kontak',
@@ -2448,12 +2445,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-09 00:00:00',
                 'jmbgStud' => '0904985330095',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1368',
                 'imeStud' => 'Tea',
                 'prezStud' => 'Međimorec',
@@ -2461,12 +2458,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-07-17 00:00:00',
                 'jmbgStud' => '1707984330129',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1369',
                 'imeStud' => 'Mato',
                 'prezStud' => 'Kobal',
@@ -2474,12 +2471,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-30 00:00:00',
                 'jmbgStud' => '3007984383313',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1370',
                 'imeStud' => 'Tibor',
                 'prezStud' => 'Poljanec',
@@ -2487,12 +2484,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-22 00:00:00',
                 'jmbgStud' => '2209984370027',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1372',
                 'imeStud' => 'Adrijan',
                 'prezStud' => 'Herceg',
@@ -2500,12 +2497,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1985-04-30 00:00:00',
                 'jmbgStud' => '3004985330071',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1373',
                 'imeStud' => 'Antonijo',
                 'prezStud' => 'Bilić',
@@ -2513,12 +2510,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-12-03 00:00:00',
                 'jmbgStud' => '0312984391218',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1374',
                 'imeStud' => 'Tea',
                 'prezStud' => 'Mihaljević',
@@ -2526,12 +2523,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-06-28 00:00:00',
                 'jmbgStud' => '2806984370019',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1376',
                 'imeStud' => 'Darko',
                 'prezStud' => 'Mrduljaš',
@@ -2539,12 +2536,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-07-16 00:00:00',
                 'jmbgStud' => '1607985330152',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1377',
                 'imeStud' => 'Davorka',
                 'prezStud' => 'Čavrak',
@@ -2552,12 +2549,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-31 00:00:00',
                 'jmbgStud' => '3107984390009',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1378',
                 'imeStud' => 'Antonio',
                 'prezStud' => 'Pamučar',
@@ -2565,12 +2562,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-10 00:00:00',
                 'jmbgStud' => '1005985330166',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1380',
                 'imeStud' => 'Tihomir',
                 'prezStud' => 'Medić',
@@ -2578,12 +2575,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-15 00:00:00',
                 'jmbgStud' => '1510984330055',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1381',
                 'imeStud' => 'Antun',
                 'prezStud' => 'Balog',
@@ -2591,12 +2588,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-08-30 00:00:00',
                 'jmbgStud' => '3008984335037',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1382',
                 'imeStud' => 'Vlatka',
                 'prezStud' => 'Relota',
@@ -2604,12 +2601,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-06-11 00:00:00',
                 'jmbgStud' => '1106985330115',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1384',
                 'imeStud' => 'Helena',
                 'prezStud' => 'Budimir',
@@ -2617,12 +2614,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-11-18 00:00:00',
                 'jmbgStud' => '1811984312506',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1385',
                 'imeStud' => 'Tin',
                 'prezStud' => 'Krajtner',
@@ -2630,12 +2627,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-12-27 00:00:00',
                 'jmbgStud' => '2712984330082',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1386',
                 'imeStud' => 'Dragan',
                 'prezStud' => 'Vidaković',
@@ -2643,12 +2640,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-12-02 00:00:00',
                 'jmbgStud' => '0212984340003',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1388',
                 'imeStud' => 'Antun Ivan',
                 'prezStud' => 'Šimić',
@@ -2656,12 +2653,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-09 00:00:00',
                 'jmbgStud' => '0901985330269',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1389',
                 'imeStud' => 'Mihovil',
                 'prezStud' => 'Slaviček',
@@ -2669,12 +2666,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-08-12 00:00:00',
                 'jmbgStud' => '1208985330046',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1390',
                 'imeStud' => 'Zdenka',
                 'prezStud' => 'Jureta',
@@ -2682,12 +2679,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1985-05-10 00:00:00',
                 'jmbgStud' => '1005985391503',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1392',
                 'imeStud' => 'Filip',
                 'prezStud' => 'Cigrovski',
@@ -2695,12 +2692,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '51000',
                 'datRodStud' => '1983-11-27 00:00:00',
                 'jmbgStud' => '2711983330077',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1393',
                 'imeStud' => 'Stjepan',
                 'prezStud' => 'Tomić',
@@ -2708,12 +2705,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-06 00:00:00',
                 'jmbgStud' => '0605985330013',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1394',
                 'imeStud' => 'Augustina',
                 'prezStud' => 'Šimek',
@@ -2721,12 +2718,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-15 00:00:00',
                 'jmbgStud' => '1501985320515',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1396',
                 'imeStud' => 'Gordana',
                 'prezStud' => 'Husak',
@@ -2734,12 +2731,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '31000',
                 'datRodStud' => '1982-01-18 00:00:00',
                 'jmbgStud' => '1801982380065',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1397',
                 'imeStud' => 'Mijo',
                 'prezStud' => 'Legović',
@@ -2747,12 +2744,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-12-28 00:00:00',
                 'jmbgStud' => '2812984361908',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1398',
                 'imeStud' => 'Zdravka',
                 'prezStud' => 'Budiša',
@@ -2760,12 +2757,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-04 00:00:00',
                 'jmbgStud' => '0401985383929',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1400',
                 'imeStud' => 'Miljenko',
                 'prezStud' => 'Tuđen',
@@ -2773,12 +2770,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-22 00:00:00',
                 'jmbgStud' => '2207984391806',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1401',
                 'imeStud' => 'Vinko',
                 'prezStud' => 'Marković',
@@ -2786,12 +2783,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '47000',
                 'datRodStud' => '1984-10-19 00:00:00',
                 'jmbgStud' => '1910984334304',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1402',
                 'imeStud' => 'Slavko',
                 'prezStud' => 'Kavčič',
@@ -2799,12 +2796,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-15 00:00:00',
                 'jmbgStud' => '1504985383908',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1404',
                 'imeStud' => 'Željka',
                 'prezStud' => 'Puljek',
@@ -2812,12 +2809,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '44000',
                 'datRodStud' => '1985-03-05 00:00:00',
                 'jmbgStud' => '0503985334317',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1405',
                 'imeStud' => 'Jerko',
                 'prezStud' => 'Ogresta',
@@ -2825,12 +2822,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '53000',
                 'datRodStud' => '1985-01-09 00:00:00',
                 'jmbgStud' => '0901985302806',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1406',
                 'imeStud' => 'Tomica',
                 'prezStud' => 'Lulić',
@@ -2838,12 +2835,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-20 00:00:00',
                 'jmbgStud' => '2011984330107',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1408',
                 'imeStud' => 'Mirjana',
                 'prezStud' => 'Cesnik',
@@ -2851,12 +2848,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-06-01 00:00:00',
                 'jmbgStud' => '0106984330014',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1409',
                 'imeStud' => 'Berislav',
                 'prezStud' => 'Crnković',
@@ -2864,12 +2861,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '22000',
                 'datRodStud' => '1985-04-05 00:00:00',
                 'jmbgStud' => '0504985330263',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1410',
                 'imeStud' => 'Željka',
                 'prezStud' => 'Koren',
@@ -2877,12 +2874,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '35000',
                 'datRodStud' => '1985-03-12 00:00:00',
                 'jmbgStud' => '1203985334304',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1412',
                 'imeStud' => 'Hana',
                 'prezStud' => 'Birkić',
@@ -2890,12 +2887,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '40000',
                 'datRodStud' => '1984-08-10 00:00:00',
                 'jmbgStud' => '1008984302118',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1413',
                 'imeStud' => 'Antun Ivan',
                 'prezStud' => 'Galić',
@@ -2903,12 +2900,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-20 00:00:00',
                 'jmbgStud' => '2004985301006',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1414',
                 'imeStud' => 'Tin',
                 'prezStud' => 'Šipek',
@@ -2916,12 +2913,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '43000',
                 'datRodStud' => '1984-11-24 00:00:00',
                 'jmbgStud' => '2411984330174',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1415',
                 'imeStud' => 'Tomislav',
                 'prezStud' => 'Kovačić',
@@ -2929,12 +2926,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '52000',
                 'datRodStud' => '1984-06-15 00:00:00',
                 'jmbgStud' => '1506984370008',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1417',
                 'imeStud' => 'Toni',
                 'prezStud' => 'Merlak',
@@ -2942,12 +2939,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '35000',
                 'datRodStud' => '1985-04-13 00:00:00',
                 'jmbgStud' => '1304985310024',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1418',
                 'imeStud' => 'Davor',
                 'prezStud' => 'Roketinec',
@@ -2955,12 +2952,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-05 00:00:00',
                 'jmbgStud' => '0511984330035',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1419',
                 'imeStud' => 'Mirko',
                 'prezStud' => 'Brečić',
@@ -2968,12 +2965,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '40000',
                 'datRodStud' => '1984-10-29 00:00:00',
                 'jmbgStud' => '2910984383906',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1421',
                 'imeStud' => 'Ljiljana',
                 'prezStud' => 'Jokić',
@@ -2981,12 +2978,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-03-16 00:00:00',
                 'jmbgStud' => '1603985383315',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1422',
                 'imeStud' => 'Helena',
                 'prezStud' => 'Crnković',
@@ -2994,12 +2991,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '52000',
                 'datRodStud' => '1985-04-12 00:00:00',
                 'jmbgStud' => '1204985339016',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1423',
                 'imeStud' => 'Vjeran',
                 'prezStud' => 'Nakić',
@@ -3007,12 +3004,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-28 00:00:00',
                 'jmbgStud' => '2807984311904',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1425',
                 'imeStud' => 'Martina',
                 'prezStud' => 'Petrinec',
@@ -3020,12 +3017,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-10-24 00:00:00',
                 'jmbgStud' => '2410984334004',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1426',
                 'imeStud' => 'Vanja',
                 'prezStud' => 'Bonačić',
@@ -3033,12 +3030,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-02-14 00:00:00',
                 'jmbgStud' => '1402985391809',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1427',
                 'imeStud' => 'Hrvoje',
                 'prezStud' => 'Juričić',
@@ -3046,12 +3043,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-03-06 00:00:00',
                 'jmbgStud' => '0603985330122',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1429',
                 'imeStud' => 'Karla',
                 'prezStud' => 'Kafadar',
@@ -3059,12 +3056,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-08-13 00:00:00',
                 'jmbgStud' => '1308984370016',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1430',
                 'imeStud' => 'Želimir',
                 'prezStud' => 'Pintar',
@@ -3072,12 +3069,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-24 00:00:00',
                 'jmbgStud' => '2410984320029',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1431',
                 'imeStud' => 'Franjo',
                 'prezStud' => 'Berač',
@@ -3085,12 +3082,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-29 00:00:00',
                 'jmbgStud' => '2904985370026',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1433',
                 'imeStud' => 'Igor',
                 'prezStud' => 'Bogati',
@@ -3098,12 +3095,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-07 00:00:00',
                 'jmbgStud' => '0711984385009',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1434',
                 'imeStud' => 'Mijo',
                 'prezStud' => 'Vrhoci',
@@ -3111,12 +3108,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-03-09 00:00:00',
                 'jmbgStud' => '0903985330211',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1435',
                 'imeStud' => 'Alan',
                 'prezStud' => 'Franc',
@@ -3124,12 +3121,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-24 00:00:00',
                 'jmbgStud' => '2409984392103',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1437',
                 'imeStud' => 'Miro',
                 'prezStud' => 'Pugar',
@@ -3137,12 +3134,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-02 00:00:00',
                 'jmbgStud' => '0207984335112',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1438',
                 'imeStud' => 'Vedran',
                 'prezStud' => 'Meštrić',
@@ -3150,12 +3147,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '42240',
                 'datRodStud' => '1985-04-07 00:00:00',
                 'jmbgStud' => '0704985368003',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1439',
                 'imeStud' => 'Josip',
                 'prezStud' => 'Škvorc',
@@ -3163,12 +3160,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-18 00:00:00',
                 'jmbgStud' => '1801985392106',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1441',
                 'imeStud' => 'Majo',
                 'prezStud' => 'Meglaj',
@@ -3176,12 +3173,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-06-09 00:00:00',
                 'jmbgStud' => '0906984383906',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1442',
                 'imeStud' => 'Boris',
                 'prezStud' => 'Jertec',
@@ -3189,12 +3186,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-02-29 00:00:00',
                 'jmbgStud' => '2902984330072',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1443',
                 'imeStud' => 'Nataša',
                 'prezStud' => 'Cerjan',
@@ -3202,12 +3199,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '33405',
                 'datRodStud' => '1984-08-28 00:00:00',
                 'jmbgStud' => '2808984335042',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1445',
                 'imeStud' => 'Niko',
                 'prezStud' => 'Grbić',
@@ -3215,12 +3212,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-04 00:00:00',
                 'jmbgStud' => '0401985330196',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1446',
                 'imeStud' => 'Antonijo',
                 'prezStud' => 'Nikolić',
@@ -3228,12 +3225,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-06 00:00:00',
                 'jmbgStud' => '0609984330247',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1447',
                 'imeStud' => 'Vid',
                 'prezStud' => 'Markulinčić',
@@ -3241,12 +3238,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-14 00:00:00',
                 'jmbgStud' => '1410984330114',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1449',
                 'imeStud' => 'Nataša',
                 'prezStud' => 'Osredečki',
@@ -3254,12 +3251,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-23 00:00:00',
                 'jmbgStud' => '2305985303534',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1450',
                 'imeStud' => 'Borislav',
                 'prezStud' => 'Gobin',
@@ -3267,12 +3264,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '42000',
                 'datRodStud' => '1985-08-04 00:00:00',
                 'jmbgStud' => '0408985330169',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1451',
                 'imeStud' => 'Mirko',
                 'prezStud' => 'Kadić',
@@ -3280,12 +3277,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-15 00:00:00',
                 'jmbgStud' => '1509984382604',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1453',
                 'imeStud' => 'Petra',
                 'prezStud' => 'Tišlar',
@@ -3293,12 +3290,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '31000',
                 'datRodStud' => '1984-06-30 00:00:00',
                 'jmbgStud' => '3006984335183',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1454',
                 'imeStud' => 'Božidar',
                 'prezStud' => 'Sesar',
@@ -3306,12 +3303,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1983-04-29 00:00:00',
                 'jmbgStud' => '2904983383316',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1455',
                 'imeStud' => 'Iva',
                 'prezStud' => 'Hafner',
@@ -3319,12 +3316,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-18 00:00:00',
                 'jmbgStud' => '1809984340007',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1457',
                 'imeStud' => 'Borna',
                 'prezStud' => 'Burtina',
@@ -3332,12 +3329,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '34000',
                 'datRodStud' => '1985-06-04 00:00:00',
                 'jmbgStud' => '0406985380077',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1458',
                 'imeStud' => 'Davor',
                 'prezStud' => 'Kroflin',
@@ -3345,12 +3342,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-09-18 00:00:00',
                 'jmbgStud' => '1809984383124',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1459',
                 'imeStud' => 'Predrag',
                 'prezStud' => 'Vlah',
@@ -3358,12 +3355,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-29 00:00:00',
                 'jmbgStud' => '2911984330044',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1461',
                 'imeStud' => 'Nenad',
                 'prezStud' => 'Toth',
@@ -3371,12 +3368,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-04-08 00:00:00',
                 'jmbgStud' => '0804985380005',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1462',
                 'imeStud' => 'Vilim',
                 'prezStud' => 'Živčić',
@@ -3384,12 +3381,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-10 00:00:00',
                 'jmbgStud' => '1011984370839',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1463',
                 'imeStud' => 'Ivan',
                 'prezStud' => 'Balenović',
@@ -3397,12 +3394,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1983-08-16 00:00:00',
                 'jmbgStud' => '1608983335065',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1464',
                 'imeStud' => 'Tihomir',
                 'prezStud' => 'Fizir',
@@ -3410,12 +3407,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-06 00:00:00',
                 'jmbgStud' => '0605985330058',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1466',
                 'imeStud' => 'Neven',
                 'prezStud' => 'Rubeša',
@@ -3423,12 +3420,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-23 00:00:00',
                 'jmbgStud' => '2305985335025',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1467',
                 'imeStud' => 'Tea',
                 'prezStud' => 'Stjepanović',
@@ -3436,12 +3433,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-27 00:00:00',
                 'jmbgStud' => '2710984330142',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1468',
                 'imeStud' => 'Ivana',
                 'prezStud' => 'Kuzma',
@@ -3449,12 +3446,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1985-07-09 00:00:00',
                 'jmbgStud' => '0907985335135',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1470',
                 'imeStud' => 'Dubravko',
                 'prezStud' => 'Bartolić',
@@ -3462,12 +3459,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-16 00:00:00',
                 'jmbgStud' => '1611984392608',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1471',
                 'imeStud' => 'Božidar',
                 'prezStud' => 'Ježić',
@@ -3475,12 +3472,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-26 00:00:00',
                 'jmbgStud' => '2611984321729',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1472',
                 'imeStud' => 'Ivana',
                 'prezStud' => 'Muranić',
@@ -3488,12 +3485,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-08-07 00:00:00',
                 'jmbgStud' => '0708985381113',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1474',
                 'imeStud' => 'Vjekoslav',
                 'prezStud' => 'Lacković',
@@ -3501,12 +3498,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-24 00:00:00',
                 'jmbgStud' => '2410984383901',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1475',
                 'imeStud' => 'Branimir',
                 'prezStud' => 'Bolfek',
@@ -3514,12 +3511,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-23 00:00:00',
                 'jmbgStud' => '2309984330054',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1476',
                 'imeStud' => 'Zlatko',
                 'prezStud' => 'Perčić',
@@ -3527,12 +3524,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-02-18 00:00:00',
                 'jmbgStud' => '1802985301803',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1478',
                 'imeStud' => 'Vid',
                 'prezStud' => 'Kulišić',
@@ -3540,12 +3537,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-03 00:00:00',
                 'jmbgStud' => '0304985380005',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1479',
                 'imeStud' => 'Branko',
                 'prezStud' => 'Car',
@@ -3553,12 +3550,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1985-07-19 00:00:00',
                 'jmbgStud' => '1907985302136',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1480',
                 'imeStud' => 'Vjeran',
                 'prezStud' => 'Stipaničev',
@@ -3566,12 +3563,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-12-29 00:00:00',
                 'jmbgStud' => '2912984330052',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1482',
                 'imeStud' => 'Iva',
                 'prezStud' => 'Klarin',
@@ -3579,12 +3576,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-11-10 00:00:00',
                 'jmbgStud' => '1011984383918',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1483',
                 'imeStud' => 'Ivica',
                 'prezStud' => 'Čučković',
@@ -3592,12 +3589,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '35400',
                 'datRodStud' => '1984-12-20 00:00:00',
                 'jmbgStud' => '2012984335149',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1484',
                 'imeStud' => 'Antun Ivan',
                 'prezStud' => 'Pužar',
@@ -3605,12 +3602,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-03-13 00:00:00',
                 'jmbgStud' => '1303985390025',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1486',
                 'imeStud' => 'Iva',
                 'prezStud' => 'Kopjar',
@@ -3618,12 +3615,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-09-06 00:00:00',
                 'jmbgStud' => '0609985380028',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1487',
                 'imeStud' => 'Juraj',
                 'prezStud' => 'Valjak',
@@ -3631,12 +3628,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-04-23 00:00:00',
                 'jmbgStud' => '2304984391802',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1488',
                 'imeStud' => 'Davor',
                 'prezStud' => 'Dilber',
@@ -3644,12 +3641,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '51000',
                 'datRodStud' => '1984-10-03 00:00:00',
                 'jmbgStud' => '0310984330019',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1490',
                 'imeStud' => 'Bruno',
                 'prezStud' => 'Hundak',
@@ -3657,12 +3654,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-12-21 00:00:00',
                 'jmbgStud' => '2112984300052',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1491',
                 'imeStud' => 'Jakov',
                 'prezStud' => 'Bumbar',
@@ -3670,12 +3667,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '31000',
                 'datRodStud' => '1985-01-15 00:00:00',
                 'jmbgStud' => '1501985330061',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1492',
                 'imeStud' => 'Ivan',
                 'prezStud' => 'Kordić',
@@ -3683,12 +3680,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '31000',
                 'datRodStud' => '1985-04-12 00:00:00',
                 'jmbgStud' => '1204985388117',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1494',
                 'imeStud' => 'Franjo',
                 'prezStud' => 'Blažević',
@@ -3696,12 +3693,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-21 00:00:00',
                 'jmbgStud' => '2101985301004',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1495',
                 'imeStud' => 'Lovre',
                 'prezStud' => 'Šimek',
@@ -3709,12 +3706,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-11-14 00:00:00',
                 'jmbgStud' => '1411984303204',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1496',
                 'imeStud' => 'Cvijeta',
                 'prezStud' => 'Erceg',
@@ -3722,12 +3719,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-08-16 00:00:00',
                 'jmbgStud' => '1608985390075',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1498',
                 'imeStud' => 'Janko',
                 'prezStud' => 'Jakopović',
@@ -3735,12 +3732,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '51000',
                 'datRodStud' => '1984-07-06 00:00:00',
                 'jmbgStud' => '0607984307828',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1499',
                 'imeStud' => 'Vlaho',
                 'prezStud' => 'Roginić',
@@ -3748,12 +3745,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-07 00:00:00',
                 'jmbgStud' => '0704985340301',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1500',
                 'imeStud' => 'Dalibor',
                 'prezStud' => 'Gradečak',
@@ -3761,12 +3758,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '35000',
                 'datRodStud' => '1985-05-27 00:00:00',
                 'jmbgStud' => '2705985311411',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1502',
                 'imeStud' => 'Josip',
                 'prezStud' => 'Nikl',
@@ -3774,12 +3771,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-30 00:00:00',
                 'jmbgStud' => '3009984383005',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1503',
                 'imeStud' => 'Majo',
                 'prezStud' => 'Posavec',
@@ -3787,12 +3784,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '33000',
                 'datRodStud' => '1984-09-03 00:00:00',
                 'jmbgStud' => '0309984330118',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1504',
                 'imeStud' => 'Josip',
                 'prezStud' => 'Poljak',
@@ -3800,12 +3797,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '43000',
                 'datRodStud' => '1984-12-06 00:00:00',
                 'jmbgStud' => '0612984391807',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1506',
                 'imeStud' => 'Damir',
                 'prezStud' => 'Buković',
@@ -3813,12 +3810,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '31000',
                 'datRodStud' => '1984-12-08 00:00:00',
                 'jmbgStud' => '0812984383608',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1507',
                 'imeStud' => 'Mijo',
                 'prezStud' => 'Bitar',
@@ -3826,12 +3823,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-12-15 00:00:00',
                 'jmbgStud' => '1512984330055',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1508',
                 'imeStud' => 'Vlasta',
                 'prezStud' => 'Ciković',
@@ -3839,12 +3836,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-03 00:00:00',
                 'jmbgStud' => '0304985330026',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1510',
                 'imeStud' => 'Vlatka',
                 'prezStud' => 'Ćurković',
@@ -3852,12 +3849,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '34000',
                 'datRodStud' => '1984-12-19 00:00:00',
                 'jmbgStud' => '1912984360007',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1511',
                 'imeStud' => 'Mirko',
                 'prezStud' => 'Rech',
@@ -3865,12 +3862,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-04-12 00:00:00',
                 'jmbgStud' => '1204984321701',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1512',
                 'imeStud' => 'Josip',
                 'prezStud' => 'Horvat',
@@ -3878,12 +3875,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-08-05 00:00:00',
                 'jmbgStud' => '0508985383312',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1513',
                 'imeStud' => 'Josip',
                 'prezStud' => 'Ivanović',
@@ -3891,12 +3888,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '31000',
                 'datRodStud' => '1984-07-30 00:00:00',
                 'jmbgStud' => '3007984370022',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1515',
                 'imeStud' => 'Predrag',
                 'prezStud' => 'Fugaj',
@@ -3904,12 +3901,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '49000',
                 'datRodStud' => '1984-08-31 00:00:00',
                 'jmbgStud' => '3108984334004',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1516',
                 'imeStud' => 'Vlatko',
                 'prezStud' => 'Bedeniković',
@@ -3917,12 +3914,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-27 00:00:00',
                 'jmbgStud' => '2701985341117',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1517',
                 'imeStud' => 'Daniel',
                 'prezStud' => 'Kamenar',
@@ -3930,12 +3927,12 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-05 00:00:00',
                 'jmbgStud' => '0507984312503',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
-
             Array
-            (
+                (
                 'mbrStud' => '1519',
                 'imeStud' => 'Slavko',
                 'prezStud' => 'Prstačić',
@@ -3943,11 +3940,11 @@ class StudTableSeeder extends Seeder
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-01-15 00:00:00',
                 'jmbgStud' => '1501984330074',
+                'slikaStud' => NULL,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             )
-
-            
         ));
     }
+
 }

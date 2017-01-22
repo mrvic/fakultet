@@ -21,7 +21,8 @@ class Stud extends Model
         'pbrRod',
         'pbrStan',
         'datRodStud',
-        'jmbgStud'];
+        'jmbgStud',
+        'slikaStud'];
     
     function mjesto_stan(){
         return $this->belongsTo('Fakultet\Mjesto', 'pbrStan');  

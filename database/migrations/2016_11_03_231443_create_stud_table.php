@@ -22,6 +22,7 @@ class CreateStudTable extends Migration {
 			$table->integer('pbrStan')->unsigned()->index('pbrStan');
 			$table->dateTime('datRodStud')->nullable();
 			$table->char('jmbgStud', 13)->nullable();
+                        $table->char('slikaStud', 10)->nullable();
 			$table->timestamps();
 		});
 	}
