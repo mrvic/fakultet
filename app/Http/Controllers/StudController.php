@@ -119,7 +119,7 @@ class StudController extends Controller {
             'prezStud' => 'required',
             'pbrRod' => 'required|numeric',
             'pbrStan' => 'required|numeric',
-            'datRodStud' => 'required',
+            'datRodStud' => 'required|date|date_format:Y-n-j',
             'jmbgStud' => 'required'
         );
         $validator = Validator::make(Input::all(), $rules);

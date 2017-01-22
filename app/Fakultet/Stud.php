@@ -24,6 +24,42 @@ class Stud extends Model
         'jmbgStud',
         'slikaStud'];
     
+    /**
+     * The attributes that should be mutated to dates.
+     * @example /studenti/1120/edit Polje datum rođenja pretvara iz 1985-06-06 00:00:00.000 u 1985-06-06
+     * @var array
+     */
+    protected $dates = [
+        'dateRodStud'
+    ];
+
+    
+    public function setimeStudAttribute($in){
+        // Mutator
+        $this->attributes['imeStud']=  ucfirst($in);
+    }
+    public function setprezStudAttribute($in){
+        // Mutator
+        $this->attributes['prezStud']=  ucfirst($in);
+    }  
+    /*
+    public function getdatRodStudAttribute(){
+        // Accessor
+        return $this->attributes['datRodStud'];
+    }
+      */
+     
+    /**
+     * 
+     * @param type $in
+     */
+    /*
+    public function setdatRodStudAttribute($in){
+        // Mutator
+        $this->attributes['datRodStud']=  $in;
+    }
+     
+     */
     function mjesto_stan(){
         return $this->belongsTo('Fakultet\Mjesto', 'pbrStan');  
     }

@@ -49,9 +49,14 @@ Treba:
     {{ Form::label('pbrStan', 'Mjesto stanovanja') }}
     {{ Form::text( 'pbrStan', Input::old('pbrStan'), array('class' => 'form-control')) }}
 </div>
+
 <div class="form-group">
     {{ Form::label('datRodStud', 'Datum rođenja') }}
-    {{ Form::text( 'datRodStud', Input::old('datRodStud'), array('class' => 'form-control')) }}
+    {{ $student->datRodStud }}
+     {{ $student->imeStud }}
+    {!! Form::input('datetime-local', 'published_at','1985-06-06 00:00:00.000', ['class' => 'form-control']) !!}
+    {!! Form::date('date',$student->datRodStud->format('Y.m.d H:i:s'),['class' => 'form-control', 'required' => 'required']) !!}
+    {{ Form::date( 'datRodStud', Input::old('datRodStud'), array('class' => 'form-control', 'required' => 'required')) }}
 </div>
 <div class="form-group">
     {{ Form::label('jmbgStud', 'Matični broj studenta') }}
