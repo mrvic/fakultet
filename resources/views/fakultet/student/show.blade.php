@@ -7,7 +7,7 @@
 <div class="alert alert-info">{{ Session::get('message') }}</div>
 @endif
 
- <div><h1>{{ $student->imeStud }} 
+<div><h1>{{ $student->imeStud }} 
 
         <a class="btn btn-small btn-info" href="{{ URL::to('studenti/' . $student->mbrStud . '/edit') }}">
             Uredi ovog studenta <span class="glyphicon glyphicon-edit"></span></a></h1></div>
@@ -27,10 +27,15 @@
             <td style="text-align: left; font-weight: bold"> {{ date('d.m.Y.',strtotime($student->datRodStud)) }}</td></tr>
         <tr><td style="text-align: right"> Mjesto stanovanja:   </td>
             <td style="text-align: left; font-weight: bold"> {{$student->mjesto_stan->nazMjesto}}</td></tr>
-        
-        
+
+
     </table>
-    </p>
+</p>
+@if ($student->slikaStud==1)
+<p>
+    <img alt="Student {{$student->imeStud}} {{$student->prezStud}}" width="200" src="/slike-studenata/{{$student->mbrStud}}.jpg" title="Student {{$student->imeStud}} {{$student->prezStud}}"/>
+</p>
+@endif
 
 </div>
 

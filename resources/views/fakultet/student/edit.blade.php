@@ -22,7 +22,7 @@ Treba:
 <div class="alert alert-info">{{ Session::get('message') }}</div>
 @endif
 
-{{ Form::model($student, array('action' => array('StudController@update', $student->mbrStud), 'method' => 'PUT')) }}
+{{ Form::model($student, array('action' => array('StudController@update', $student->mbrStud), 'method' => 'PUT', 'files' => true)) }}
 
 
 <div class="form-group">
@@ -58,8 +58,8 @@ Treba:
     {{ Form::text( 'jmbgStud', Input::old('jmbgStud'), array('class' => 'form-control')) }}
 </div>
 <div class="form-group">
-    {{ Form::label('slikaStud', 'Slika studenta') }}
-    {{ Form::text( 'slikaStud', Input::old('slikaStud'), array('class' => 'form-control')) }}
+    {{ Form::label('photo', 'Slika studenta') }}
+    {{ Form::file( 'photo', '', array('class' => 'form-control')) }}
 </div>
 {{ Form::submit('Uredi studenta!', array('class' => 'btn btn-primary')) }}
 

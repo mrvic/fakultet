@@ -139,9 +139,27 @@ class StudController extends Controller {
             $student->pbrStan = Input::get('pbrStan');
             $student->datRodStud = Input::get('datRodStud');
             $student->jmbgStud = Input::get('jmbgStud');
-            $student->slikaStud = Input::get('slikaStud');
-
-
+           // $student->slikaStud = Input::get('slikaStud');
+echo "Jel postoji maja?";
+if (Input::hasFile('photo'))
+{
+    // Ovo istoradi, alteranativa je dolje...
+    /*
+        $request->file('photo')->move(
+        base_path() . '/public/slike-studenata/', 'maja.jpg'
+    );
+    */
+    $imageName=$student->mbrStud;
+$imageExtension = $request->photo->getClientOriginalExtension();
+        $request->photo->move(public_path('slike-studenata'), $imageName.".".$imageExtension);
+     
+}
+if(file_exists(public_path('slike-studenata'.$student->mbrStud.".jpg"))){
+     $student->slikaStud=1;
+}
+else{
+    $student->slikaStud=1;
+}
 
             $student->save();
 
@@ -158,7 +176,13 @@ class StudController extends Controller {
      * @return Response
      */
     public function destroy($id) {
-        //
+        // delete
+        $s = Stud::find($id);
+        $s->delete();
+
+        // redirect
+        Session::flash('message', 'Student uspješno obrisan!');
+        return Redirect::to('studenti');
     }
 
 }
