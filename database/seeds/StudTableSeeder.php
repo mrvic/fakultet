@@ -27,7 +27,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '40000',
                 'datRodStud' => '1985-06-06 00:00:00',
                 'jmbgStud' => '0606985330186',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -40,7 +40,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-12-18 00:00:00',
                 'jmbgStud' => '1812984330118',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -53,7 +53,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-01-21 00:00:00',
                 'jmbgStud' => '2101984330133',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -66,7 +66,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-01 00:00:00',
                 'jmbgStud' => '0105985303228',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -79,7 +79,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '44000',
                 'datRodStud' => '1984-04-12 00:00:00',
                 'jmbgStud' => '1204984335026',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -92,7 +92,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '32000',
                 'datRodStud' => '1984-07-19 00:00:00',
                 'jmbgStud' => '1907984362909',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -105,7 +105,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-03-17 00:00:00',
                 'jmbgStud' => '1703984330099',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -118,7 +118,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '51000',
                 'datRodStud' => '1985-05-19 00:00:00',
                 'jmbgStud' => '1905985330161',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -131,7 +131,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '35000',
                 'datRodStud' => '1984-11-17 00:00:00',
                 'jmbgStud' => '1711984395329',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -144,7 +144,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '48000',
                 'datRodStud' => '1984-09-01 00:00:00',
                 'jmbgStud' => '0109984330006',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -157,7 +157,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-18 00:00:00',
                 'jmbgStud' => '1810984330093',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -170,7 +170,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '42000',
                 'datRodStud' => '1984-08-19 00:00:00',
                 'jmbgStud' => '1908984312508',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -183,7 +183,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '51000',
                 'datRodStud' => '1985-06-26 00:00:00',
                 'jmbgStud' => '2606985325027',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -196,7 +196,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '22000',
                 'datRodStud' => '1983-11-02 00:00:00',
                 'jmbgStud' => '0211983392304',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -209,7 +209,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '48000',
                 'datRodStud' => '1984-08-22 00:00:00',
                 'jmbgStud' => '2208984173977',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -222,7 +222,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-10-29 00:00:00',
                 'jmbgStud' => '2910984300802',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -235,7 +235,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-07-25 00:00:00',
                 'jmbgStud' => '2507984301807',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -248,7 +248,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-10-08 00:00:00',
                 'jmbgStud' => '0810985390025',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -261,7 +261,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-10-08 00:00:00',
                 'jmbgStud' => '0810985390015',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -274,7 +274,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-07-06 00:00:00',
                 'jmbgStud' => '0607985361605',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -287,7 +287,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-06-14 00:00:00',
                 'jmbgStud' => '1406985311906',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -300,7 +300,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-16 00:00:00',
                 'jmbgStud' => '1607984330068',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -313,7 +313,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-04-08 00:00:00',
                 'jmbgStud' => '0804984330122',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -326,7 +326,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-08-18 00:00:00',
                 'jmbgStud' => '1808984320522',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -339,7 +339,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20250',
                 'datRodStud' => '1985-08-07 00:00:00',
                 'jmbgStud' => '0708985395074',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -352,7 +352,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-23 00:00:00',
                 'jmbgStud' => '2306985330111',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -365,7 +365,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '32100',
                 'datRodStud' => '1985-07-04 00:00:00',
                 'jmbgStud' => '0407985307804',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -378,7 +378,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10370',
                 'datRodStud' => '1985-01-27 00:00:00',
                 'jmbgStud' => '2701985381508',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -391,7 +391,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-23 00:00:00',
                 'jmbgStud' => '2305985390005',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -404,7 +404,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-02-18 00:00:00',
                 'jmbgStud' => '1802985330169',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -417,7 +417,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-27 00:00:00',
                 'jmbgStud' => '2710984303508',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -430,7 +430,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-23 00:00:00',
                 'jmbgStud' => '2305985330103',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -443,7 +443,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-27 00:00:00',
                 'jmbgStud' => '2706985391817',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -456,7 +456,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-03-07 00:00:00',
                 'jmbgStud' => '0703985395007',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -469,7 +469,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-03 00:00:00',
                 'jmbgStud' => '0306985392119',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -482,7 +482,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-03-28 00:00:00',
                 'jmbgStud' => '2803984310615',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -495,7 +495,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-22 00:00:00',
                 'jmbgStud' => '2211984335101',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -508,7 +508,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-27 00:00:00',
                 'jmbgStud' => '2711984320539',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -521,7 +521,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '31000',
                 'datRodStud' => '1985-04-11 00:00:00',
                 'jmbgStud' => '1104985301819',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -534,7 +534,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-04-10 00:00:00',
                 'jmbgStud' => '1004984383309',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -547,7 +547,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1980-02-29 00:00:00',
                 'jmbgStud' => '1902980334016',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -560,7 +560,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-21 00:00:00',
                 'jmbgStud' => '2106985380029',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -573,7 +573,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1983-12-31 00:00:00',
                 'jmbgStud' => '3112983320569',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -586,7 +586,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-10 00:00:00',
                 'jmbgStud' => '1006985330028',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -599,7 +599,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-07 00:00:00',
                 'jmbgStud' => '0710984361315',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -612,7 +612,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-01-31 00:00:00',
                 'jmbgStud' => '3101985340008',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -625,7 +625,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-09-17 00:00:00',
                 'jmbgStud' => '1709984320508',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -638,7 +638,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1983-07-21 00:00:00',
                 'jmbgStud' => '2107983340011',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -651,7 +651,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-09-08 00:00:00',
                 'jmbgStud' => '0809984360058',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -664,7 +664,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-23 00:00:00',
                 'jmbgStud' => '2306985330083',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -677,7 +677,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-18 00:00:00',
                 'jmbgStud' => '1809984391008',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -690,7 +690,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-19 00:00:00',
                 'jmbgStud' => '1901985391825',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -703,7 +703,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-01-27 00:00:00',
                 'jmbgStud' => '2701985390206',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -716,7 +716,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-03-13 00:00:00',
                 'jmbgStud' => '1303985330094',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -729,7 +729,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-07-10 00:00:00',
                 'jmbgStud' => '1007985300028',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -742,7 +742,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-03 00:00:00',
                 'jmbgStud' => '0311984370805',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -755,7 +755,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-07-04 00:00:00',
                 'jmbgStud' => '0407984330073',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -768,7 +768,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-12 00:00:00',
                 'jmbgStud' => '1207984330057',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -781,7 +781,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-12 00:00:00',
                 'jmbgStud' => '1204985306801',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -794,7 +794,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-08-31 00:00:00',
                 'jmbgStud' => '3108984330057',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -807,7 +807,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-05-05 00:00:00',
                 'jmbgStud' => '0505984330124',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -820,7 +820,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-01 00:00:00',
                 'jmbgStud' => '0106985392713',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -833,7 +833,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-04-10 00:00:00',
                 'jmbgStud' => '1004984340304',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -846,7 +846,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '51000',
                 'datRodStud' => '1985-08-10 00:00:00',
                 'jmbgStud' => '1008985311207',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -859,7 +859,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-28 00:00:00',
                 'jmbgStud' => '2811984330185',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -872,7 +872,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '51000',
                 'datRodStud' => '1985-06-10 00:00:00',
                 'jmbgStud' => '1006985383925',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -885,7 +885,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '31000',
                 'datRodStud' => '1984-08-11 00:00:00',
                 'jmbgStud' => '1108984385042',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -898,7 +898,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '31000',
                 'datRodStud' => '1984-12-14 00:00:00',
                 'jmbgStud' => '1412984380046',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -911,7 +911,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '31000',
                 'datRodStud' => '1984-12-28 00:00:00',
                 'jmbgStud' => '2812984335123',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -924,7 +924,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '47000',
                 'datRodStud' => '1984-10-01 00:00:00',
                 'jmbgStud' => '0110984330012',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -937,7 +937,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '47000',
                 'datRodStud' => '1984-12-23 00:00:00',
                 'jmbgStud' => '2312984380051',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -950,7 +950,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-26 00:00:00',
                 'jmbgStud' => '2605985383309',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -963,7 +963,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '43000',
                 'datRodStud' => '1984-11-09 00:00:00',
                 'jmbgStud' => '0911984330036',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -976,7 +976,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '52000',
                 'datRodStud' => '1984-12-11 00:00:00',
                 'jmbgStud' => '1112984370017',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -989,7 +989,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '31000',
                 'datRodStud' => '1985-06-23 00:00:00',
                 'jmbgStud' => '2306985340015',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1002,7 +1002,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-03-17 00:00:00',
                 'jmbgStud' => '1703985335145',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1015,7 +1015,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-27 00:00:00',
                 'jmbgStud' => '2706985362104',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1028,7 +1028,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '34000',
                 'datRodStud' => '1984-12-15 00:00:00',
                 'jmbgStud' => '1512984391826',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1041,7 +1041,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-07-02 00:00:00',
                 'jmbgStud' => '0207985335087',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1054,7 +1054,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '32000',
                 'datRodStud' => '1984-08-05 00:00:00',
                 'jmbgStud' => '0508984380043',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1067,7 +1067,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '42000',
                 'datRodStud' => '1985-04-11 00:00:00',
                 'jmbgStud' => '1104985392619',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1080,7 +1080,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '51000',
                 'datRodStud' => '1984-11-24 00:00:00',
                 'jmbgStud' => '2411984340712',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1093,7 +1093,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-09-24 00:00:00',
                 'jmbgStud' => '2409985330058',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1106,7 +1106,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '53000',
                 'datRodStud' => '1985-01-06 00:00:00',
                 'jmbgStud' => '0601985320007',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1119,7 +1119,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '32000',
                 'datRodStud' => '1985-06-03 00:00:00',
                 'jmbgStud' => '0306985300888',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1132,7 +1132,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '51000',
                 'datRodStud' => '1985-06-03 00:00:00',
                 'jmbgStud' => '0306985300078',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1145,7 +1145,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1981-09-15 00:00:00',
                 'jmbgStud' => '1509981330133',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1158,7 +1158,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-29 00:00:00',
                 'jmbgStud' => '2901985390007',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1171,7 +1171,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-08-19 00:00:00',
                 'jmbgStud' => '1908985320002',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1184,7 +1184,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-06-22 00:00:00',
                 'jmbgStud' => '2206984339303',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1197,7 +1197,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-07 00:00:00',
                 'jmbgStud' => '0709984330054',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1210,7 +1210,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-10-04 00:00:00',
                 'jmbgStud' => '0410984330044',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1223,7 +1223,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-10-12 00:00:00',
                 'jmbgStud' => '1210984330177',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1236,7 +1236,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-01-04 00:00:00',
                 'jmbgStud' => '0401985330026',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1249,7 +1249,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-05 00:00:00',
                 'jmbgStud' => '0511984391518',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1262,7 +1262,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-04 00:00:00',
                 'jmbgStud' => '0404985335091',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1275,7 +1275,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-29 00:00:00',
                 'jmbgStud' => '2909984330071',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1288,7 +1288,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-12 00:00:00',
                 'jmbgStud' => '1206985330109',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1301,7 +1301,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-23 00:00:00',
                 'jmbgStud' => '2311984360005',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1314,7 +1314,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-07 00:00:00',
                 'jmbgStud' => '0705985391019',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1327,7 +1327,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-24 00:00:00',
                 'jmbgStud' => '2405985330205',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1340,7 +1340,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21420',
                 'datRodStud' => '1985-02-27 00:00:00',
                 'jmbgStud' => '2702985390302',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1353,7 +1353,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '32100',
                 'datRodStud' => '1984-09-21 00:00:00',
                 'jmbgStud' => '2109984302141',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1366,7 +1366,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-08-17 00:00:00',
                 'jmbgStud' => '1708985383929',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1379,7 +1379,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-04-21 00:00:00',
                 'jmbgStud' => '2104984340015',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1392,7 +1392,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-22 00:00:00',
                 'jmbgStud' => '2207984383304',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1405,7 +1405,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-12-11 00:00:00',
                 'jmbgStud' => '1112984308219',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1418,7 +1418,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-12-17 00:00:00',
                 'jmbgStud' => '1712984311413',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1431,7 +1431,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '42000',
                 'datRodStud' => '1985-01-05 00:00:00',
                 'jmbgStud' => '0501985392729',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1444,7 +1444,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '31000',
                 'datRodStud' => '1985-07-12 00:00:00',
                 'jmbgStud' => '1207985330096',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1457,7 +1457,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-09-25 00:00:00',
                 'jmbgStud' => '2509984383927',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1470,7 +1470,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1983-07-12 00:00:00',
                 'jmbgStud' => '1207983330073',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1483,7 +1483,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-19 00:00:00',
                 'jmbgStud' => '1905985320026',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1496,7 +1496,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-25 00:00:00',
                 'jmbgStud' => '2504985334318',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1509,7 +1509,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-08-27 00:00:00',
                 'jmbgStud' => '2708985334008',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1522,7 +1522,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-09 00:00:00',
                 'jmbgStud' => '0904985820084',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1535,7 +1535,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-05-15 00:00:00',
                 'jmbgStud' => '1505984335045',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1548,7 +1548,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-07-02 00:00:00',
                 'jmbgStud' => '0207985361927',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1561,7 +1561,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-04 00:00:00',
                 'jmbgStud' => '0405985303209',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1574,7 +1574,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-11-29 00:00:00',
                 'jmbgStud' => '2911984317209',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1587,7 +1587,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-10 00:00:00',
                 'jmbgStud' => '1001985383921',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1600,7 +1600,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-26 00:00:00',
                 'jmbgStud' => '2610984311907',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1613,7 +1613,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-02-01 00:00:00',
                 'jmbgStud' => '0102985334042',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1626,7 +1626,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-05 00:00:00',
                 'jmbgStud' => '0504985335094',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1639,7 +1639,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-08 00:00:00',
                 'jmbgStud' => '0801985366002',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1652,7 +1652,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-08-21 00:00:00',
                 'jmbgStud' => '2108984383317',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1665,7 +1665,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-03-11 00:00:00',
                 'jmbgStud' => '1103984361305',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1678,7 +1678,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1985-03-01 00:00:00',
                 'jmbgStud' => '0103985320504',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1691,7 +1691,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '22000',
                 'datRodStud' => '1984-12-20 00:00:00',
                 'jmbgStud' => '2012984321406',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1704,7 +1704,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-11-15 00:00:00',
                 'jmbgStud' => '1511984330125',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1717,7 +1717,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1985-02-26 00:00:00',
                 'jmbgStud' => '2602985330075',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1730,7 +1730,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-03-21 00:00:00',
                 'jmbgStud' => '2103985330067',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1743,7 +1743,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-06 00:00:00',
                 'jmbgStud' => '0601985330138',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1756,7 +1756,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1985-07-23 00:00:00',
                 'jmbgStud' => '2307985330036',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1769,7 +1769,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1985-04-11 00:00:00',
                 'jmbgStud' => '1104985390303',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1782,7 +1782,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '51000',
                 'datRodStud' => '1985-04-15 00:00:00',
                 'jmbgStud' => '1504985380055',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1795,7 +1795,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '51000',
                 'datRodStud' => '1985-07-22 00:00:00',
                 'jmbgStud' => '2207985330193',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1808,7 +1808,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-17 00:00:00',
                 'jmbgStud' => '1704985381105',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1821,7 +1821,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '31000',
                 'datRodStud' => '1985-05-23 00:00:00',
                 'jmbgStud' => '2305985330039',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1834,7 +1834,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-31 00:00:00',
                 'jmbgStud' => '3107984381518',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1847,7 +1847,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '47000',
                 'datRodStud' => '1983-07-14 00:00:00',
                 'jmbgStud' => '1407983330042',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1860,7 +1860,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-16 00:00:00',
                 'jmbgStud' => '1609984330314',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1873,7 +1873,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '22000',
                 'datRodStud' => '1984-12-02 00:00:00',
                 'jmbgStud' => '0212984391814',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1886,7 +1886,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-21 00:00:00',
                 'jmbgStud' => '2106985334006',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1899,7 +1899,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '40000',
                 'datRodStud' => '1984-05-20 00:00:00',
                 'jmbgStud' => '2005984390118',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1912,7 +1912,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-25 00:00:00',
                 'jmbgStud' => '2506985330144',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1925,7 +1925,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '52000',
                 'datRodStud' => '1984-10-28 00:00:00',
                 'jmbgStud' => '2810984330097',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1938,7 +1938,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '31000',
                 'datRodStud' => '1985-05-11 00:00:00',
                 'jmbgStud' => '1105985335128',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1951,7 +1951,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-05-06 00:00:00',
                 'jmbgStud' => '0605984334017',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1964,7 +1964,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '49000',
                 'datRodStud' => '1985-05-23 00:00:00',
                 'jmbgStud' => '2305985383905',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1977,7 +1977,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-13 00:00:00',
                 'jmbgStud' => '1311984330155',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -1990,7 +1990,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-20 00:00:00',
                 'jmbgStud' => '2009984311404',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2003,7 +2003,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '53000',
                 'datRodStud' => '1985-02-09 00:00:00',
                 'jmbgStud' => '0902985390011',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2016,7 +2016,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-06-18 00:00:00',
                 'jmbgStud' => '1806984330251',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2029,7 +2029,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '49000',
                 'datRodStud' => '1984-11-17 00:00:00',
                 'jmbgStud' => '1711984335042',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2042,7 +2042,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-02-03 00:00:00',
                 'jmbgStud' => '0302984383304',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2055,7 +2055,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '44000',
                 'datRodStud' => '1983-11-27 00:00:00',
                 'jmbgStud' => '2711983370016',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2068,7 +2068,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-08 00:00:00',
                 'jmbgStud' => '0810984334302',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2081,7 +2081,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-26 00:00:00',
                 'jmbgStud' => '2605985153755',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2094,7 +2094,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-03 00:00:00',
                 'jmbgStud' => '0309984330249',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2107,7 +2107,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-02-09 00:00:00',
                 'jmbgStud' => '0902985383308',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2120,7 +2120,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-04 00:00:00',
                 'jmbgStud' => '0409984391807',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2133,7 +2133,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-18 00:00:00',
                 'jmbgStud' => '1804985391514',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2146,7 +2146,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1985-06-29 00:00:00',
                 'jmbgStud' => '2906985350009',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2159,7 +2159,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-01-19 00:00:00',
                 'jmbgStud' => '1901985360076',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2172,7 +2172,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-12-24 00:00:00',
                 'jmbgStud' => '2412984330067',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2185,7 +2185,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-08-02 00:00:00',
                 'jmbgStud' => '0208985361006',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2198,7 +2198,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-06-28 00:00:00',
                 'jmbgStud' => '2806985371019',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2211,7 +2211,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-01-05 00:00:00',
                 'jmbgStud' => '0501984330031',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2224,7 +2224,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '34330',
                 'datRodStud' => '1984-12-25 00:00:00',
                 'jmbgStud' => '2512984330145',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2237,7 +2237,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-12-10 00:00:00',
                 'jmbgStud' => '1012984320027',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2250,7 +2250,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '52100',
                 'datRodStud' => '1985-02-23 00:00:00',
                 'jmbgStud' => '2302985363032',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2263,7 +2263,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-03-19 00:00:00',
                 'jmbgStud' => '1903985110036',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2276,7 +2276,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-19 00:00:00',
                 'jmbgStud' => '1909984302127',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2289,7 +2289,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-02-02 00:00:00',
                 'jmbgStud' => '0202985330149',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2302,7 +2302,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-07-15 00:00:00',
                 'jmbgStud' => '1507985388902',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2315,7 +2315,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-13 00:00:00',
                 'jmbgStud' => '1310984363004',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2328,7 +2328,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-03-01 00:00:00',
                 'jmbgStud' => '0103985320023',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2341,7 +2341,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '40000',
                 'datRodStud' => '1985-04-22 00:00:00',
                 'jmbgStud' => '2204985391517',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2354,7 +2354,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '31000',
                 'datRodStud' => '1985-03-25 00:00:00',
                 'jmbgStud' => '2503985381527',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2367,7 +2367,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-22 00:00:00',
                 'jmbgStud' => '2201985335002',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2380,7 +2380,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-08-25 00:00:00',
                 'jmbgStud' => '2508984330069',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2393,7 +2393,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '44400',
                 'datRodStud' => '1984-06-14 00:00:00',
                 'jmbgStud' => '1406984330053',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2406,7 +2406,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '32000',
                 'datRodStud' => '1985-06-08 00:00:00',
                 'jmbgStud' => '0806985383315',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2419,7 +2419,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-20 00:00:00',
                 'jmbgStud' => '2001985302121',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2432,7 +2432,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-05-11 00:00:00',
                 'jmbgStud' => '1105985330025',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2445,7 +2445,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-09 00:00:00',
                 'jmbgStud' => '0904985330095',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2458,7 +2458,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-07-17 00:00:00',
                 'jmbgStud' => '1707984330129',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2471,7 +2471,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-30 00:00:00',
                 'jmbgStud' => '3007984383313',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2484,7 +2484,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-22 00:00:00',
                 'jmbgStud' => '2209984370027',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2497,7 +2497,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1985-04-30 00:00:00',
                 'jmbgStud' => '3004985330071',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2510,7 +2510,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-12-03 00:00:00',
                 'jmbgStud' => '0312984391218',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2523,7 +2523,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-06-28 00:00:00',
                 'jmbgStud' => '2806984370019',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2536,7 +2536,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-07-16 00:00:00',
                 'jmbgStud' => '1607985330152',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2549,7 +2549,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-31 00:00:00',
                 'jmbgStud' => '3107984390009',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2562,7 +2562,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-10 00:00:00',
                 'jmbgStud' => '1005985330166',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2575,7 +2575,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-15 00:00:00',
                 'jmbgStud' => '1510984330055',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2588,7 +2588,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-08-30 00:00:00',
                 'jmbgStud' => '3008984335037',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2601,7 +2601,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-06-11 00:00:00',
                 'jmbgStud' => '1106985330115',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2614,7 +2614,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-11-18 00:00:00',
                 'jmbgStud' => '1811984312506',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2627,7 +2627,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-12-27 00:00:00',
                 'jmbgStud' => '2712984330082',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2640,7 +2640,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-12-02 00:00:00',
                 'jmbgStud' => '0212984340003',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2653,7 +2653,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-09 00:00:00',
                 'jmbgStud' => '0901985330269',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2666,7 +2666,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-08-12 00:00:00',
                 'jmbgStud' => '1208985330046',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2679,7 +2679,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1985-05-10 00:00:00',
                 'jmbgStud' => '1005985391503',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2692,7 +2692,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '51000',
                 'datRodStud' => '1983-11-27 00:00:00',
                 'jmbgStud' => '2711983330077',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2705,7 +2705,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-06 00:00:00',
                 'jmbgStud' => '0605985330013',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2718,7 +2718,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-15 00:00:00',
                 'jmbgStud' => '1501985320515',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2731,7 +2731,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '31000',
                 'datRodStud' => '1982-01-18 00:00:00',
                 'jmbgStud' => '1801982380065',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2744,7 +2744,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-12-28 00:00:00',
                 'jmbgStud' => '2812984361908',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2757,7 +2757,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-04 00:00:00',
                 'jmbgStud' => '0401985383929',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2770,7 +2770,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-22 00:00:00',
                 'jmbgStud' => '2207984391806',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2783,7 +2783,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '47000',
                 'datRodStud' => '1984-10-19 00:00:00',
                 'jmbgStud' => '1910984334304',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2796,7 +2796,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-15 00:00:00',
                 'jmbgStud' => '1504985383908',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2809,7 +2809,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '44000',
                 'datRodStud' => '1985-03-05 00:00:00',
                 'jmbgStud' => '0503985334317',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2822,7 +2822,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '53000',
                 'datRodStud' => '1985-01-09 00:00:00',
                 'jmbgStud' => '0901985302806',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2835,7 +2835,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-20 00:00:00',
                 'jmbgStud' => '2011984330107',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2848,7 +2848,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-06-01 00:00:00',
                 'jmbgStud' => '0106984330014',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2861,7 +2861,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '22000',
                 'datRodStud' => '1985-04-05 00:00:00',
                 'jmbgStud' => '0504985330263',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2874,7 +2874,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '35000',
                 'datRodStud' => '1985-03-12 00:00:00',
                 'jmbgStud' => '1203985334304',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2887,7 +2887,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '40000',
                 'datRodStud' => '1984-08-10 00:00:00',
                 'jmbgStud' => '1008984302118',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2900,7 +2900,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-20 00:00:00',
                 'jmbgStud' => '2004985301006',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2913,7 +2913,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '43000',
                 'datRodStud' => '1984-11-24 00:00:00',
                 'jmbgStud' => '2411984330174',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2926,7 +2926,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '52000',
                 'datRodStud' => '1984-06-15 00:00:00',
                 'jmbgStud' => '1506984370008',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2939,7 +2939,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '35000',
                 'datRodStud' => '1985-04-13 00:00:00',
                 'jmbgStud' => '1304985310024',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2952,7 +2952,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-05 00:00:00',
                 'jmbgStud' => '0511984330035',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2965,7 +2965,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '40000',
                 'datRodStud' => '1984-10-29 00:00:00',
                 'jmbgStud' => '2910984383906',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2978,7 +2978,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-03-16 00:00:00',
                 'jmbgStud' => '1603985383315',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -2991,7 +2991,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '52000',
                 'datRodStud' => '1985-04-12 00:00:00',
                 'jmbgStud' => '1204985339016',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3004,7 +3004,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-28 00:00:00',
                 'jmbgStud' => '2807984311904',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3017,7 +3017,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-10-24 00:00:00',
                 'jmbgStud' => '2410984334004',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3030,7 +3030,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-02-14 00:00:00',
                 'jmbgStud' => '1402985391809',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3043,7 +3043,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-03-06 00:00:00',
                 'jmbgStud' => '0603985330122',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3056,7 +3056,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-08-13 00:00:00',
                 'jmbgStud' => '1308984370016',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3069,7 +3069,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-24 00:00:00',
                 'jmbgStud' => '2410984320029',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3082,7 +3082,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-29 00:00:00',
                 'jmbgStud' => '2904985370026',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3095,7 +3095,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-07 00:00:00',
                 'jmbgStud' => '0711984385009',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3108,7 +3108,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-03-09 00:00:00',
                 'jmbgStud' => '0903985330211',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3121,7 +3121,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-24 00:00:00',
                 'jmbgStud' => '2409984392103',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3134,7 +3134,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-02 00:00:00',
                 'jmbgStud' => '0207984335112',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3147,7 +3147,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '42240',
                 'datRodStud' => '1985-04-07 00:00:00',
                 'jmbgStud' => '0704985368003',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3160,7 +3160,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-18 00:00:00',
                 'jmbgStud' => '1801985392106',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3173,7 +3173,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-06-09 00:00:00',
                 'jmbgStud' => '0906984383906',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3186,7 +3186,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-02-29 00:00:00',
                 'jmbgStud' => '2902984330072',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3199,7 +3199,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '33405',
                 'datRodStud' => '1984-08-28 00:00:00',
                 'jmbgStud' => '2808984335042',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3212,7 +3212,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-04 00:00:00',
                 'jmbgStud' => '0401985330196',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3225,7 +3225,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-06 00:00:00',
                 'jmbgStud' => '0609984330247',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3238,7 +3238,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-14 00:00:00',
                 'jmbgStud' => '1410984330114',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3251,7 +3251,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-23 00:00:00',
                 'jmbgStud' => '2305985303534',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3264,7 +3264,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '42000',
                 'datRodStud' => '1985-08-04 00:00:00',
                 'jmbgStud' => '0408985330169',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3277,7 +3277,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-15 00:00:00',
                 'jmbgStud' => '1509984382604',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3290,7 +3290,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '31000',
                 'datRodStud' => '1984-06-30 00:00:00',
                 'jmbgStud' => '3006984335183',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3303,7 +3303,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1983-04-29 00:00:00',
                 'jmbgStud' => '2904983383316',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3316,7 +3316,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-18 00:00:00',
                 'jmbgStud' => '1809984340007',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3329,7 +3329,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '34000',
                 'datRodStud' => '1985-06-04 00:00:00',
                 'jmbgStud' => '0406985380077',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3342,7 +3342,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-09-18 00:00:00',
                 'jmbgStud' => '1809984383124',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3355,7 +3355,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-29 00:00:00',
                 'jmbgStud' => '2911984330044',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3368,7 +3368,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-04-08 00:00:00',
                 'jmbgStud' => '0804985380005',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3381,7 +3381,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-10 00:00:00',
                 'jmbgStud' => '1011984370839',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3394,7 +3394,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1983-08-16 00:00:00',
                 'jmbgStud' => '1608983335065',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3407,7 +3407,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-06 00:00:00',
                 'jmbgStud' => '0605985330058',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3420,7 +3420,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-05-23 00:00:00',
                 'jmbgStud' => '2305985335025',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3433,7 +3433,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-27 00:00:00',
                 'jmbgStud' => '2710984330142',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3446,7 +3446,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1985-07-09 00:00:00',
                 'jmbgStud' => '0907985335135',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3459,7 +3459,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-16 00:00:00',
                 'jmbgStud' => '1611984392608',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3472,7 +3472,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-11-26 00:00:00',
                 'jmbgStud' => '2611984321729',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3485,7 +3485,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-08-07 00:00:00',
                 'jmbgStud' => '0708985381113',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3498,7 +3498,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-10-24 00:00:00',
                 'jmbgStud' => '2410984383901',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3511,7 +3511,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-23 00:00:00',
                 'jmbgStud' => '2309984330054',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3524,7 +3524,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-02-18 00:00:00',
                 'jmbgStud' => '1802985301803',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3537,7 +3537,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-03 00:00:00',
                 'jmbgStud' => '0304985380005',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3550,7 +3550,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1985-07-19 00:00:00',
                 'jmbgStud' => '1907985302136',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3563,7 +3563,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-12-29 00:00:00',
                 'jmbgStud' => '2912984330052',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3576,7 +3576,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-11-10 00:00:00',
                 'jmbgStud' => '1011984383918',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3589,7 +3589,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '35400',
                 'datRodStud' => '1984-12-20 00:00:00',
                 'jmbgStud' => '2012984335149',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3602,7 +3602,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-03-13 00:00:00',
                 'jmbgStud' => '1303985390025',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3615,7 +3615,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1985-09-06 00:00:00',
                 'jmbgStud' => '0609985380028',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3628,7 +3628,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-04-23 00:00:00',
                 'jmbgStud' => '2304984391802',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3641,7 +3641,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '51000',
                 'datRodStud' => '1984-10-03 00:00:00',
                 'jmbgStud' => '0310984330019',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3654,7 +3654,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-12-21 00:00:00',
                 'jmbgStud' => '2112984300052',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3667,7 +3667,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '31000',
                 'datRodStud' => '1985-01-15 00:00:00',
                 'jmbgStud' => '1501985330061',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3680,7 +3680,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '31000',
                 'datRodStud' => '1985-04-12 00:00:00',
                 'jmbgStud' => '1204985388117',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3693,7 +3693,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-21 00:00:00',
                 'jmbgStud' => '2101985301004',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3706,7 +3706,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-11-14 00:00:00',
                 'jmbgStud' => '1411984303204',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3719,7 +3719,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-08-16 00:00:00',
                 'jmbgStud' => '1608985390075',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3732,7 +3732,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '51000',
                 'datRodStud' => '1984-07-06 00:00:00',
                 'jmbgStud' => '0607984307828',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3745,7 +3745,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-07 00:00:00',
                 'jmbgStud' => '0704985340301',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3758,7 +3758,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '35000',
                 'datRodStud' => '1985-05-27 00:00:00',
                 'jmbgStud' => '2705985311411',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3771,7 +3771,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-09-30 00:00:00',
                 'jmbgStud' => '3009984383005',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3784,7 +3784,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '33000',
                 'datRodStud' => '1984-09-03 00:00:00',
                 'jmbgStud' => '0309984330118',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3797,7 +3797,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '43000',
                 'datRodStud' => '1984-12-06 00:00:00',
                 'jmbgStud' => '0612984391807',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3810,7 +3810,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '31000',
                 'datRodStud' => '1984-12-08 00:00:00',
                 'jmbgStud' => '0812984383608',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3823,7 +3823,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '21000',
                 'datRodStud' => '1984-12-15 00:00:00',
                 'jmbgStud' => '1512984330055',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3836,7 +3836,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-04-03 00:00:00',
                 'jmbgStud' => '0304985330026',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3849,7 +3849,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '34000',
                 'datRodStud' => '1984-12-19 00:00:00',
                 'jmbgStud' => '1912984360007',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3862,7 +3862,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-04-12 00:00:00',
                 'jmbgStud' => '1204984321701',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3875,7 +3875,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-08-05 00:00:00',
                 'jmbgStud' => '0508985383312',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3888,7 +3888,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '31000',
                 'datRodStud' => '1984-07-30 00:00:00',
                 'jmbgStud' => '3007984370022',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3901,7 +3901,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '49000',
                 'datRodStud' => '1984-08-31 00:00:00',
                 'jmbgStud' => '3108984334004',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3914,7 +3914,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1985-01-27 00:00:00',
                 'jmbgStud' => '2701985341117',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3927,7 +3927,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '10000',
                 'datRodStud' => '1984-07-05 00:00:00',
                 'jmbgStud' => '0507984312503',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             ),
@@ -3940,7 +3940,7 @@ class StudTableSeeder extends Seeder {
                 'pbrStan' => '20000',
                 'datRodStud' => '1984-01-15 00:00:00',
                 'jmbgStud' => '1501984330074',
-                'slikaStud' => NULL,
+                'slikaStud' => false,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => NULL
             )
