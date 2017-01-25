@@ -158,7 +158,7 @@ if(file_exists(public_path('slike-studenata'.$student->mbrStud.".jpg"))){
      $student->slikaStud=1;
 }
 else{
-    $student->slikaStud=1;
+    $student->slikaStud=0;
 }
 
             $student->save();
