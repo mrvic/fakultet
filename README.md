@@ -27,7 +27,8 @@ mkdir ~/Code
 cd ~/Code
 git clone https://github.com/mrvic/fakultet.git fakultet
 cd ~/Code/fakultet
-composer update
+composer update --no-scripts
+php artisan cache:clear
 composer dump-autoload
 edit .env
 [start-mysql-server]
