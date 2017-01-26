@@ -2,6 +2,9 @@
 
 use Illuminate\Database\Seeder;
 
+
+// php artisan make:seeder ZupanijaTableSeeder
+
 class ZupanijaTableSeeder extends Seeder
 {
     /**
