@@ -52,7 +52,10 @@ class StudController extends Controller {
      * @return Response
      */
     public function index() {
-        return Stud::all();
+        $studenti= Stud::all();
+        
+            return View::make('fakultet.student.index')
+                            ->with('studenti', $studenti);
     }
 
     /**
@@ -61,7 +64,7 @@ class StudController extends Controller {
      * @return Response
      */
     public function create() {
-        //
+     return View::make('fakultet.student.create');
     }
 
     /**
@@ -154,7 +157,7 @@ $imageExtension = $request->photo->getClientOriginalExtension();
         $request->photo->move(public_path('slike-studenata'), $imageName.".".$imageExtension);
      
 }
-if(file_exists(public_path('slike-studenata'.$student->mbrStud.".jpg"))){
+if(file_exists(public_path('slike-studenata'.DIRECTORY_SEPARATOR.$student->mbrStud.".jpg"))){
      $student->slikaStud=1;
 }
 else{
