@@ -74,9 +74,95 @@ class StudController extends Controller {
      * @return Response
      */
     public function store(Request $request) {
-        //
-    }
+               // validate
+        // read more on validation at http://laravel.com/docs/validation
+        $rules = array(
+          //  'mbrStud' => 'required|numeric',
+            'imeStud' => 'required',
+            'prezStud' => 'required',
+            'pbrRod' => 'required|numeric',
+            'pbrStan' => 'required|numeric',
+            'datRodStud' => 'required|date|date_format:Y-n-j',
+            'jmbgStud' => 'required'
+        );
+        $validator = Validator::make(Input::all(), $rules);
 
+        // process the login
+        if ($validator->fails()) {
+            return Redirect::to('studenti/create')
+                            ->withErrors($validator)
+                            ->withInput(Input::except('password'));
+        } else {
+            // store
+
+            $student = new Stud;
+            $student->imeStud = Input::get('imeStud');
+            $student->prezStud = Input::get('prezStud');
+            $student->pbrRod = Input::get('pbrRod');
+            $student->pbrStan = Input::get('pbrStan');
+            $student->datRodStud = Input::get('datRodStud');
+            $student->jmbgStud = Input::get('jmbgStud');
+            // $student->slikaStud = Input::get('slikaStud');
+
+            if (Input::hasFile('photo')) {
+                // Ovo istoradi, alteranativa je dolje...
+                /*
+                  $request->file('photo')->move(
+                  base_path() . '/public/slike-studenata/', 'maja.jpg'
+                  );
+                 */
+                $imageName = $student->mbrStud;
+                $imageExtension = $request->photo->getClientOriginalExtension();
+
+                $request->photo->move(public_path('slike-studenata'), $imageName . "." . $imageExtension);
+
+// RESIZE SLIKE I KREIRANJE THUMBNAILA
+                // Get new sizes
+
+                $filename = public_path('slike-studenata') . DIRECTORY_SEPARATOR . $imageName . "." . $imageExtension; //'test.jpg';
+
+                list($width, $height) = getimagesize($filename);
+
+// generate thumbnail
+                                $newwidth = 100;
+                $newheight = $height * ($newwidth / $width);
+
+// Load
+                $thumb = imagecreatetruecolor($newwidth, $newheight);
+                $source = imagecreatefromjpeg($filename);
+
+// Resize
+                imagecopyresized($thumb, $source, 0, 0, 0, 0, $newwidth, $newheight, $width, $height);
+                imagejpeg($thumb, public_path('slike-studenata') . DIRECTORY_SEPARATOR . 'thumb_' . $imageName . "." . $imageExtension, 75);
+           
+                                $newwidth = 400;
+                $newheight = $height * ($newwidth / $width);
+
+// Load
+                $thumb = imagecreatetruecolor($newwidth, $newheight);
+                $source = imagecreatefromjpeg($filename);
+
+// Resize
+                imagecopyresized($thumb, $source, 0, 0, 0, 0, $newwidth, $newheight, $width, $height);
+
+//Sacuvaj resizanu sliku
+                imagejpeg($thumb, public_path('slike-studenata') . DIRECTORY_SEPARATOR . $imageName . "." . $imageExtension, 75);
+
+                
+            }
+            if (file_exists(public_path('slike-studenata' . DIRECTORY_SEPARATOR . $student->mbrStud . ".jpg"))) {
+                $student->slikaStud = 1;
+            } else {
+                $student->slikaStud = 0;
+            }
+
+            $student->save();
+
+            // redirect
+            Session::flash('message', 'Uspjesno dodan student!');
+            return Redirect::to('studenti');
+    }
+    }
     /**
      * Display the specified resource.
      *
@@ -134,8 +220,14 @@ class StudController extends Controller {
                             ->withInput(Input::except('password'));
         } else {
             // store
-            $student = Stud::find($id);
-            $student->mbrStud = Input::get('mbrStud');
+            if (isNull($id)){
+               $student = new Stud;
+            }
+            else{
+                $student = Stud::find($id);
+                $student->mbrStud = Input::get('mbrStud');
+            }
+            
             $student->imeStud = Input::get('imeStud');
             $student->prezStud = Input::get('prezStud');
             $student->pbrRod = Input::get('pbrRod');
