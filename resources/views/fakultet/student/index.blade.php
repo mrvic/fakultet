@@ -16,7 +16,7 @@
 {{$s->imeStud}} {{$s->prezStud}}            
 </a>
 @if ($s->slikaStud!=0)
-<img src="/slike-studenata/{{$s->mbrStud}}.jpg" width="32">
+<img src="/slike-studenata/thumb_{{$s->mbrStud}}.jpg" width="32">
 @endif
 <br/>    
 @endforeach
