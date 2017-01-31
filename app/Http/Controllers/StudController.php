@@ -10,10 +10,39 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
+use Khill\Lavacharts\Lavacharts;
 use View;
+use function public_path;
 
 class StudController extends Controller {
+   
+    /**
+     * Vraća statistiku u obliku google charts grafova
+     *
+     * @return Response
+     */
+    public function stats() {
 
+$lava = new Lavacharts; // See note below for Laravel
+
+$popularity = Lava::DataTable();
+
+$popularity->addStringColumn('Country')
+           ->addNumberColumn('Popularity')
+           ->addRow(array('Germany', 200))
+           ->addRow(array('United States', 300))
+           ->addRow(array('Brazil', 400))
+           ->addRow(array('Canada', 500))
+           ->addRow(array('France', 600))
+           ->addRow(array('RU', 700));
+
+$lava->GeoChart('Popularity', $popularity);
+        
+        
+        return View::make('fakultet.student.stats')
+                        ->with('lava', $lava);
+    }
+    
     public function studloc($pbr) {
         $m = new Mjesto;
         $os = $m->find($pbr)->student_rod->first();

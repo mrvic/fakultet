@@ -16,6 +16,8 @@
  */
 Route::get('/studloc/{pbr}', 'StudController@studloc');
 
+Route::get('/studenti/stats', 'StudController@stats');
+
 Route::get('/dvorane', function () {
     $d=Fakultet\Dvorana::all();
     //$d::all(['kapacitet','oznDvorana']);

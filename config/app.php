@@ -141,6 +141,10 @@ return [
          */
         //za kreiranje formi: https://laravelcollective.com/docs/5.3/html
         Collective\Html\HtmlServiceProvider::class,
+        
+        // Za google charts statistike /studenti/stats
+        "Khill\Lavacharts\Laravel\LavachartsServiceProvider",
+        
         /*
          * Laravel Framework Service Providers...
          */
