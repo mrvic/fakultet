@@ -24,11 +24,12 @@ Treba:
 
 {{ Form::open(array('url' => 'studenti', 'files' => true)) }}
 
-
+ {{-- 
 <div class="form-group">
     {{ Form::label('mbrStud', 'Matični broj studenta') }}
     {{ Form::text( 'mbrStud', Input::old('mbrStud'), array('class' => 'form-control')) }}
 </div>
+ --}} 
 <div class="form-group">
     {{ Form::label('imeStud', 'Ime studenta') }}
     {{ Form::text( 'imeStud', Input::old('imeStud'), array('class' => 'form-control')) }}
@@ -63,4 +64,7 @@ Treba:
 
 {{ Form::close() }}
 
+<?php 
+print_r($errors);
+?>
 @endsection

@@ -85,7 +85,8 @@ class StudController extends Controller {
             'prezStud' => 'required',
             'pbrRod' => 'required|numeric',
             'pbrStan' => 'required|numeric',
-            'datRodStud' => 'required|date||date_format:Y-n-j',
+          //  'datRodStud' => 'required|date||date_format:Y-n-j',
+            'datRodStud' => 'required|date|date_format:"Y-m-d"',
             'jmbgStud' => 'required'
             
         );
@@ -94,12 +95,14 @@ class StudController extends Controller {
 
         // process the login
         if ($validator->fails()) {
+            //echo Input::get('datRodStud');
+            
             return Redirect::to('studenti/create')
                             ->withErrors($validator)
                             ->withInput(Input::except('password'));
         } else {
             // store
-
+/*
              $rules = array(
         //    'mbrStud' => 'required|numeric',
             'imeStud' => 'required',
@@ -118,13 +121,12 @@ class StudController extends Controller {
                             ->withInput(Input::except('password'));
         } else {
             // store
-          
+          */
                $student = new Stud;
-            
-            
-                
-           //     $student->mbrStud = Input::get('mbrStud');
-            
+   // mbrstud se dodjeljuje automatski jer je u modelu Student postavljen
+   // pogledaj >>>  migrations/2016_11_03_231443_create_stud_table
+   // $table->increments('mbrStud');
+   //     $student->mbrStud = Input::get('mbrStud');
             
             $student->imeStud = Input::get('imeStud');
             $student->prezStud = Input::get('prezStud');
@@ -132,11 +134,15 @@ class StudController extends Controller {
             $student->pbrStan = Input::get('pbrStan');
             $student->datRodStud = Input::get('datRodStud');
             $student->jmbgStud = Input::get('jmbgStud');
-            $student->slikaStud = Input::get('slikaStud');
-            //echo "Jel postoji maja?";
-         
+            // Prvo kreiramo studenta da nam dodjeli autoincrement mbrStud
+            $student->slikaStud = 0;// Input::get('slikaStud');
+
+            $student->save();
             
-            
+            // Pokušaj uploadati sliku
+            try {
+  
+
             if (Input::hasFile('photo')) {
                 // Ovo istoradi, alteranativa je dolje...
                 /*
@@ -146,14 +152,12 @@ class StudController extends Controller {
                  */
                 $imageName = $student->mbrStud;
                 $imageExtension = $request->photo->getClientOriginalExtension();
-
                 $request->photo->move(public_path('slike-studenata'), $imageName . "." . $imageExtension);
 
 // RESIZE SLIKE I KREIRANJE THUMBNAILA
                 // Get new sizes
 
                 $filename = public_path('slike-studenata') . DIRECTORY_SEPARATOR . $imageName . "." . $imageExtension; //'test.jpg';
-
                 list($width, $height) = getimagesize($filename);
 
 // generate thumbnail
@@ -168,7 +172,7 @@ class StudController extends Controller {
                 imagecopyresized($thumb, $source, 0, 0, 0, 0, $newwidth, $newheight, $width, $height);
                 imagejpeg($thumb, public_path('slike-studenata') . DIRECTORY_SEPARATOR . 'thumb_' . $imageName . "." . $imageExtension, 75);
            
-                                $newwidth = 400;
+                $newwidth = 400;
                 $newheight = $height * ($newwidth / $width);
 
 // Load
@@ -188,16 +192,24 @@ class StudController extends Controller {
             } else {
                 $student->slikaStud = 0;
             }
-            
             $student->save();
+            } catch (Exception $e) {
+            // Ukoliko upload ne odradi javi poruku
+            Session::flash('message', 'Student je kreiran ali nije uspio upload slike: '.$e->getMessage());
+            return Redirect::to('studenti');
+}
+
            
+            
+            
+            
             // redirect
             Session::flash('message', 'Uspjesno kreiran student!');
             
             return Redirect::to('studenti');
     }
     }
-    }
+    
     /**
      * Display the specified resource.
      *

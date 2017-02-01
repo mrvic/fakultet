@@ -26,12 +26,14 @@ class Stud extends Model
         'slikaStud'];
     
     /**
+     * Ovo sam morao zakomentirati jer nije dobro radila 
+     * validacija datuma kod kreiranja novog studenta
      * The attributes that should be mutated to dates.
      * @example /studenti/1120/edit Polje datum rođenja pretvara iz 1985-06-06 00:00:00.000 u 1985-06-06
      * @var array
      */
     protected $dates = [
-        'dateRodStud'
+    //    'dateRodStud'
     ];
 
     
