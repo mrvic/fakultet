@@ -27,7 +27,7 @@ Treba:
 
 <div class="form-group">
     {{ Form::label('mbrStud', 'Matični broj studenta') }}
-    {{ Form::text( 'mbrStud', Input::old('mbrStud'), array('class' => 'form-control')) }}
+    {{ Form::text( 'mbrStud', Input::old('mbrStud'), array('class' => 'form-control','disabled'=>true)) }}
 </div>
 <div class="form-group">
     {{ Form::label('imeStud', 'Ime studenta') }}

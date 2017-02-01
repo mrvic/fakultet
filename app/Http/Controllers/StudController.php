@@ -352,6 +352,7 @@ class StudController extends Controller {
         $s = Stud::find($id);
         $s->delete();
 
+        // Prilikom brisanja obrisi i sliku i thumbnail ukoliko postoje
         try{
         $filename       = public_path('slike-studenata') . DIRECTORY_SEPARATOR. $s->mbrStud . ".jpg"; 
         $filename_thumb = public_path('slike-studenata') . DIRECTORY_SEPARATOR. "thumb_" . $s->mbrStud . ".jpg"; 
