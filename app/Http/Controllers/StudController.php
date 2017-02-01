@@ -2,6 +2,7 @@
 
 namespace Fakultet\Http\Controllers;
 
+
 use Fakultet\Mjesto;
 use Fakultet\Stud;
 use Illuminate\Http\Request;
@@ -56,6 +57,8 @@ class StudController extends Controller {
 
         return View::make('fakultet.student.index')
                         ->with('studenti', $studenti);
+        
+        
     }
 
     /**
@@ -77,7 +80,28 @@ class StudController extends Controller {
                // validate
         // read more on validation at http://laravel.com/docs/validation
         $rules = array(
-          //  'mbrStud' => 'required|numeric',
+          // 'mbrStud' => 'required|numeric',
+            'imeStud' => 'required',
+            'prezStud' => 'required',
+            'pbrRod' => 'required|numeric',
+            'pbrStan' => 'required|numeric',
+            'datRodStud' => 'required|date||date_format:Y-n-j',
+            'jmbgStud' => 'required'
+            
+        );
+      
+        $validator = Validator::make(Input::all(), $rules);
+
+        // process the login
+        if ($validator->fails()) {
+            return Redirect::to('studenti/create')
+                            ->withErrors($validator)
+                            ->withInput(Input::except('password'));
+        } else {
+            // store
+
+             $rules = array(
+        //    'mbrStud' => 'required|numeric',
             'imeStud' => 'required',
             'prezStud' => 'required',
             'pbrRod' => 'required|numeric',
@@ -94,16 +118,25 @@ class StudController extends Controller {
                             ->withInput(Input::except('password'));
         } else {
             // store
-
-            $student = new Stud;
+          
+               $student = new Stud;
+            
+            
+                
+           //     $student->mbrStud = Input::get('mbrStud');
+            
+            
             $student->imeStud = Input::get('imeStud');
             $student->prezStud = Input::get('prezStud');
             $student->pbrRod = Input::get('pbrRod');
             $student->pbrStan = Input::get('pbrStan');
             $student->datRodStud = Input::get('datRodStud');
             $student->jmbgStud = Input::get('jmbgStud');
-            // $student->slikaStud = Input::get('slikaStud');
-
+            $student->slikaStud = Input::get('slikaStud');
+            //echo "Jel postoji maja?";
+         
+            
+            
             if (Input::hasFile('photo')) {
                 // Ovo istoradi, alteranativa je dolje...
                 /*
@@ -124,7 +157,7 @@ class StudController extends Controller {
                 list($width, $height) = getimagesize($filename);
 
 // generate thumbnail
-                                $newwidth = 100;
+                $newwidth = 100;
                 $newheight = $height * ($newwidth / $width);
 
 // Load
@@ -155,12 +188,14 @@ class StudController extends Controller {
             } else {
                 $student->slikaStud = 0;
             }
-
+            
             $student->save();
-
+           
             // redirect
-            Session::flash('message', 'Uspjesno dodan student!');
+            Session::flash('message', 'Uspjesno kreiran student!');
+            
             return Redirect::to('studenti');
+    }
     }
     }
     /**
@@ -220,13 +255,11 @@ class StudController extends Controller {
                             ->withInput(Input::except('password'));
         } else {
             // store
-            if (isNull($id)){
-               $student = new Stud;
-            }
-            else{
+           
+            
                 $student = Stud::find($id);
                 $student->mbrStud = Input::get('mbrStud');
-            }
+            
             
             $student->imeStud = Input::get('imeStud');
             $student->prezStud = Input::get('prezStud');

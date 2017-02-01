@@ -50,8 +50,6 @@ Treba:
     {{ Form::label('datRodStud', 'Datum rođenja') }}
     {{ Form::date( 'datRodStud', Input::old('datRodStud'), array('class' => 'form-control', 'required' => 'required')) }}   
     
-    <!-- ne radi Input::old za date ?? -->
-    {{-- Form::date( 'datRodStud', Input::old('datRodStud'), array('class' => 'form-control', 'required' => 'required')) --}}
 </div>
 <div class="form-group">
     {{ Form::label('jmbgStud', 'Matični broj studenta') }}
