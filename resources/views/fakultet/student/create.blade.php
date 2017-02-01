@@ -64,7 +64,4 @@ Treba:
 
 {{ Form::close() }}
 
-<?php 
-print_r($errors);
-?>
 @endsection

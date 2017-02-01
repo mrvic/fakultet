@@ -53,7 +53,7 @@ class StudController extends Controller {
      * @return Response
      */
     public function index() {
-        $studenti = Stud::all();
+        $studenti = Stud::all()->reverse();
 
         return View::make('fakultet.student.index')
                         ->with('studenti', $studenti);
@@ -352,6 +352,19 @@ class StudController extends Controller {
         $s = Stud::find($id);
         $s->delete();
 
+        try{
+        $filename       = public_path('slike-studenata') . DIRECTORY_SEPARATOR. $s->mbrStud . ".jpg"; 
+        $filename_thumb = public_path('slike-studenata') . DIRECTORY_SEPARATOR. "thumb_" . $s->mbrStud . ".jpg"; 
+        if (file_exists($filename)){
+            unlink($filename);
+        }
+        if (file_exists($filename_thumb)){
+            unlink($filename_thumb);
+        }
+        }
+ catch (Exception $e){
+     
+ }
         // redirect
         Session::flash('message', 'Student uspješno obrisan!');
         return Redirect::to('studenti');
