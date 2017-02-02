@@ -24,11 +24,12 @@ Treba:
 
 {{ Form::open(array('url' => 'studenti', 'files' => true)) }}
 
-
+ {{-- 
 <div class="form-group">
     {{ Form::label('mbrStud', 'Matični broj studenta') }}
     {{ Form::text( 'mbrStud', Input::old('mbrStud'), array('class' => 'form-control')) }}
 </div>
+ --}} 
 <div class="form-group">
     {{ Form::label('imeStud', 'Ime studenta') }}
     {{ Form::text( 'imeStud', Input::old('imeStud'), array('class' => 'form-control')) }}
@@ -50,8 +51,6 @@ Treba:
     {{ Form::label('datRodStud', 'Datum rođenja') }}
     {{ Form::date( 'datRodStud', Input::old('datRodStud'), array('class' => 'form-control', 'required' => 'required')) }}   
     
-    <!-- ne radi Input::old za date ?? -->
-    {{-- Form::date( 'datRodStud', Input::old('datRodStud'), array('class' => 'form-control', 'required' => 'required')) --}}
 </div>
 <div class="form-group">
     {{ Form::label('jmbgStud', 'Matični broj studenta') }}
