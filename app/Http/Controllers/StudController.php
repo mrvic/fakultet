@@ -26,7 +26,9 @@ class StudController extends Controller {
 
 $lava = new Lavacharts; // See note below for Laravel
 
-$popularity = Lava::DataTable();
+// DEFAULT regija WORLD
+
+$popularity = \Lava::DataTable();
 
 $popularity->addStringColumn('Country')
            ->addNumberColumn('Popularity')
@@ -36,15 +38,98 @@ $popularity->addStringColumn('Country')
            ->addRow(array('Canada', 500))
            ->addRow(array('France', 600))
            ->addRow(array('RU', 700));
+ 
+\Lava::GeoChart('Popularity', $popularity); 
 
-$lava->GeoChart('Popularity', $popularity);
-        
+// REGIJA ITALIJA
+
+$itpop = \Lava::DataTable();
+$itpop->addStringColumn('City')
+        ->addNumberColumn('Population')
+        ->addNumberColumn('Area')
+        ->addRow(array('Rome',      2761477,    1285.31))
+        ->addRow(array('Milan',     1324110,    181.76))
+        ->addRow(array('Naples',    959574,     117.27))
+        ->addRow(array('Turin',     907563,     130.17))
+        ->addRow(array('Palermo',   655875,     158.9))
+        ->addRow(array('Genoa',     607906,     243.60))
+        ->addRow(array('Bologna',   380181,     140.7))
+        ->addRow(array('Florence',  371282,     102.41))
+        ->addRow(array('Fiumicino', 67370,      213.44))
+        ->addRow(array('Anzio',     52192,      43.43))
+        ->addRow(array('Ciampino',  38262,      11));
+
+
+\Lava::GeoChart('ITPopularity', $itpop, [
+    'region'=>'IT',
+    'displayMode'=> 'markers']);
+
+
+//  Krivulje
+
+$finances = \Lava::DataTable();
+
+$finances->addDateColumn('Year')
+         ->addNumberColumn('Sales')
+         ->addNumberColumn('Expenses')
+         ->addNumberColumn('Net Worth')
+         ->addRow(['2009-1-1', 1100, 490, 1324])
+         ->addRow(['2010-1-1', 1000, 400, 1524])
+         ->addRow(['2011-1-1', 1400, 450, 1351])
+         ->addRow(['2012-1-1', 1250, 600, 1243])
+         ->addRow(['2013-1-1', 1100, 550, 1462]);
+
+\Lava::ComboChart('Finances', $finances, [
+    'title' => 'Company Performance',
+    'titleTextStyle' => [
+        'color'    => 'rgb(123, 65, 89)',
+        'fontSize' => 16
+    ],
+    'legend' => [
+        'position' => 'in'
+    ],
+    'seriesType' => 'bars',
+    'series' => [
+        2 => ['type' => 'line']
+    ]
+]);
+ 
+//  TREBA DODATI OVU ODLIČNU STATISTIKU
+/*
+ * 
+ * 
+SELECT 
+stud.mbrStud,
+stud.imeStud,
+stud.prezStud, 
+AVG(ispit.ocjena) AS prosjek, 
+COUNT(ispit.ocjena) AS brojpolozenih, 
+SUM(ispit.ocjena) AS zbrojocjena, 
+YEAR(datIspit) godina
+FROM stud RIGHT JOIN ispit on stud.mbrStud=ispit.mbrStud
+WHERE ocjena>1  
+GROUP BY godina, stud.mbrStud 
+ORDER BY godina,brojpolozenih DESC, prosjek DESC;
+ * 
+ * 
+ */
+
         
         return View::make('fakultet.student.stats')
                         ->with('lava', $lava);
     }
+
     
-    public function studloc($pbr) {
+///////////////////////////////////////////////
+/*
+ * 
+ *             CRUD STUDENT
+ * 
+ * 
+ */
+///////////////////////////////////////////////
+    
+public function studloc($pbr) {
         $m = new Mjesto;
         $os = $m->find($pbr)->student_rod->first();
 
