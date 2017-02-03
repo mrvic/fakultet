@@ -22,7 +22,6 @@ class Zupanija extends Model
      */
     //protected  $fillable = ['sifZupanija','nazZupanija'];
     public  $fillable = ['sifZupanija','nazZupanija'];
-    
 
     
     public function mjesto(){

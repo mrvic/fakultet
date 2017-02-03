@@ -364,7 +364,7 @@ public function studloc($pbr) {
         // validate
         // read more on validation at http://laravel.com/docs/validation
         $rules = array(
-            'mbrStud' => 'required|numeric',
+           // 'mbrStud' => 'required|numeric',
             'imeStud' => 'required',
             'prezStud' => 'required',
             'pbrRod' => 'required|numeric',
@@ -384,7 +384,7 @@ public function studloc($pbr) {
            
             
                 $student = Stud::find($id);
-                $student->mbrStud = Input::get('mbrStud');
+             //   $student->mbrStud = Input::get('mbrStud');
             
             
             $student->imeStud = Input::get('imeStud');
@@ -394,7 +394,7 @@ public function studloc($pbr) {
             $student->datRodStud = Input::get('datRodStud');
             $student->jmbgStud = Input::get('jmbgStud');
             // $student->slikaStud = Input::get('slikaStud');
-            echo "Jel postoji maja?";
+     
             if (Input::hasFile('photo')) {
                 // Ovo istoradi, alteranativa je dolje...
                 /*

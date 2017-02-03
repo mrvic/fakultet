@@ -56,12 +56,10 @@ class ZupanijaTest extends TestCase
     public function testPogledajJeliSeUcitalaZupanijaLista()
     {
         //TODO Treba dopuniti test za Županije
-        static::markTestSkipped('');
+        //static::markTestSkipped('');
         $this->visit('/zupanija')
             ->see('Sve županije')
-            ->dontSee('Errfor');
-        
-        $this->assertTrue(true);
+            ->dontSee('Ovo je string koji ne smije biti na stranici');
     }
     public function testKlikniNaCreateLinkUMeniju()
     {

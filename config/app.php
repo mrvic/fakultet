@@ -143,7 +143,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         
         // Za google charts statistike /studenti/stats
-        "Khill\Lavacharts\Laravel\LavachartsServiceProvider",
+        Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
         
         /*
          * Laravel Framework Service Providers...

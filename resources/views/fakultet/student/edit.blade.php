@@ -15,6 +15,7 @@ Treba:
 @section('title', 'Uredi studenta')
 
 @section('content')
+{{ print_r($errors) }}
 <h1>Edit {{ $student->imeStud }}</h1>
 
 <!-- will be used to show any messages -->
@@ -61,7 +62,7 @@ Treba:
     {{ Form::label('photo', 'Slika studenta') }}
     {{ Form::file( 'photo', '', array('class' => 'form-control')) }}
 </div>
-{{ Form::submit('Uredi studenta!', array('class' => 'btn btn-primary')) }}
+{{ Form::submit('Uredi studenta!', array('class' => 'btn btn-primary','name'=>'Uredi studenta')) }}
 
 {{ Form::close() }}
 
