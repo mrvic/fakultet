@@ -10,6 +10,9 @@
 |
 */
 
+Route::get('/ispit', 'ispitController@ispit');
+Route::post('/ispit','ispitController@rezultat');
+
 /**
  * Direktno sa Route -> Model -> Db
  * @todo DOhvati sve studente iz Osijeka
