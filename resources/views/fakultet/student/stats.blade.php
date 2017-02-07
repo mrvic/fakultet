@@ -12,11 +12,13 @@
 
 <div class="jumbotron text-center">
     <h2> Student</h2>
-
+    <div id="stud-div"></div>
     <div id="pop-div"></div>
     <div id="itpop-div"></div>
     <div id="fin-div"></div>
 </div>
+@combochart('Studranked', 'stud-div')
+
 
 @geochart('Popularity', 'pop-div')
 @geochart('ITPopularity', 'itpop-div')

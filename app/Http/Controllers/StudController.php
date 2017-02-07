@@ -114,6 +114,56 @@ ORDER BY godina ASC,rank DESC, brojpolozenih DESC, prosjek DESC;
  * 
  * 
  */
+$query="
+SELECT 
+stud.mbrStud,
+stud.imeStud,
+stud.prezStud, 
+AVG(ispit.ocjena) AS prosjek, 
+COUNT(ispit.ocjena) AS brojpolozenih, 
+SUM(ispit.ocjena) AS zbrojocjena, 
+(COUNT(ispit.ocjena)*SUM(ispit.ocjena)/10) AS rank, 
+YEAR(datIspit) godina 
+FROM stud RIGHT JOIN ispit on stud.mbrStud=ispit.mbrStud 
+WHERE ocjena>1  
+GROUP BY godina, stud.mbrStud,stud.imeStud,stud.prezStud  
+ORDER BY godina ASC,rank DESC, brojpolozenih DESC, prosjek DESC 
+LIMIT 0,10 ;
+";
+$statstable= \Illuminate\Support\Facades\DB::select($query);
+
+
+//dd($statstable);
+$studranked = \Lava::DataTable();
+
+$studranked->addStringColumn('Imena')
+         ->addNumberColumn('Sales')
+         ->addNumberColumn('Expenses')
+         ->addNumberColumn('Net Worth');
+foreach ($statstable as $s){
+$studranked->addRow(
+        [$s->imeStud.' '.$s->prezStud
+        , $s->prosjek
+        , $s->brojpolozenih
+        , $s->rank]);
+}
+  // dd($studranked)    ;  
+
+\Lava::ComboChart('Studranked', $studranked, [
+    'title' => 'Rank za rektorovu nagradu',
+    'titleTextStyle' => [
+        'color'    => 'rgb(123, 65, 89)',
+        'fontSize' => 16
+    ],
+    'legend' => [
+        'position' => 'in'
+    ],
+    'seriesType' => 'bars',
+    'series' => [
+        2 => ['type' => 'line']
+    ]
+]);
+
 
         
         return View::make('fakultet.student.stats')
