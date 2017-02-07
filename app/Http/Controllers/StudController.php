@@ -104,12 +104,13 @@ stud.imeStud,
 stud.prezStud, 
 AVG(ispit.ocjena) AS prosjek, 
 COUNT(ispit.ocjena) AS brojpolozenih, 
-SUM(ispit.ocjena) AS zbrojocjena, 
+SUM(ispit.ocjena) AS zbrojocjena,
+(COUNT(ispit.ocjena)*SUM(ispit.ocjena)) AS rank, 
 YEAR(datIspit) godina
 FROM stud RIGHT JOIN ispit on stud.mbrStud=ispit.mbrStud
 WHERE ocjena>1  
 GROUP BY godina, stud.mbrStud 
-ORDER BY godina,brojpolozenih DESC, prosjek DESC;
+ORDER BY godina ASC,rank DESC, brojpolozenih DESC, prosjek DESC;
  * 
  * 
  */

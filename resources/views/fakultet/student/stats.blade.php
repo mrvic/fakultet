@@ -15,7 +15,7 @@
 
     <div id="pop-div"></div>
     <div id="itpop-div"></div>
-        <div id="fin-div"></div>
+    <div id="fin-div"></div>
 </div>
 
 @geochart('Popularity', 'pop-div')
