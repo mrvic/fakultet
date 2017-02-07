@@ -216,7 +216,7 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Input' => Illuminate\Support\Facades\Input::class,
-        'Lava' => Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
+        'Lava' => Khill\Lavacharts\Laravel\LavachartsFacade::class,
         
         /*
          * Ispod su postojeće:

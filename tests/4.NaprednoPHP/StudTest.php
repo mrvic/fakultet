@@ -28,7 +28,7 @@ public function testPogledajJeliSeUcitalaListaStudenata()
             ->see('Slavko Prstačić')    
             ->dontSee('Ovo je string koji ne smije biti na stranici');
     }
-    public function testKlikniNaShow()
+    public function testStudentCRUD()
 {
     $faker = Faker::create();
         $student = new \Fakultet\Stud;
