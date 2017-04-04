@@ -1,6 +1,11 @@
 Fakultet - Laravel projekt
 =========================
 
+
+[![Build Status](https://travis-ci.org/mrvic/fakultet.svg?branch=master)](https://travis-ci.org/mrvic/fakultet)
+
+
+
 Ovaj repozitorij sadrži bazni projekt za tečaj "Programer internet aplikacija – PHP i MySQL"
 
 
