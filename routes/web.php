@@ -10,6 +10,13 @@
 |
 */
 
+
+Route::get('/dummy', function(){
+    $d1= Fakultet\Dummy::find(1);
+    $d1->imeDummija= rand(10,100);
+    $d1->save();
+    return "Moje ime je". $d1->imeDummija;
+});
 Route::get('/ispit', 'ispitController@ispit');
 Route::post('/ispit','ispitController@rezultat');
 
