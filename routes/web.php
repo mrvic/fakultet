@@ -11,12 +11,12 @@
 */
 
 
-Route::get('/dummy', function(){
-    $d1= Fakultet\Dummy::find(1);
-    $d1->imeDummija= rand(10,100);
-    $d1->save();
-    return "Moje ime je". $d1->imeDummija;
+Route::get('/nastavnik/all', function(){
+    $d1= Fakultet\Nastavnik::all();
+    return "<h1>Svi nastavnici</h1><br>". $d1;
 });
+Route::get('/nastavnik/top', 'NastavnikController@top');
+
 Route::get('/ispit', 'ispitController@ispit');
 Route::post('/ispit','ispitController@rezultat');
 
@@ -103,6 +103,7 @@ Route::get('/mjesto-ajax', function () {
 Route::resource('mjesto',   'MjestoController');
 Route::resource('zupanija', 'ZupanijaController');
 Route::resource('studenti', 'StudController');
+Route::resource('nastavnik', 'NastavnikController');
 Route::resource('dvorana', 'DvoranaController');
 
 Route::get('/laravel-version', function()
