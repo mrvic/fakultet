@@ -1,10 +1,14 @@
 <?php
-
+// php artisan make:controller NastavnikController --resource
 namespace Fakultet\Http\Controllers;
 
 use Fakultet\Nastavnik;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+//use Illuminate\View\View;
+use View;
+use Input;
+use Redirect;
 
 
 class NastavnikController extends Controller
@@ -16,7 +20,10 @@ class NastavnikController extends Controller
      */
     public function index()
     {
-        //
+        $nastavnici = Nastavnik::all()->reverse();
+
+        return View::make('fakultet.nastavnik.index')
+                        ->with('nastavnici', $nastavnici);
     }
 
     /**
@@ -26,18 +33,29 @@ class NastavnikController extends Controller
      */
     public function create()
     {
-        //
+        return View::make('fakultet.nastavnik.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  Request  $request
      * @return Response
      */
     public function store(Request $request)
     {
-        //
+        //TODO napravi validaciju
+        $n = new Nastavnik;
+        $n->imeNastavnik=Input::get('imeNastavnik');
+        $n->prezNastavnik=Input::get('prezNastavnik');
+        $n->pbrStan=Input::get('pbrStan');
+        $n->sifOrgjed=Input::get('sifOrgjed');
+        $n->koef=Input::get('koef');
+        $n->sifNastavnik=999;
+        $n->save();
+        
+        return Redirect::to('nastavnik');
+ 
     }
 
     /**
@@ -65,7 +83,7 @@ class NastavnikController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  Request  $request
      * @param  int  $id
      * @return Response
      */
@@ -92,7 +110,11 @@ class NastavnikController extends Controller
     $d1 = Nastavnik::all()
             ->where('koef', '>', '7.10')
             ->take(5);
-    return "<h1>Nastavnici sa koeficijentom većim od 7.10, limit 5</h1><br>" . $d1;
+    return "<h1>Nastavnici sa koeficijentom većim od 7.10, limit 5</h1><br>" 
+.$d1;
+//TODO želim ispisati samo ime i prezime nastavnika
+//BUG Ispravi i ispisi top 10 nastavnika!    
+//. $d1->attributes['imeNastavnik'];
 
     }
 }
