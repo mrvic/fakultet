@@ -3,13 +3,15 @@
 namespace Fakultet\Http\Controllers;
 
 use Fakultet\Nastavnik;
+use Fakultet\Stud;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Session;
-//use Illuminate\View\View;
-use View;
+//use Illuminate\Support\Facades\Validator;  //koristiti cemo alias
+use Validator;
 use Input;
 use Redirect;
+use View;
 
 
 class NastavnikController extends Controller
@@ -67,7 +69,10 @@ class NastavnikController extends Controller
      */
     public function show($id)
     {
-        //
+     $n = Nastavnik::find($id);
+
+        return View::make('fakultet.nastavnik.show')
+                        ->with('nastavnici', $n);
     }
 
     /**
@@ -78,7 +83,11 @@ class NastavnikController extends Controller
      */
     public function edit($id)
     {
-        //
+        $n = Nastavnik::find($id);
+
+        // Pokazi formu za editiranje studenata
+        return View::make('fakultet.nastavnik.edit')
+                        ->with('nastavnik', $n);
     }
 
     /**
@@ -90,9 +99,39 @@ class NastavnikController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
-    }
+       // validate
+       // read more on validation at http://laravel.com/docs/validation
+        $rules = array(
+            'imeNastavnik'=> 'required',
+            'prezNastavnik' => 'required',
+            'pbrStan' => 'required|numeric',
+            'sifOrgjed' => 'required|numeric',
+            'koef' => 'required|numeric'
+        );
+        $validator = Validator::make(Input::all(), $rules);
 
+        // process the login
+        if ($validator->fails()) {
+            return Redirect::to('nastavnik/' . $id . '/edit')
+                            ->withErrors($validator)
+                            ->withInput(Input::except('password'));
+        } else {
+            // store
+            $nastavnik = Nastavnik::find($id);
+                     
+            $nastavnik->imeNastavnik= Input::get('imeNastavnik');
+            $nastavnik->prezNastavnik = Input::get('prezNastavnik');
+            $nastavnik->pbrStan = Input::get('pbrStan');
+            $nastavnik->sifOrgjed = Input::get('sifOrgjed');
+            $nastavnik->koef = Input::get('koef');    
+        
+            $nastavnik->save();
+
+            // redirect
+            Session::flash('message', 'Uspjesno uređen nastavnik!');
+            return Redirect::to('nastavnik');
+    }
+    }
     /**
      * Remove the specified resource from storage.
      *

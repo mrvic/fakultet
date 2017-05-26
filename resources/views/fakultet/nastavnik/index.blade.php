@@ -53,10 +53,10 @@
                 {{ Form::close() }}
 
                 <!-- show the nerd (uses the show method found at GET /nerds/{id} -->
-                <a class="btn btn-small btn-success" id="{{'studenti-' . $value->mbrStud}}" href="{{ URL::to('studenti/' . $value->mbrStud) }}">Pokaži ovog studenta</a>
+                <a class="btn btn-small btn-success" id="{{'nastavnik-' . $value->sifNastavnik}}" href="{{ URL::to('nastavnik/' . $value->sifNastavnik) }}">Pokaži nastavnika</a>
 
                 <!-- edit this nerd (uses the edit method found at GET /nerds/{id}/edit -->
-                <a class="btn btn-small btn-info" href="{{ URL::to('studenti/' . $value->mbrStud . '/edit') }}">Uredi ovog studenta</a>
+                <a class="btn btn-small btn-info" href="{{ URL::to('nastavnik/' . $value->sifNastavnik . '/edit') }}">Uredi nastavnika</a>
 
             </td>
         </tr>
