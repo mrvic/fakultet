@@ -54,7 +54,7 @@ class NastavnikController extends Controller
         $n->pbrStan=Input::get('pbrStan');
         $n->sifOrgjed=Input::get('sifOrgjed');
         $n->koef=Input::get('koef');
-        $n->sifNastavnik=999;
+        //$n->sifNastavnik=999;
         $n->save();
         
         return Redirect::to('nastavnik');
