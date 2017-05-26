@@ -22,7 +22,7 @@ $popnastavnik_eloquent = \Illuminate\Support\Facades\DB::table('nastavnik')
                 , DB::raw('sum(ispit.ocjena) AS ukupno')
         )
         ->groupBy('nastavnik.sifNastavnik', 'ime')
-        ->having(DB::raw('sum(ispit.ocjena)'), '>', 50)
+        ->having(DB::raw('sum(ispit.ocjena)'), '>', 30)
         ->orderBy(DB::raw('AVG(ispit.ocjena)'), 'desc')
         ->get();
 
@@ -44,7 +44,7 @@ FROM fakultet.ispit inner join fakultet.nastavnik ON fakultet.ispit.sifNastavnik
 GROUP BY
 fakultet.nastavnik.sifNastavnik, fakultet.nastavnik.imeNastavnik, fakultet.nastavnik.prezNastavnik
 ) AS prva
-WHERE ukupno > 50 #ne broje se oni koji su dali manje od 10 petica
+WHERE ukupno > 30 #ne broje se oni koji su dali manje od 10 petica
 ORDER BY prosjek DESC
 LIMIT 1
 ');

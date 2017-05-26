@@ -5,6 +5,7 @@ namespace Fakultet\Http\Controllers;
 use Fakultet\Nastavnik;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Session;
 //use Illuminate\View\View;
 use View;
 use Input;
@@ -100,7 +101,11 @@ class NastavnikController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $n = Nastavnik::find($id);
+        $n->delete();
+        // redirect
+        Session::flash('message', 'Nastavnik je uspješno obrisan!');
+        return Redirect::to('nastavnik');
     }
         /**
      * Ova funkcija vraća listu nastavnika sa najvećim koeficijentom
