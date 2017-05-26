@@ -9,7 +9,16 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+Route::get('/nastavnik/all', function(){
+    $d1= Fakultet\Nastavnik::all();
+    return "<h1>Svi nastavnici</h1><br>". $d1;
+});
+Route::get('/nastavnik/top', 'NastavnikController@top');
 
+Route::get('/dummy',function(){
+    $d1=Fakultet\Dummy::find(1);
+       return"Moje ime je.". $d1->imeDummija;
+});
 Route::get('/ispit', 'ispitController@ispit');
 Route::post('/ispit','ispitController@rezultat');
 
@@ -96,6 +105,7 @@ Route::get('/mjesto-ajax', function () {
 Route::resource('mjesto',   'MjestoController');
 Route::resource('zupanija', 'ZupanijaController');
 Route::resource('studenti', 'StudController');
+Route::resource('nastavnik', 'NastavnikController');
 Route::resource('dvorana', 'DvoranaController');
 
 Route::get('/laravel-version', function()
