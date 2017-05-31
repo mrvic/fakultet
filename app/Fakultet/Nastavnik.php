@@ -1,5 +1,5 @@
 <?php
-//php artisan make:model Nastavnik
+//php artisan make:model Nastavnik --migration
 namespace Fakultet;
 
 use Illuminate\Database\Eloquent\Model;

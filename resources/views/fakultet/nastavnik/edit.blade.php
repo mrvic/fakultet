@@ -1,17 +1,26 @@
-<!-- resources/views/fakultet/nastavnik/create.blade.php -->
+<!--
+NEDOVRSENO   !!!!
+Treba:
+//TODO - prilagoditi tip polja podacima iz baze
+//TODO - stilski posloziti formula
+//TODO - validator za text
+//TODO - validator duljine pbr-a 
+//TODO - validator datuma rodjenja
+-->
+
+<!-- resources/views/fakultet/nastavnik/edit.blade.php -->
 @extends('fakultet.master')
-@section('title', 'Unesi novog nastavnika')
+@section('title', 'Uredi nastavnika')
 
 @section('content')
-<h1>Dodaj novog nastavnika</h1>
+<h1>Uredi nastavnika</h1>
 
 <!-- will be used to show any messages -->
 @if (Session::has('message'))
 <div class="alert alert-info">{{ Session::get('message') }}</div>
 @endif
 
-{{ Form::open(array('url' => 'nastavnik', 'files' => true)) }}
-
+{{ Form::model($nastavnik, array('action' => array('NastavnikController@update', $nastavnik->sifNastavnik), 'method' => 'PUT', 'files' => true)) }}
  
 <div class="form-group">
     {{ Form::label('imeNastavnik', 'Ime nastavnika') }}
@@ -35,7 +44,7 @@
     {{ Form::number( 'koef', Input::old('koef'), array('class' => 'form-control','required' => 'required')) }}
 </div>
 
-{{ Form::submit('Kreiraj novog nastavnika!', array('class' => 'btn btn-primary')) }}
+{{ Form::submit('Uredi nastavnika!', array('class' => 'btn btn-primary')) }}
 
 {{ Form::close() }}
 
