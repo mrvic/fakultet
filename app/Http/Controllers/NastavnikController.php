@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 // php artisan make:controller NastavnikController --resource
 namespace Fakultet\Http\Controllers;
 use Fakultet\Nastavnik;
@@ -11,6 +12,16 @@ use Validator;
 use Input;
 use Redirect;
 use View;
+=======
+
+namespace Fakultet\Http\Controllers;
+
+use Fakultet\Nastavnik;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+
+
+>>>>>>> 1e2eda3b0b8a1bf59a6bfaa5a1000711ec10a14a
 class NastavnikController extends Controller
 {
     /**
@@ -20,10 +31,16 @@ class NastavnikController extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD
         $nastavnici = Nastavnik::all()->reverse();
         return View::make('fakultet.nastavnik.index')
                         ->with('nastavnici', $nastavnici);
     }
+=======
+        //
+    }
+
+>>>>>>> 1e2eda3b0b8a1bf59a6bfaa5a1000711ec10a14a
     /**
      * Show the form for creating a new resource.
      *
@@ -31,16 +48,27 @@ class NastavnikController extends Controller
      */
     public function create()
     {
+<<<<<<< HEAD
         return View::make('fakultet.nastavnik.create');
     }
     /**
      * Store a newly created resource in storage.
      *
      * @param  Request  $request
+=======
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+>>>>>>> 1e2eda3b0b8a1bf59a6bfaa5a1000711ec10a14a
      * @return Response
      */
     public function store(Request $request)
     {
+<<<<<<< HEAD
         //TODO napravi validaciju
         $n = new Nastavnik;
         $n->imeNastavnik=Input::get('imeNastavnik');
@@ -54,6 +82,11 @@ class NastavnikController extends Controller
         return Redirect::to('nastavnik');
  
     }
+=======
+        //
+    }
+
+>>>>>>> 1e2eda3b0b8a1bf59a6bfaa5a1000711ec10a14a
     /**
      * Display the specified resource.
      *
@@ -62,10 +95,16 @@ class NastavnikController extends Controller
      */
     public function show($id)
     {
+<<<<<<< HEAD
      $n = Nastavnik::find($id);
         return View::make('fakultet.nastavnik.show')
                         ->with('nastavnici', $n);
     }
+=======
+        //
+    }
+
+>>>>>>> 1e2eda3b0b8a1bf59a6bfaa5a1000711ec10a14a
     /**
      * Show the form for editing the specified resource.
      *
@@ -74,6 +113,7 @@ class NastavnikController extends Controller
      */
     public function edit($id)
     {
+<<<<<<< HEAD
         $n = Nastavnik::find($id);
         // Pokazi formu za editiranje studenata
         return View::make('fakultet.nastavnik.edit')
@@ -83,11 +123,21 @@ class NastavnikController extends Controller
      * Update the specified resource in storage.
      *
      * @param  Request  $request
+=======
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+>>>>>>> 1e2eda3b0b8a1bf59a6bfaa5a1000711ec10a14a
      * @param  int  $id
      * @return Response
      */
     public function update(Request $request, $id)
     {
+<<<<<<< HEAD
        // validate
        // read more on validation at http://laravel.com/docs/validation
         $rules = array(
@@ -119,6 +169,11 @@ class NastavnikController extends Controller
             return Redirect::to('nastavnik');
     }
     }
+=======
+        //
+    }
+
+>>>>>>> 1e2eda3b0b8a1bf59a6bfaa5a1000711ec10a14a
     /**
      * Remove the specified resource from storage.
      *
@@ -127,11 +182,15 @@ class NastavnikController extends Controller
      */
     public function destroy($id)
     {
+<<<<<<< HEAD
         $n = Nastavnik::find($id);
         $n->delete();
         // redirect
         Session::flash('message', 'Nastavnik je uspješno obrisan!');
         return Redirect::to('nastavnik');
+=======
+        //
+>>>>>>> 1e2eda3b0b8a1bf59a6bfaa5a1000711ec10a14a
     }
         /**
      * Ova funkcija vraća listu nastavnika sa najvećim koeficijentom
@@ -141,6 +200,7 @@ class NastavnikController extends Controller
     $d1 = Nastavnik::all()
             ->where('koef', '>', '7.10')
             ->take(5);
+<<<<<<< HEAD
     return "<h1>Nastavnici sa koeficijentom većim od 7.10, limit 5</h1><br>" 
 .$d1;
 //TODO želim ispisati samo ime i prezime nastavnika
@@ -148,3 +208,9 @@ class NastavnikController extends Controller
 //. $d1->attributes['imeNastavnik'];
     }
 }
+=======
+    return "<h1>Nastavnici sa koeficijentom većim od 7.10, limit 5</h1><br>" . $d1;
+
+    }
+}
+>>>>>>> 1e2eda3b0b8a1bf59a6bfaa5a1000711ec10a14a
