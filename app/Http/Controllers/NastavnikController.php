@@ -102,10 +102,10 @@ class NastavnikController extends Controller
        // validate
        // read more on validation at http://laravel.com/docs/validation
         $rules = array(
-            'imeNastavnik'=> 'required',
-            'prezNastavnik' => 'required',
-            'pbrStan' => 'required|numeric',
-            'sifOrgjed' => 'required|numeric',
+            'imeNastavnik'=> 'required|max:20',
+            'prezNastavnik' => 'required|max:25',
+            'pbrStan' => 'required|numeric|size:5',
+            'sifOrgjed' => 'required|numeric|max:10',
             'koef' => 'required|numeric'
         );
         $validator = Validator::make(Input::all(), $rules);
