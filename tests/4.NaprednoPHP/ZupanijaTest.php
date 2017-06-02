@@ -3,11 +3,15 @@
 //use Illuminate\Foundation\Testing\WithoutMiddleware;
 //use Illuminate\Foundation\Testing\DatabaseMigrations;
 //use Illuminate\Foundation\Testing\DatabaseTransactions;
+
+
 use Faker\Factory as Faker;
 use Fakultet\Zupanija;
+use Tests\DuskTestCase;
+use Laravel\Dusk\Chrome;
 //use Fakultet;
 
-class ZupanijaTest extends TestCase
+class ZupanijaTest extends DuskTestCase
 {
     public function testModelZupanija() {
         //$lista_mjesta->Zupanija::find(1)->mjesto;
@@ -57,50 +61,47 @@ class ZupanijaTest extends TestCase
     {
         //TODO Treba dopuniti test za Županije
         //static::markTestSkipped('');
-        $this->visit('/zupanija')
-            ->see('Sve županije')
-            ->dontSee('Ovo je string koji ne smije biti na stranici');
+        $this->browse(function ($browser) {
+            $browser->visit('/zupanija')
+            ->assertSee('Sve županije')
+            ->assertdontSee('Ovo je string koji ne smije biti na stranici');
+    });
     }
-    public function testKlikniNaCreateLinkUMeniju()
-    {
-                static::markTestSkipped('');
-        $this->visit('/zupanija')
-                ->click('Create a Nerd')
-                ->seePageIs('/nerds/create');
-    }  
      public function testKlikniNaPokaziZupaniju()
     {
-                $this->visit('/zupanija')
-                //click('Pokaži ovu županiju') // vjerojatno neće zbog ž ??
-                ->click('zupanija-0')     
-                ->seePageIs('/zupanija/0');
+            $this->browse(function ($browser) {
+            $browser->visit('/zupanija')
+                ->click('zupanija-0')  
+                ->onPage('/zupanija/0');
+        });
     }     
     
-    public function testKlikniNaButtonCrate()
-    {
-                static::markTestSkipped('');
-        $this->visit('/zupanija')
-                ->click('Create a Nerd')
-                ->seePageIs('/nerds/create');
-    } 
+
     public function testKreirajNovo()
 {
                        //static::markTestSkipped('');
 $faker = Faker::create();
-        $this->visit('/zupanija/create')
+        $this->browse(function ($browser) {
+            $browser->visit('/zupanija/create')
          //->type("$faker->randomElement(33, 44, 55, 77, 99)", 'sifZupanija')
          ->type("99", 'sifZupanija')  // testiramo brojem 99
          ->type("_test_ $faker->city", 'nazZupanija')
          ->press('zupanija-dodaj')
-         ->seePageIs('/zupanija');
+         //->seePageIs('/zupanija');
+         ->onPage('/zupanija');   
+        });
+        
 }
     public function testPokusajObrisati()
     {
                       //  static::markTestSkipped('');
-        $this->visit('/zupanija')
+        $this->browse(function ($browser) {
+            $browser->visit('/zupanija')
                 //->press('Delete this zupanija')
                 ->press('zupanija-del-99')
-                ->see('Successfully deleted');
+                ->assertSee('Successfully deleted');
+        });
+        
     } 
 
     
