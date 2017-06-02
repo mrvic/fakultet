@@ -14,7 +14,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // DOdao ovo zbog hr slova u unit testingu:
+        // https://laravel.io/forum/07-30-2014-problem-with-utf8-or-unicode
+        \Blade::setEchoFormat('e(utf8_decode(%s))');
     }
 
     /**
