@@ -1,10 +1,7 @@
 <?php
-
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
-
 class CreateNastavnikTable extends Migration {
-
 	/**
 	 * Run the migrations.
 	 *
@@ -29,8 +26,6 @@ class CreateNastavnikTable extends Migration {
 			$table->timestamps();
 		});
 	}
-
-
 	/**
 	 * Reverse the migrations.
 	 *
@@ -40,5 +35,4 @@ class CreateNastavnikTable extends Migration {
 	{
 		Schema::drop('nastavnik');
 	}
-
 }

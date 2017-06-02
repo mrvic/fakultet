@@ -15,11 +15,19 @@
  
 <div class="form-group">
     {{ Form::label('imeNastavnik', 'Ime nastavnika') }}
+<<<<<<< HEAD
     {{ Form::text( 'imeNastavnik', Input::old('imeNastavnik'), array('class' => 'form-control','required' => 'required','maxlength' => 20)) }}
 </div>
 <div class="form-group">
     {{ Form::label('prezNastavnik', 'Prezime nastavnika') }}
     {{ Form::text( 'prezNastavnik',Input::old('prezNastavnik') , array('class' => 'form-control','required' => 'required','maxlength' => 25)) }}
+=======
+    {{ Form::text( 'imeNastavnik', Input::old('imeNastavnik'), array('class' => 'form-control','required' => 'required')) }}
+</div>
+<div class="form-group">
+    {{ Form::label('prezNastavnik', 'Prezime nastavnika') }}
+    {{ Form::text( 'prezNastavnik',Input::old('prezNastavnik') , array('class' => 'form-control','required' => 'required')) }}
+>>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
 </div>
 <div class="form-group">
     {{ Form::label('pbrStan', 'Mjesto stanovanja') }}
@@ -39,4 +47,8 @@
 
 {{ Form::close() }}
 
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea

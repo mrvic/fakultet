@@ -4,7 +4,7 @@ use Illuminate\Database\Seeder;
 
 class OrgJedTableSeeder extends Seeder
 {
-    /**
+     /**
      * Run the database seeds.
      *
      * @return void

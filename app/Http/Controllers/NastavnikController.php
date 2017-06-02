@@ -1,7 +1,6 @@
 <?php
 // php artisan make:controller NastavnikController --resource
 namespace Fakultet\Http\Controllers;
-
 use Fakultet\Nastavnik;
 use Fakultet\Stud;
 use Illuminate\Http\Request;
@@ -12,8 +11,11 @@ use Validator;
 use Input;
 use Redirect;
 use View;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
 class NastavnikController extends Controller
 {
     /**
@@ -24,11 +26,13 @@ class NastavnikController extends Controller
     public function index()
     {
         $nastavnici = Nastavnik::all()->reverse();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
         return View::make('fakultet.nastavnik.index')
                         ->with('nastavnici', $nastavnici);
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -38,7 +42,6 @@ class NastavnikController extends Controller
     {
         return View::make('fakultet.nastavnik.create');
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -60,7 +63,6 @@ class NastavnikController extends Controller
         return Redirect::to('nastavnik');
  
     }
-
     /**
      * Display the specified resource.
      *
@@ -70,11 +72,13 @@ class NastavnikController extends Controller
     public function show($id)
     {
      $n = Nastavnik::find($id);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
         return View::make('fakultet.nastavnik.show')
                         ->with('nastavnici', $n);
     }
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -84,12 +88,14 @@ class NastavnikController extends Controller
     public function edit($id)
     {
         $n = Nastavnik::find($id);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
         // Pokazi formu za editiranje studenata
         return View::make('fakultet.nastavnik.edit')
                         ->with('nastavnik', $n);
     }
-
     /**
      * Update the specified resource in storage.
      *
@@ -102,6 +108,7 @@ class NastavnikController extends Controller
        // validate
        // read more on validation at http://laravel.com/docs/validation
         $rules = array(
+<<<<<<< HEAD
             'imeNastavnik'=> 'required|max:20',
             'prezNastavnik' => 'required|max:25',
             'pbrStan' => 'required|numeric|size:5',
@@ -110,6 +117,15 @@ class NastavnikController extends Controller
         );
         $validator = Validator::make(Input::all(), $rules);
 
+=======
+            'imeNastavnik'=> 'required',
+            'prezNastavnik' => 'required',
+            'pbrStan' => 'required|numeric',
+            'sifOrgjed' => 'required|numeric',
+            'koef' => 'required|numeric'
+        );
+        $validator = Validator::make(Input::all(), $rules);
+>>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
         // process the login
         if ($validator->fails()) {
             return Redirect::to('nastavnik/' . $id . '/edit')
@@ -126,7 +142,10 @@ class NastavnikController extends Controller
             $nastavnik->koef = Input::get('koef');    
         
             $nastavnik->save();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
             // redirect
             Session::flash('message', 'Uspjesno uređen nastavnik!');
             return Redirect::to('nastavnik');
@@ -159,6 +178,9 @@ class NastavnikController extends Controller
 //TODO želim ispisati samo ime i prezime nastavnika
 //BUG Ispravi i ispisi top 10 nastavnika!    
 //. $d1->attributes['imeNastavnik'];
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
     }
 }

@@ -1,11 +1,12 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
-class CreateOrgjedTable extends Migration {
-
-	/**
+class CreateOrgjedTable extends Migration
+{
+   /**
 	 * Run the migrations.
 	 *
 	 * @return void
@@ -16,7 +17,7 @@ class CreateOrgjedTable extends Migration {
 		{
 			$table->integer('sifOrgjed')->unsigned()->primary();
 			$table->char('nazOrgjed', 60);
-			$table->integer('sifNadorgjed')->unsigned()->nullable()->index('sifNadorgjed');
+			$table->integer('sifNadorgjed')->nullable()->index('sifNadorgjed');
 			$table->timestamps();
 		});
 	}
@@ -31,5 +32,4 @@ class CreateOrgjedTable extends Migration {
 	{
 		Schema::drop('orgjed');
 	}
-
 }

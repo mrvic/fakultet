@@ -1,5 +1,8 @@
 <!--
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
 NEDOVRSENO   !!!!
 Treba:
 //TODO - prilagoditi tip polja podacima iz baze
@@ -7,7 +10,10 @@ Treba:
 //TODO - validator za text
 //TODO - validator duljine pbr-a 
 //TODO - validator datuma rodjenja
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
 -->
 
 <!-- resources/views/fakultet/nastavnik/edit.blade.php -->
@@ -50,4 +56,8 @@ Treba:
 
 {{ Form::close() }}
 
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea

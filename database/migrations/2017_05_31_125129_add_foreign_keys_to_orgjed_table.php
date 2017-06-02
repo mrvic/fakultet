@@ -1,11 +1,12 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
-class AddForeignKeysToOrgjedTable extends Migration {
-
-	/**
+class AddForeignKeysToOrgjedTable extends Migration
+{
+   /**
 	 * Run the migrations.
 	 *
 	 * @return void
@@ -31,5 +32,4 @@ class AddForeignKeysToOrgjedTable extends Migration {
 			$table->dropForeign('orgjed_ibfk_1');
 		});
 	}
-
 }

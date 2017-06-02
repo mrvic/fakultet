@@ -1,10 +1,7 @@
 <?php
-
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
-
 class CreateIspitTable extends Migration {
-
     /**
      * Run the migrations.
      *
@@ -21,7 +18,6 @@ class CreateIspitTable extends Migration {
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *
@@ -30,5 +26,4 @@ class CreateIspitTable extends Migration {
     public function down() {
         Schema::drop('ispit');
     }
-
 }
