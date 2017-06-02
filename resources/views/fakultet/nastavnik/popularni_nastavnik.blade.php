@@ -10,11 +10,7 @@
  * ukupna suma ocijena mora biti veća od 50 kako bi eliminirali one koji imaju mali uzorak
  * 
  */
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
 ////////////////////////////////////////
 // ELOQUENT 
 $popnastavnik_eloquent = \Illuminate\Support\Facades\DB::table('nastavnik')
@@ -28,10 +24,7 @@ $popnastavnik_eloquent = \Illuminate\Support\Facades\DB::table('nastavnik')
         ->having(DB::raw('sum(ispit.ocjena)'), '>', 30)
         ->orderBy(DB::raw('AVG(ispit.ocjena)'), 'desc')
         ->get();
-<<<<<<< HEAD
 
-=======
->>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
 ////////////////////////////////////////
 // 'ČISTI' SQL način:
 $popnastavnik_rawsql = Illuminate\Support\Facades\DB::select('
@@ -83,9 +76,5 @@ GROUP BY fakultet.nastavnik.sifNastavnik
 HAVING ukupno > 50 #ne broje se oni koji su dali manje od 10 petica
 ORDER BY prosjek DESC
 LIMIT 1;
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
 -->

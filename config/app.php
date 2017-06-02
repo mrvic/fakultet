@@ -141,15 +141,11 @@ return [
          */
         //za kreiranje formi: https://laravelcollective.com/docs/5.3/html
         Collective\Html\HtmlServiceProvider::class,
-<<<<<<< HEAD
-        
         // Za dodavanje Tinkera
         Laravel\Tinker\TinkerServiceProvider::class,
         
-=======
         //Tinker
         Laravel\Tinker\TinkerServiceProvider::class,
->>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
         // Za google charts statistike /studenti/stats
         Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
         

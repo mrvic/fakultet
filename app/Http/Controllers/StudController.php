@@ -248,8 +248,8 @@ public function studloc($pbr) {
           // 'mbrStud' => 'required|numeric',
             'imeStud' => 'required',
             'prezStud' => 'required',
-            'pbrRod' => 'required|numeric|size:5',
-            'pbrStan' => 'required|numeric|size:5',
+            'pbrRod' => 'required|numeric',
+            'pbrStan' => 'required|numeric',
           //  'datRodStud' => 'required|date||date_format:Y-n-j',
             'datRodStud' => 'required|date|date_format:"Y-m-d"',
             'jmbgStud' => 'required'

@@ -15,11 +15,16 @@
  
 <div class="form-group">
     {{ Form::label('imeNastavnik', 'Ime nastavnika') }}
+<<<<<<< OURS
 <<<<<<< HEAD
     {{ Form::text( 'imeNastavnik', Input::old('imeNastavnik'), array('class' => 'form-control','required' => 'required','maxlength' => 20)) }}
+=======
+    {{ Form::text( 'imeNastavnik', Input::old('imeNastavnik'), array('class' => 'form-control','required' => 'required')) }}
+>>>>>>> THEIRS
 </div>
 <div class="form-group">
     {{ Form::label('prezNastavnik', 'Prezime nastavnika') }}
+<<<<<<< OURS
     {{ Form::text( 'prezNastavnik',Input::old('prezNastavnik') , array('class' => 'form-control','required' => 'required','maxlength' => 25)) }}
 =======
     {{ Form::text( 'imeNastavnik', Input::old('imeNastavnik'), array('class' => 'form-control','required' => 'required')) }}
@@ -28,6 +33,9 @@
     {{ Form::label('prezNastavnik', 'Prezime nastavnika') }}
     {{ Form::text( 'prezNastavnik',Input::old('prezNastavnik') , array('class' => 'form-control','required' => 'required')) }}
 >>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
+=======
+    {{ Form::text( 'prezNastavnik',Input::old('prezNastavnik') , array('class' => 'form-control','required' => 'required')) }}
+>>>>>>> THEIRS
 </div>
 <div class="form-group">
     {{ Form::label('pbrStan', 'Mjesto stanovanja') }}
