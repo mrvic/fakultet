@@ -9,20 +9,11 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 1e2eda3b0b8a1bf59a6bfaa5a1000711ec10a14a
 Route::get('/nastavnik/all', function(){
     $d1= Fakultet\Nastavnik::all();
     return "<h1>Svi nastavnici</h1><br>". $d1;
 });
 Route::get('/nastavnik/top', 'NastavnikController@top');
-<<<<<<< HEAD
-=======
-
->>>>>>> 1e2eda3b0b8a1bf59a6bfaa5a1000711ec10a14a
 Route::get('/ispit', 'ispitController@ispit');
 Route::post('/ispit','ispitController@rezultat');
 /**
