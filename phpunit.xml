@@ -12,6 +12,7 @@
         <testsuite name="Application Test Fakultet">
             <directory suffix="Test.php">./tests</directory>
             <exclude>NerdTest.php</exclude>
+            <exclude>./tests/Browser/</exclude>
         </testsuite>
         <testsuite name="Uvod u PHP i objektno orjentirano programiranje">
             <directory suffix="Test.php">./tests/1.OsnovePHP</directory>                 
