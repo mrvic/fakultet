@@ -8,6 +8,7 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Faker\Factory as Faker;
 
 //php artisan make:test StudTest
+//php artisan dusk .\tests\4.NaprednoPHP\StudTest.php
 //class StudTest extends TestCase {
 class StudTest extends DuskTestCase {
 
@@ -29,7 +30,7 @@ class StudTest extends DuskTestCase {
         $this->browse(function ($browser) {
             $browser->visit('/studenti')
                     ->assertSee('Svi studenti')
-                    ->assertSee('Slavko Prstačić')
+                    ->assertSee('Daniel Kamenar')
                     ->assertDontSee('Ovo je string koji ne smije biti na stranici');
         });
         /*
@@ -49,7 +50,13 @@ public function testStudentCRUD() {
         $student->prezStud = $faker->lastName;
         $student->pbrRod = \Fakultet\Mjesto::all()->first()->pbr;
         $student->pbrStan = \Fakultet\Mjesto::all()->random()->pbr;
-        $student->datRodStud = $faker->date('Y-m-d');
+        
+        /* 
+// DUSK javlja grešku: 
+Illuminate\Support\ViewErrorBag Object ( [bags:protected] => Array ( [default] => Illuminate\Support\MessageBag Object ( [messages:protected] => Array ( [datRodStud] => Array ( [0] => The dat rod stud does not match the format Y-n-j. ) ) [format:protected] => :message ) ) ) 1
+         */
+       // $student->datRodStud = $faker->date('Y-n-j');//date('Y-m-d');
+        $student->datRodStud = '1984-12-15 00:00:00';
         $student->jmbgStud = 123456789;
         // Prvo kreiramo studenta da nam dodjeli autoincrement mbrStud
         $student->slikaStud = 0; // Input::get('slikaStud');
@@ -64,10 +71,14 @@ public function testStudentCRUD() {
                 ->assertPathIs('/studenti/' . $student->mbrStud . '/edit')
                 ->type('jmbgStud',1501984330075)
                 ->press('Uredi studenta')
+                ->pause(3000)
                 ->assertPathIs('/studenti')
                 ->clickLink('Uredi ovog studenta')
+                ->pause(3000)
                 ->assertPathIs('/studenti/' . $student->mbrStud . '/edit')
-                ->assertSee(1501984330075)
+                // provjera vrijednosti polja forme
+                ->assertInputValue('jmbgStud', 1501984330075) 
+                ->pause(3000)
                 ->type('jmbgStud',1501984330074)
                 ->press('Uredi studenta')
                 ->assertPathIs('/studenti');

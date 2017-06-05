@@ -69,22 +69,27 @@ class ZupanijaTest extends DuskTestCase {
     public function testKlikniNaPokaziZupaniju() {
         $this->browse(function ($browser) {
             $browser->visit('/zupanija')
-                    ->clickLink('zupanija-0')
-                    ->onPage('/zupanija/0');
+                    //->click('zupanija-0')  // neće jer nije text linka
+                    // mora ovao ako je link ima ID
+                    ->visit($browser->attribute('#zupanija-0', 'href'))
+                    ->assertPathIs('/zupanija/0');
         });
     }
 
     public function testKreirajNovo() {
         //static::markTestSkipped('');
-        $faker = Faker::create();
+        
         $this->browse(function ($browser) {
+            $faker = Faker::create();
             $browser->visit('/zupanija/create')
                     //->type("$faker->randomElement(33, 44, 55, 77, 99)", 'sifZupanija')
-                    ->type("99", 'sifZupanija')  // testiramo brojem 99
-                    ->type("_test_ $faker->city", 'nazZupanija')
-                    ->press('zupanija-dodaj')
+                    ->type('sifZupanija',"99")  // testiramo brojem 99
+                    ->type( 'nazZupanija',"_test_ $faker->city")
+                    //->click($browser->attribute('zupanija-dodaj'))
+                    ->click('#zupanija-dodaj')
                     //->seePageIs('/zupanija');
-                    ->onPage('/zupanija');
+                    //->onPage('/zupanija');
+                    ->assertPathIs('/zupanija');
         });
     }
 
@@ -93,7 +98,7 @@ class ZupanijaTest extends DuskTestCase {
         $this->browse(function ($browser) {
             $browser->visit('/zupanija')
                     //->press('Delete this zupanija')
-                    ->press('zupanija-del-99')
+                    ->click('#zupanija-del-99')
                     ->assertSee('Successfully deleted');
         });
     }
