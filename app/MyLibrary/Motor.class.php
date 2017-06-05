@@ -32,10 +32,10 @@ class Motor {
         // /tests/Osnove/motorClassTest@testPokusajDaKreiramoMotorSaKrivimArgumentima()
         if (!is_int($s)){ 
             // mora se postaviti \ znak jer je to root klasa a ne custom \InvalidArgumentException
-            throw new \InvalidArgumentException("Moraš ubaciti broj!");        
+            throw new \InvalidArgumentException("Moras ubaciti broj!");        
         }
         else{
-        echo "\n".get_class($this).": Motor je kreiran sa ispravno unešenim argumentom\n";
+        echo "\n".get_class($this).": Motor je kreiran sa ispravno unesenim argumentom\n";
         $this->zvuk=$s;
         }
     }

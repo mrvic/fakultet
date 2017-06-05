@@ -43,7 +43,7 @@ class motorClassTest extends TestCase
         $this->assertEquals(
                 (new Motor(20))->zvuk
                 ,20
-                ,'Klasa Motor (new Motor())->zvuk,"brmmmmmm"');
+                ,'Klasa motor ima gresku, provjeri je li kreirana sa new Motor(int)');
     }
 
     

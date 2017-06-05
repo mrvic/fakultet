@@ -27,6 +27,10 @@ class ZupanijaMjestoTest extends TestCase {
         $this->assertEquals("Kostanjevac",
                            $z->find(1)->mjesto->find(10455)->nazMjesto
                            , 'Mjesto sa pbr 10455 je trebao biti Kostanjevac');
+        $this->assertEquals("Brinje",
+                           $z->find(9)->mjesto->find(53260)->nazMjesto
+                           , 'Mjesto sa pbr 53260 je trebao biti Brinje');
+        
     }
           
 

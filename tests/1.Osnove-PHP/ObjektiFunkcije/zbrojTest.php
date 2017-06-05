@@ -10,15 +10,15 @@ class zbrojTest extends TestCase
      * @param number $a
      * @param number $b 
      *
-     * @dataProvider providerTestZbroj
+     * @dataProvider providerZbroj
      */
     public function testZbroj($a,$b,$c){
            
-        $this->assertEquals($a+$b,$c);
+        $this->assertEquals($a+$b,$c,'Greska! ocekivani zbroj nije jednak rezultatu');
         
     }
     
-        public function providerTestZbroj()
+        public function providerZbroj()
     {
         return array(
             array(1,2,3),
@@ -27,7 +27,7 @@ class zbrojTest extends TestCase
             array(0,2000000000,2000000000),
             array(9.99999999,9.99999999,19.99999998),
             array(1,-2,-1),
-            array(1,2,3),
+            array(15,45,60),
             array(1,2,3),
             array(1,2,3),
             array(1,2,3),
