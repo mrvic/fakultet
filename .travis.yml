@@ -23,7 +23,6 @@ before_install:
   #- mysql -e 'CREATE DATABASE fakultet;'
   
 script:
-  - vendor/bin/phpunit
   - php artisan dusk
   
 services:
