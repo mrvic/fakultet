@@ -1,4 +1,3 @@
-<!-- app/views/nerds/edit.blade.php -->
 @extends('fakultet.master')
 @section('title', 'Uredi mjesto')
 
@@ -10,6 +9,12 @@
 	<div class="alert alert-info">{{ Session::get('message') }}</div>
 @endif
 
+<?php            
+// dohvati sva imena zupanija za popuniti select formu
+$z = \Fakultet\Zupanija::all();       
+$z= json_decode($z);
+//dd($z);
+?>
 {!! Form::model($mjesto, array('action' => array('MjestoController@update', $mjesto->pbr), 'method' => 'PUT')) !!}
 
 
@@ -23,13 +28,14 @@
 	</div>
 	<div class="form-group">
 		{!! Form::label('sifZupanija', 'Ime županije') !!}
-                {!! Form::select('sifZupanija', $zupanije), Input::old('sifZupanija'), array('class' => 'form-control') !!}
-
+                {!! Form::text('sifZupanija', Input::old('sifZupanija'), array('class' => 'form-control')) !!}
+                {!! Form::select('sifZupanija', ['nazZupanija' => 'nazZupanija'], array('class' => 'form-control')) !!}
                	</div>
 
 
 	{!! Form::submit('Uredi mjesto!', array('class' => 'btn btn-primary')) !!}
 
 {!! Form::close() !!}
+
 
 @endsection
