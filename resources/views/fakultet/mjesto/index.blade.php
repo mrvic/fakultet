@@ -30,10 +30,10 @@
 
 				<!-- delete the nerd (uses the destroy method DESTROY /nerds/{id} -->
 				<!-- we will add this later since its a little more complicated than the first two buttons -->
-				{{ Form::open(array('url' => 'mjesto/' . $value->pbr, 'class' => 'pull-right')) }}
-					{{ Form::hidden('_method', 'DELETE') }}
-					{{ Form::submit('Obriši ovo mjesto', array('class' => 'btn btn-warning','id'=>'mjesto-del-'.$value->pbr)) }}
-				{{ Form::close() }}
+				{!! Form::open(array('url' => 'mjesto/' . $value->pbr, 'class' => 'pull-right')) !!}
+					{!! Form::hidden('_method', 'DELETE') !!}
+					{!! Form::submit('Obriši ovo mjesto', array('class' => 'btn btn-warning','id'=>'mjesto-del-'.$value->pbr)) !!}
+				{!! Form::close() !!}
 
 				<!-- show the nerd (uses the show method found at GET /nerds/{id} -->
 				<a class="btn btn-small btn-success" id="{{'mjesto-' . $value->pbr}}" href="{{ URL::to('mjesto/' . $value->pbr) }}">Pokaži ovu mjesto</a>

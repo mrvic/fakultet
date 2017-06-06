@@ -139,13 +139,14 @@ return [
         /*
          * Provideri koje sam ja dodao
          */
-        //za kreiranje formi: https://laravelcollective.com/docs/5.3/html
+        //za kreiranje formi: https://laravelcollective.com/docs/master/html
+        // Po novome za laravel 5.4.*: (06.06.2017)
         Collective\Html\HtmlServiceProvider::class,
+        
+        //Collective\Bus\BusServiceProvider::class,
         // Za dodavanje Tinkera
         Laravel\Tinker\TinkerServiceProvider::class,
-        
-        //Tinker
-        Laravel\Tinker\TinkerServiceProvider::class,
+
         // Za google charts statistike /studenti/stats
         Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
         
@@ -154,7 +155,7 @@ return [
          */
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
-        Illuminate\Bus\BusServiceProvider::class,
+        //Illuminate\Bus\BusServiceProvider::class,
         Illuminate\Cache\CacheServiceProvider::class,
         Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class,
         Illuminate\Cookie\CookieServiceProvider::class,

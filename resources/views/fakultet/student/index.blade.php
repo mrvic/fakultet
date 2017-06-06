@@ -34,10 +34,10 @@
 
 
                 <!-- we will add this later since its a little more complicated than the first two buttons -->
-                {{ Form::open(array('url' => 'studenti/' . $value->mbrStud, 'class' => 'pull-right')) }}
-                {{ Form::hidden('_method', 'DELETE') }}
-                {{ Form::submit('Obrisi ovog studenta', array('class' => 'btn btn-warning','id'=>'student-del-'.$value->mbrStud)) }}
-                {{ Form::close() }}
+                {!! Form::open(array('url' => 'studenti/' . $value->mbrStud, 'class' => 'pull-right')) !!}
+                {!! Form::hidden('_method', 'DELETE') !!}
+                {!! Form::submit('Obrisi ovog studenta', array('class' => 'btn btn-warning','id'=>'student-del-'.$value->mbrStud)) !!}
+                {!! Form::close() !!}
 
                 <!-- show the nerd (uses the show method found at GET /nerds/{id} -->
                 <a class="btn btn-small btn-success" id="{{'studenti-' . $value->mbrStud}}" href="{{ URL::to('studenti/' . $value->mbrStud) }}">Pokaži ovog studenta</a>
