@@ -15,10 +15,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // DOdao ovo zbog hr slova u unit testingu:
+        // 07.06.2017. Od verzije 5.4 nije više potrebno blade::setechoformat
+        // Dodao ovo zbog hr slova u unit testingu:
         // https://laravel.io/forum/07-30-2014-problem-with-utf8-or-unicode
-        \Blade::setEchoFormat('e(utf8_decode(%s))');
-        Blade::setEchoFormat('e(utf8_encode(%s))');
+        //\Blade::setEchoFormat('e(utf8_decode(%s))');
+        
     }
 
     /**

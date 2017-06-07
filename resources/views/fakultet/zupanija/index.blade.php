@@ -9,7 +9,7 @@
 @if (Session::has('message'))
 <div class="alert alert-info">{{ Session::get('message') }}</div>
 @endif
-
+{{-- dd($zupanijas)--}}
 <table class="table table-striped table-bordered">
     <thead>
         <tr>
@@ -31,8 +31,9 @@
                 {!! Form::submit('Obrisi ovu Zupaniju', array('class' => 'btn btn-warning','id'=>'zupanija-del-'.$value->sifZupanija)) !!}
                 {!! Form::close() !!}
 
-                <!-- show the nerd (uses the show method found at GET /nerds/{id} -->
-                <a class="btn btn-small btn-success" id="{{'zupanija-' . $value->sifZupanija}}" href="{{ URL::to('zupanija/' . $value->sifZupanija) }}">Pokaži ovu županiju</a>
+                <a class="btn btn-small btn-success" 
+                   id="{{'zupanija-' . $value->sifZupanija}}" 
+                   href="{{ URL::to('zupanija/' . $value->sifZupanija) }}">Pokaži ovu županiju</a>
 
                 <!-- edit this nerd (uses the edit method found at GET /nerds/{id}/edit -->
                 <a class="btn btn-small btn-info" href="{{ URL::to('zupanija/' . $value->sifZupanija . '/edit') }}">Uredi ovu županiju</a>

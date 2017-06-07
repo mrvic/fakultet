@@ -1,5 +1,3 @@
-<!-- app/views/nerds/show.blade.php -->
-
 @extends('fakultet.master')
 @section('title', 'Details')
 
@@ -23,12 +21,13 @@
 </div>
 
 <div>
-    <ul>
+    <h4>Ovoj županiji pripadaju sljedeća mjesta (ukupno {{$zupanija->mjesto()->count()}}):</h4>
+    <ol>
         @foreach ($zupanija->mjesto()->orderBy('nazMjesto')->get() as $m)
 
         <li><a href="{{ URL::to('mjesto')}}/{{ $m->pbr }}">{{ $m->nazMjesto }}</a></li>
         @endforeach
-    </ul>   
+    </ol>   
 </div>
 
 @endsection
