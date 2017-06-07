@@ -1,4 +1,3 @@
-<!-- app/views/nerds/edit.blade.php -->
 @extends('fakultet.master')
 @section('title', 'Uredi županiju')
 
