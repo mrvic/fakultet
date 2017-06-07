@@ -54,11 +54,14 @@ Route::get('/mjesto-zupanija', function(){
    dd($lista_mjesta);
 });
 Route::get('/show-key', function(){
-    var_dump( $_ENV['APP_KEY']);
+    // Stari nacin, globalne varijable se ne smiju više dohvaćati direktno
+    // https://laravel.com/docs/5.4/configuration#retrieving-environment-configuration
+    //var_dump( $_ENV['APP_KEY']);
+    
+    var_dump(config('app.key'));
     echo "<br>";
-    $_ENV['proba']="neki text";
-    echo $_ENV['DB_USERNAME'];
-    dd($_ENV);
+
+   dd(config('app'));
 });
 // Ovako isprintamo composer.json
 Route::get('/get-composer-json', function(){

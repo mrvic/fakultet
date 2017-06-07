@@ -10,20 +10,20 @@
 	<div class="alert alert-info">{{ Session::get('message') }}</div>
 @endif
 
-{{ Form::model($dvorana, array('action' => array('DvoranaController@update', $dvorana->oznDvorana), 'method' => 'PUT')) }}
+{!! Form::model($dvorana, array('action' => array('DvoranaController@update', $dvorana->oznDvorana), 'method' => 'PUT')) !!}
 
 
 <div class="form-group">
-		{{ Form::label('oznDvorana', 'Oznaka dvorane') }}
-		{{ Form::text( 'oznDvorana', Input::old('oznDvorana'), array('class' => 'form-control')) }}
+		{!! Form::label('oznDvorana', 'Oznaka dvorane') !!}
+		{!! Form::text( 'oznDvorana', Input::old('oznDvorana'), array('class' => 'form-control')) !!}
 	</div>
 	<div class="form-group">
-		{{ Form::label('kapacitet', 'Kapacitet dvorane') }}
-		{{ Form::text( 'kapacitet', Input::old('kapacitet'), array('class' => 'form-control')) }}
+		{!! Form::label('kapacitet', 'Kapacitet dvorane') !!}
+		{!! Form::text( 'kapacitet', Input::old('kapacitet'), array('class' => 'form-control')) !!}
 	</div>
 
-	{{ Form::submit('Uredi dvoranu!', array('class' => 'btn btn-primary'), redirect('index')->with('status', 'Dvorana updated!')) }}
+	{!! Form::submit('Uredi dvoranu!', array('class' => 'btn btn-primary'), redirect('index')->with('status', 'Dvorana updated!')) !!}
         
-{{ Form::close() }}
+{!! Form::close() !!}
 
 @endsection

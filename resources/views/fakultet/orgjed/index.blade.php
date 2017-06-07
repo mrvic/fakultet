@@ -28,14 +28,13 @@
 			<!-- we will also add show, edit, and delete buttons -->
 			<td>
 
-				<!-- delete the nerd (uses the destroy method DESTROY /nerds/{id} -->
-				<!-- we will add this later since its a little more complicated than the first two buttons -->
-				{{ Form::open(array('url' => 'orgjed/' . $value->sifOrgjed, 'class' => 'pull-right')) }}
-					{{ Form::hidden('_method', 'DELETE') }}
-					{{ Form::submit('Obrisi ovu org.jedinicu'
+
+				{!! Form::open(array('url' => 'orgjed/' . $value->sifOrgjed, 'class' => 'pull-right')) !!}
+					{!! Form::hidden('_method', 'DELETE') !!}
+					{!! Form::submit('Obrisi ovu org.jedinicu'
                                             , array('class' => 'btn btn-warning',
-                                            'id'=>'orgjed-del-'.$value->sifOrgjed)) }}
-				{{ Form::close() }}
+                                            'id'=>'orgjed-del-'.$value->sifOrgjed)) !!}
+				{!! Form::close() !!}
 
 				<!-- show the nerd (uses the show method found at GET /nerds/{id} -->
 				<a class="btn btn-small btn-success" id="{{'orgjed-' . $value->sifOrgjed}}" href="{{ URL::to('orgjed/' . $value->sifOrgjed) }}">Pokaži ovu org.jedinicu</a>

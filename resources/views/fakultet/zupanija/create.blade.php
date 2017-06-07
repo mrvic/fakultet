@@ -13,12 +13,12 @@
 
 
 	<div class="form-group">
-		{{ Form::label('sifZupanija', 'Broj županije') }}
-		{{ Form::number('sifZupanija', Input::old('sifZupanija'), array('class' => 'form-control')) }}
+		{!! Form::label('sifZupanija', 'Broj županije') !!}
+		{!! Form::number('sifZupanija', Input::old('sifZupanija'), array('class' => 'form-control')) !!}
 	</div>
 	<div class="form-group">
-		{{ Form::label('nazZupanija', 'Ime županije') }}
-		{{ Form::text('nazZupanija', Input::old('nazZupanija'), array('class' => 'form-control')) }}
+		{!! Form::label('nazZupanija', 'Ime županije') !!}
+		{!! Form::text('nazZupanija', Input::old('nazZupanija'), array('class' => 'form-control')) !!}
 	</div>
 
 

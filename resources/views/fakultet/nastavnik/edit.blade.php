@@ -1,8 +1,4 @@
 <!--
-<<<<<<< HEAD
-
-=======
->>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
 NEDOVRSENO   !!!!
 Treba:
 //TODO - prilagoditi tip polja podacima iz baze
@@ -10,11 +6,7 @@ Treba:
 //TODO - validator za text
 //TODO - validator duljine pbr-a 
 //TODO - validator datuma rodjenja
-<<<<<<< HEAD
 
-=======
->>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
--->
 
 <!-- resources/views/fakultet/nastavnik/edit.blade.php -->
 @extends('fakultet.master')
@@ -28,36 +20,34 @@ Treba:
 <div class="alert alert-info">{{ Session::get('message') }}</div>
 @endif
 
-{{ Form::model($nastavnik, array('action' => array('NastavnikController@update', $nastavnik->sifNastavnik), 'method' => 'PUT', 'files' => true)) }}
+{!! Form::model($nastavnik, array('action' => array('NastavnikController@update', $nastavnik->sifNastavnik), 'method' => 'PUT', 'files' => true)) !!}
  
 <div class="form-group">
-    {{ Form::label('imeNastavnik', 'Ime nastavnika') }}
-    {{ Form::text( 'imeNastavnik', Input::old('imeNastavnik'), array('class' => 'form-control','required' => 'required')) }}
+    {!! Form::label('imeNastavnik', 'Ime nastavnika') !!}
+    {!! Form::text( 'imeNastavnik', Input::old('imeNastavnik'), array('class' => 'form-control','required' => 'required')) !!}
 </div>
 <div class="form-group">
-    {{ Form::label('prezNastavnik', 'Prezime nastavnika') }}
-    {{ Form::text( 'prezNastavnik',Input::old('prezNastavnik') , array('class' => 'form-control','required' => 'required')) }}
+    {!! Form::label('prezNastavnik', 'Prezime nastavnika') !!}
+    {!! Form::text( 'prezNastavnik',Input::old('prezNastavnik') , array('class' => 'form-control','required' => 'required')) !!}
 </div>
 <div class="form-group">
-    {{ Form::label('pbrStan', 'Mjesto stanovanja') }}
-    {{ Form::number( 'pbrStan', Input::old('pbrStan'), array('class' => 'form-control','required' => 'required')) }}
+    {!! Form::label('pbrStan', 'Mjesto stanovanja') !!}
+    {!! Form::number( 'pbrStan', Input::old('pbrStan'), array('class' => 'form-control','required' => 'required')) !!}
 </div>
 
 <div class="form-group">
-    {{ Form::label('sifOrgjed', 'Šifra organizacijske jedinice') }}
-    {{ Form::number('sifOrgjed', Input::old('sifOrgjed'), array('class' => 'form-control', 'required' => 'required')) }}     
+    {!! Form::label('sifOrgjed', 'Šifra organizacijske jedinice') !!}
+    {!! Form::number('sifOrgjed', Input::old('sifOrgjed'), array('class' => 'form-control', 'required' => 'required')) !!}     
 </div>
 <div class="form-group">
-    {{ Form::label('koef', 'Koeficijent') }}
-    {{ Form::number( 'koef', Input::old('koef'), array('class' => 'form-control','required' => 'required')) }}
+    {!! Form::label('koef', 'Koeficijent') !!}
+    {!! Form::number( 'koef', Input::old('koef'), array('class' => 'form-control','required' => 'required')) !!}
 </div>
 
-{{ Form::submit('Uredi nastavnika!', array('class' => 'btn btn-primary')) }}
+{!! Form::submit('Uredi nastavnika!', array('class' => 'btn btn-primary')) !!}
 
-{{ Form::close() }}
+{!! Form::close() !!}
 
-<<<<<<< HEAD
+
 @endsection
-=======
-@endsection
->>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
+

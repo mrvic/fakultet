@@ -9,22 +9,22 @@
 	<div class="alert alert-info">{{ Session::get('message') }}</div>
 @endif
 
-{{ Form::open(array('url' => 'dvorana')) }}
+{!! Form::open(array('url' => 'dvorana')) !!}
 
 
 	<div class="form-group">
-		{{ Form::label('oznDvorana', 'Oznaka dvorane') }}
-		{{ Form::text('oznDvorana', Input::old('oznDvorana'), array('class' => 'form-control')) }}
+		{!! Form::label('oznDvorana', 'Oznaka dvorane') !!}
+		{!! Form::text('oznDvorana', Input::old('oznDvorana'), array('class' => 'form-control')) !!}
 	</div>
 	<div class="form-group">
-		{{ Form::label('kapacitet', 'Kapacitet dvorane') }}
-		{{ Form::number('kapacitet', Input::old('kapacitet'), array('class' => 'form-control')) }}
+		{!! Form::label('kapacitet', 'Kapacitet dvorane') !!}
+		{!! Form::number('kapacitet', Input::old('kapacitet'), array('class' => 'form-control')) !!}
 	</div>
 
 
-	{{ Form::submit('Dodaj novu dvoranu!', array('class' => 'btn btn-primary','id'=>'dvorana-dodaj')) }}
+	{!! Form::submit('Dodaj novu dvoranu!', array('class' => 'btn btn-primary','id'=>'dvorana-dodaj')) !!}
 
-{{ Form::close() }}
+{!! Form::close() !!}
 
 @endsection
  

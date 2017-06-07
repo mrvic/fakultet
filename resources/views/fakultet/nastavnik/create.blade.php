@@ -10,53 +10,45 @@
 <div class="alert alert-info">{{ Session::get('message') }}</div>
 @endif
 
-{{ Form::open(array('url' => 'nastavnik', 'files' => true)) }}
+{!! Form::open(array('url' => 'nastavnik', 'files' => true)) !!}
 
  
 <div class="form-group">
-    {{ Form::label('imeNastavnik', 'Ime nastavnika') }}
-<<<<<<< OURS
-<<<<<<< HEAD
-    {{ Form::text( 'imeNastavnik', Input::old('imeNastavnik'), array('class' => 'form-control','required' => 'required','maxlength' => 20)) }}
-=======
-    {{ Form::text( 'imeNastavnik', Input::old('imeNastavnik'), array('class' => 'form-control','required' => 'required')) }}
->>>>>>> THEIRS
+    {!! Form::label('imeNastavnik', 'Ime nastavnika') !!}
+
+    {!! Form::text( 'imeNastavnik', Input::old('imeNastavnik'), array('class' => 'form-control','required' => 'required','maxlength' => 20)) !!}
+
 </div>
 <div class="form-group">
-    {{ Form::label('prezNastavnik', 'Prezime nastavnika') }}
-<<<<<<< OURS
-    {{ Form::text( 'prezNastavnik',Input::old('prezNastavnik') , array('class' => 'form-control','required' => 'required','maxlength' => 25)) }}
-=======
-    {{ Form::text( 'imeNastavnik', Input::old('imeNastavnik'), array('class' => 'form-control','required' => 'required')) }}
+    {!! Form::label('prezNastavnik', 'Prezime nastavnika') }}
+
+    {!! Form::text( 'prezNastavnik',Input::old('prezNastavnik') , array('class' => 'form-control','required' => 'required','maxlength' => 25)) !!}
+
+    {!! Form::text( 'imeNastavnik', Input::old('imeNastavnik'), array('class' => 'form-control','required' => 'required')) !!}
 </div>
 <div class="form-group">
-    {{ Form::label('prezNastavnik', 'Prezime nastavnika') }}
-    {{ Form::text( 'prezNastavnik',Input::old('prezNastavnik') , array('class' => 'form-control','required' => 'required')) }}
->>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
-=======
-    {{ Form::text( 'prezNastavnik',Input::old('prezNastavnik') , array('class' => 'form-control','required' => 'required')) }}
->>>>>>> THEIRS
+    {!! Form::label('prezNastavnik', 'Prezime nastavnika') }}
+    {!! Form::text( 'prezNastavnik',Input::old('prezNastavnik') , array('class' => 'form-control','required' => 'required')) !!}
+
 </div>
 <div class="form-group">
-    {{ Form::label('pbrStan', 'Mjesto stanovanja') }}
-    {{ Form::number( 'pbrStan', Input::old('pbrStan'), array('class' => 'form-control','required' => 'required')) }}
+    {!! Form::label('pbrStan', 'Mjesto stanovanja') !!}
+    {!! Form::number( 'pbrStan', Input::old('pbrStan'), array('class' => 'form-control','required' => 'required')) !!}
 </div>
 
 <div class="form-group">
-    {{ Form::label('sifOrgjed', 'Šifra organizacijske jedinice') }}
-    {{ Form::number('sifOrgjed', Input::old('sifOrgjed'), array('class' => 'form-control', 'required' => 'required')) }}     
+    {!! Form::label('sifOrgjed', 'Šifra organizacijske jedinice') !!}
+    {!! Form::number('sifOrgjed', Input::old('sifOrgjed'), array('class' => 'form-control', 'required' => 'required')) !!}     
 </div>
 <div class="form-group">
-    {{ Form::label('koef', 'Koeficijent') }}
-    {{ Form::number( 'koef', Input::old('koef'), array('class' => 'form-control','required' => 'required')) }}
+    {!! Form::label('koef', 'Koeficijent') !!}
+    {!! Form::number( 'koef', Input::old('koef'), array('class' => 'form-control','required' => 'required')) !!}
 </div>
 
-{{ Form::submit('Kreiraj novog nastavnika!', array('class' => 'btn btn-primary')) }}
+{!! Form::submit('Kreiraj novog nastavnika!', array('class' => 'btn btn-primary')) !!}
 
-{{ Form::close() }}
+{!! Form::close() !!}
 
-<<<<<<< HEAD
+
 @endsection
-=======
-@endsection
->>>>>>> 6def43cf2b0f328ede020b54b9b076de537492ea
+

@@ -9,26 +9,26 @@
 	<div class="alert alert-info">{{ Session::get('message') }}</div>
 @endif
 
-{{ Form::open(array('url' => 'mjesto')) }}
+{!! Form::open(array('url' => 'mjesto')) !!}
 
 
 	<div class="form-group">
-		{{ Form::label('pbr', 'Poštanski broj') }}
-		{{ Form::number('pbr', Input::old('pbr'), array('class' => 'form-control')) }}
+		{!! Form::label('pbr', 'Poštanski broj') !!}
+		{!! Form::number('pbr', Input::old('pbr'), array('class' => 'form-control')) !!}
 	</div>
 	<div class="form-group">
-		{{ Form::label('nazMjesto', 'Ime mjesta') }}
-		{{ Form::text('nazMjesto', Input::old('nazMjesto'), array('class' => 'form-control')) }}
+		{!! Form::label('nazMjesto', 'Ime mjesta') !!}
+		{!! Form::text('nazMjesto', Input::old('nazMjesto'), array('class' => 'form-control')) !!}
 	</div>
 	<div class="form-group">
-		{{ Form::label('sifZupanija', 'Ime mjesta') }}
-		{{ Form::text('sifZupanija', Input::old('sifZupanija'), array('class' => 'form-control')) }}
+		{!! Form::label('sifZupanija', 'Ime mjesta') !!}
+		{!! Form::text('sifZupanija', Input::old('sifZupanija'), array('class' => 'form-control')) !!}
 	</div>
 
 
-	{{ Form::submit('Dodaj novo mjesto!', array('class' => 'btn btn-primary','id'=>'mjesto-dodaj')) }}
+	{!! Form::submit('Dodaj novo mjesto!', array('class' => 'btn btn-primary','id'=>'mjesto-dodaj')) !!}
 
-{{ Form::close() }}
+{!! Form::close() !!}
 
 @endsection
  
