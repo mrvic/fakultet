@@ -18,7 +18,7 @@
 	<ul class="nav navbar-nav">
    		<li><a href="{{ URL::to('fakultet') }}">App fakultet</a></li>         
 		<li><a href="{{ URL::to('show-key') }}">Pokaži app key</a></li>
-		<li><a href="{{ URL::to('get-composer-json') }}">Dohvati composer.json</a>
+                <li><a href="{{ URL::to('get-composer-json') }}">Dohvati composer.json</a></li>
 	</ul>
 </nav>
 @yield('content')
