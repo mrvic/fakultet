@@ -92,14 +92,16 @@ class ZupanijaTest extends DuskTestCase {
                     ->assertPathIs('/zupanija');
         });
     }
-
+     /**
+     * @depends testKreirajNovo
+     */
     public function testPokusajObrisati() {
         //  static::markTestSkipped('');
         $this->browse(function ($browser) {
             $browser->visit('/zupanija')
                     //->press('Delete this zupanija')
                     ->click('#zupanija-del-99')
-                    ->assertSee('Successfully deleted');
+                    ->assertSee('Successfully deleted!');
         });
     }
 

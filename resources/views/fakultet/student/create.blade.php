@@ -10,7 +10,7 @@ Treba:
 
 -->
 
-<!-- resources/views/fakultet/student/edit.blade.php -->
+<!-- resources/views/fakultet/student/create.blade.php -->
 @extends('fakultet.master')
 @section('title', 'Uredi studenta')
 
@@ -22,7 +22,7 @@ Treba:
 <div class="alert alert-info">{{ Session::get('message') }}</div>
 @endif
 
-{!! Form::open(array('url' => 'studenti', 'files' => true)) }}
+{!! Form::open(array('url' => 'studenti', 'files' => true)) !!}
 
 
 <div class="form-group">

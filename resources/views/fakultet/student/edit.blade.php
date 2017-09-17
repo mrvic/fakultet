@@ -28,7 +28,9 @@ Treba:
 
 <div class="form-group">
     {!! Form::label('mbrStud', 'Matični broj studenta') !!}
-    {!! Form::text( 'mbrStud', Input::old('mbrStud'), array('class' => 'form-control','disabled'=>true)) !!}
+    <!-- ne smije se staviti disabled="true" jer onda forma neće postirati to polje -->
+    {!! Form::text( 'mbrStud', Input::old('mbrStud'), array('class' => 'form-control','readonly'=>'true')) !!}
+ 
 </div>
 <div class="form-group">
     {!! Form::label('imeStud', 'Ime studenta') !!}
@@ -59,7 +61,7 @@ Treba:
 </div>
 <div class="form-group">
     {!! Form::label('photo', 'Slika studenta') !!}
-    {!! Form::file( 'photo', '', array('class' => 'form-control')) !!}
+    {!! Form::file( 'photo', null, array('class' => 'form-control')) !!}
 </div>
 {!! Form::submit('Uredi studenta!', array('class' => 'btn btn-primary','name'=>'Uredi studenta')) !!}
 

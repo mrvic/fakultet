@@ -126,6 +126,7 @@ class ZupanijaController extends Controller
 
         // process the login
         if ($validator->fails()) {
+           // dd($validator);
             return Redirect::to('zupanija/' . $id . '/edit')
                             ->withErrors($validator)
                             ->withInput(Input::except('password'));
@@ -156,7 +157,7 @@ class ZupanijaController extends Controller
         $zupanija->delete();
 
         // redirect
-        Session::flash('message', 'Successfully deleted the Županija!');
+        Session::flash('message', 'Successfully deleted!');
         return Redirect::to('zupanija');
     }
 }

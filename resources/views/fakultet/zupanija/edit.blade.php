@@ -14,7 +14,7 @@
 
 <div class="form-group">
 		{!! Form::label('sifZupanija', 'Broj županije') !!}
-		{!! Form::text( 'sifZupanija', Input::old('sifZupanija'), array('class' => 'form-control','disabled')) !!}
+		{!! Form::text( 'sifZupanija', Input::old('sifZupanija'), array('class' => 'form-control','readonly'=>'readonly')) !!}
 	</div>
 	<div class="form-group">
 		{!! Form::label('nazZupanija', 'Ime županije') !!}

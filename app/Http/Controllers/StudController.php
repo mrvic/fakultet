@@ -420,7 +420,8 @@ public function studloc($pbr) {
             'prezStud' => 'required',
             'pbrRod' => 'required|numeric',
             'pbrStan' => 'required|numeric',
-            'datRodStud' => 'required|date|date_format:Y-n-j',
+            //'datRodStud' => 'required|date|date_format:Y-n-j',
+            'datRodStud' => 'required|date',
             'jmbgStud' => 'required'
         );
         $validator = Validator::make(Input::all(), $rules);
