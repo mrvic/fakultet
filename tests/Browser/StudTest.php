@@ -43,6 +43,7 @@ class StudTest extends DuskTestCase {
 
 public function testStudentCRUD() {
     $this->browse(function ($browser) {
+        
         $faker = Faker::create();
         $student = new \Fakultet\Stud;
 
@@ -62,14 +63,16 @@ Illuminate\Support\ViewErrorBag Object ( [bags:protected] => Array ( [default] =
         $student->slikaStud = 0; // Input::get('slikaStud');
 
         $student->save();
-
+        
         $browser->visit('/studenti')
                 ->clickLink('Pokaži ovog studenta')
                 ->assertPathIs('/studenti/' . $student->mbrStud)
                 ->assertSee($student->prezStud)
                 ->clickLink('Uredi ovog studenta')
                 ->assertPathIs('/studenti/' . $student->mbrStud . '/edit')
-                ->type('jmbgStud',1501984330075)
+                //->type('jmbgStud',1501984330075)
+                //->type('jmbgStud',$faker->ean13)->pause(30000)  // Random 13 digit number # '1817842282247'
+                ->type('jmbgStud',$faker->numberBetween($min = 1117842282247, $max = 1817842282247)) // Random 13 digit number # '1817842282247'
                 ->press('Uredi studenta')
                 ->pause(3000)
                 ->assertPathIs('/studenti')
@@ -78,7 +81,7 @@ Illuminate\Support\ViewErrorBag Object ( [bags:protected] => Array ( [default] =
                 ->assertPathIs('/studenti/' . $student->mbrStud . '/edit')
                 // provjera vrijednosti polja forme
                 ->assertInputValue('jmbgStud', 1501984330075) 
-                ->pause(3000)
+                ->assertDontSee('Slika studenta')->pause(3000)
                 ->type('jmbgStud',1501984330074)
                 ->press('Uredi studenta')
                 ->assertPathIs('/studenti');
