@@ -16,8 +16,8 @@ class CreateStudTable extends Migration {
 		{
 			//$table->integer('mbrStud', true);
 			$table->increments('mbrStud');
-			$table->char('imeStud', 25);
-			$table->char('prezStud', 25);
+			$table->char('imeStud', 45);
+			$table->char('prezStud', 45);
 			$table->integer('pbrRod')->unsigned()->nullable()->index('pbrRod');
 			$table->integer('pbrStan')->unsigned()->index('pbrStan');
 			$table->dateTime('datRodStud')->nullable();

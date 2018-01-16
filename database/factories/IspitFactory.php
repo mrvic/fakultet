@@ -15,7 +15,7 @@ use Illuminate\Support\Carbon;
 
 $factory->define(Ispit::class, function (Faker $faker) {
 return [
-'mbrStud'      => $faker->randomElement(Stud::all()->pluck('mbrStud')->toArray()), // '1210', //$faker->randomElement(User::all()->pluck('id')->toArray();)
+'mbrStud'      => $faker->randomElement(Stud::all()->pluck('mbrStud')->toArray()), // '1210', 
 'sifPred'      => $faker->randomElement(Pred::all()->pluck('sifPred')->toArray()), //'545',
 'sifNastavnik' => $faker->randomElement(Nastavnik::all()->pluck('sifNastavnik')->toArray()), //'481',
 'datIspit'     => $faker->dateTimeBetween('-3 years','now', $timezone = null), //'2002-10-22 00:00:00',
